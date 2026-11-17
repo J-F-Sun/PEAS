@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the PEAS manuscript."
+title: "PEAS: Direct Learning of Cumulative Absorption Probabilities in Molecular Communications via Backward Reformulation"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Sun
+    given-names: Jianfeng
+  - family-names: Wu
+    given-names: Yuyang
+  - family-names: Zhang
+    given-names: Jie
+  - family-names: Li
+    given-names: Hui
+# Publication venue, DOI, and public repository URL await confirmation.

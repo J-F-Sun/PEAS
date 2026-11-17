@@ -1,0 +1,21 @@
+{
+  "nondimensionalization": {
+    "length_scale": 1.0,
+    "diffusivity": 1.0
+  },
+  "domain": {
+    "r_min": 1.0,
+    "r_far": 25.0
+  },
+  "boundary": {},
+  "time": {
+    "t_min_pde": 1e-05,
+    "t_max": 20.0,
+    "sampling": {
+      "split_t": 4.0,
+      "early_fraction": 0.4,
+      "early_bias_power": 1.0,
+      "late_bias_power": 0.8
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "master_seed": 6995496284008258155,
+  "seeds": [
+    489980567,
+    1345051779,
+    228102879,
+    1542070713,
+    2076437355,
+    1872006937,
+    1652974068,
+    1117076059,
+    1049651055,
+    987432199
+  ],
+  "source_sha256": "8748a411cd930cee463b476b78d430aafbf1b1ef9c3bfe7072afafbf06e94dc0",
+  "reference_sha256": {
+    "canonical": "fd2ab1eb2e644e43f0a69d34d9987cd6213a3351cfb464f2fc94a07e33b38b65",
+    "concentric": "cc453a799592da58f3c4afe3d596192b2e0ed2c09348379f5944cd6017677f7f",
+    "eccentric": "af3d9ee0fc4a80cd12aeea49cd90e63381cb71d0a80596bdde39b19f8c9524e1",
+    "pipe": "40f873abfdbba3d45c78d63281594f324dd2aa3cbf89415c7f780f95ae2603e5"
+  },
+  "configs": {
+    "canonical": {
+      "schema_version": 1,
+      "scene": "canonical",
+      "representation": "radial",
+      "geometry": {
+        "rx_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rx_radius": 1.0,
+        "diffusivity": 1.0
+      },
+      "time": {
+        "end": 25.0,
+        "output_points": 801
+      },
+      "model": {
+        "architecture": "boundary_compliant_svd",
+        "activation": "tanh",
+        "sampling": "swim_uniform_pairs",
+        "inner_basis": 1536,
+        "outer_basis": 768
+      },
+      "source": {
+        "sigma_max": 0.15,
+        "boundary_sigma_margin": 4.0
+      },
+      "sampling": {
+        "interior_points": 4096,
+        "surface_points": 384,
+        "source_fraction": 0.25,
+        "source_spread": 6.0
+      },
+      "numerics": {
+        "outer_cutoff": 30.0,
+        "boundary_weight": 100.0,
+        "lstsq_rcond": 1e-10,
+        "svd_cutoff": 1e-07,
+        "ode_method": "LSODA",
+        "rtol": 1e-06,
+        "atol": 1e-08
+      },
+      "evaluation": {
+        "surface_points": 2048,
+        "integration_points": 4001
+      },
+      "runtime": {
+        "threads": 4,
+        "timeout_seconds": 600
+      },
+      "seed": 42,
+      "tuning_ids": [
+        "canonical_test_002",
+        "canonical_test_009",
+        "canonical_test_020"
+      ]
+    },
+    "concentric": {
+      "schema_version": 1,
+      "scene": "concentric",
+      "representation": "radial",
+      "geometry": {
+        "rx_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rx_radius": 1.0,
+        "outer_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outer_radius": 10.0,
+        "kappa": 5.0,
+        "diffusivity": 1.0
+      },
+      "time": {
+        "end": 20.0,
+        "output_points": 801
+      },
+      "model": {
+        "architecture": "boundary_compliant_svd",
+        "activation": "tanh",
+        "sampling": "swim_uniform_pairs",
+        "inner_basis": 1024,
+        "outer_basis": 512
+      },
+      "source": {
+        "sigma_max": 0.075,
+        "boundary_sigma_margin": 4.0
+      },
+      "sampling": {
+        "interior_points": 4096,
+        "surface_points": 384,
+        "source_fraction": 0.25,
+        "source_spread": 6.0
+      },
+      "numerics": {
+        "outer_cutoff": 60.0,
+        "boundary_weight": 100.0,
+        "lstsq_rcond": 1e-12,
+        "svd_cutoff": 1e-08,
+        "ode_method": "LSODA",
+        "rtol": 1e-06,
+        "atol": 1e-08
+      },
+      "evaluation": {
+        "surface_points": 2048,
+        "integration_points": 4001
+      },
+      "runtime": {
+        "threads": 4,
+        "timeout_seconds": 600
+      },
+      "seed": 42,
+      "tuning_ids": [
+        "concentric_test_006",
+        "concentric_test_011",
+        "concentric_test_020"
+      ]
+    },
+    "eccentric": {
+      "schema_version": 1,
+      "scene": "eccentric",
+      "representation": "cartesian3d",
+      "geometry": {
+        "rx_center": [
+          3.0,
+          0.0,
+          0.0
+        ],
+        "rx_radius": 1.0,
+        "outer_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outer_radius": 10.0,
+        "kappa": 5.0,
+        "diffusivity": 1.0
+      },
+      "time": {
+        "end": 20.0,
+        "output_points": 801
+      },
+      "model": {
+        "architecture": "boundary_compliant_svd",
+        "activation": "tanh",
+        "sampling": "swim_uniform_pairs",
+        "inner_basis": 4096,
+        "outer_basis": 512
+      },
+      "source": {
+        "sigma_max": 0.5,
+        "boundary_sigma_margin": 1.0
+      },
+      "sampling": {
+        "interior_points": 12288,
+        "surface_points": 4096,
+        "source_fraction": 0.15,
+        "source_spread": 4.0
+      },
+      "numerics": {
+        "outer_cutoff": 60.0,
+        "boundary_weight": 100.0,
+        "lstsq_rcond": 1e-05,
+        "svd_cutoff": 0.01,
+        "ode_method": "LSODA",
+        "rtol": 1e-06,
+        "atol": 1e-08
+      },
+      "evaluation": {
+        "surface_points": 2048,
+        "integration_points": 4001
+      },
+      "runtime": {
+        "threads": 4,
+        "timeout_seconds": 600
+      },
+      "seed": 42,
+      "tuning_ids": [
+        "eccentric_test_005",
+        "eccentric_test_009",
+        "eccentric_test_016"
+      ]
+    },
+    "pipe": {
+      "schema_version": 1,
+      "scene": "pipe",
+      "representation": "cartesian3d",
+      "geometry": {
+        "rx_center": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rx_radius": 1.0,
+        "pipe_radius": 5.0,
+        "z_min": -70.0,
+        "z_max": 70.0,
+        "kappa": 1.0,
+        "diffusivity": 1.0,
+        "end_boundary": "absorbing"
+      },
+      "time": {
+        "end": 20.0,
+        "output_points": 801
+      },
+      "model": {
+        "architecture": "boundary_compliant_svd",
+        "activation": "tanh",
+        "sampling": "swim_uniform_pairs",
+        "inner_basis": 4096,
+        "outer_basis": 512
+      },
+      "source": {
+        "sigma_max": 0.5,
+        "boundary_sigma_margin": 1.0
+      },
+      "sampling": {
+        "interior_points": 12288,
+        "surface_points": 4096,
+        "source_fraction": 0.15,
+        "source_spread": 4.0
+      },
+      "numerics": {
+        "outer_cutoff": 60.0,
+        "boundary_weight": 100.0,
+        "lstsq_rcond": 1e-05,
+        "svd_cutoff": 0.01,
+        "ode_method": "LSODA",
+        "rtol": 1e-06,
+        "atol": 1e-08
+      },
+      "evaluation": {
+        "surface_points": 2048,
+        "integration_points": 4001
+      },
+      "runtime": {
+        "threads": 4,
+        "timeout_seconds": 600
+      },
+      "seed": 42,
+      "tuning_ids": [
+        "pipe_test_004",
+        "pipe_test_010",
+        "pipe_test_017"
+      ]
+    }
+  }
+}

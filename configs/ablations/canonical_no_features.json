@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "scenario": "canonical",
+  "case_id": "canonical",
+  "problem": {
+    "nondimensionalization": {
+      "length_scale": 1.0,
+      "diffusivity": 1.0
+    },
+    "domain": {
+      "r_min": 1.0,
+      "r_far": 25.0
+    },
+    "boundary": {},
+    "time": {
+      "t_min_pde": 1e-05,
+      "t_max": 20.0,
+      "sampling": {
+        "split_t": 4.0,
+        "early_fraction": 0.4,
+        "early_bias_power": 1.0,
+        "late_bias_power": 0.8
+      }
+    }
+  },
+  "features": {
+    "include_tau": true,
+    "preset": "canonical5_multiscale",
+    "version": 1,
+    "time_scale": 20.0,
+    "tau_scale": 0.01
+  },
+  "model": {
+    "input_dim": 5,
+    "output_dim": 1,
+    "hidden_dim": 32,
+    "num_hidden_layers": 4,
+    "activation": "tanh"
+  },
+  "steady_state": {
+    "method": "radial_fem",
+    "parameters": {
+      "mode": "fem",
+      "outer_radius": 200.0,
+      "num_elements": 2048,
+      "mesh_power": 1.6,
+      "robin_kappa": 0.005,
+      "clamp_min": 1e-06
+    },
+    "checkpoint": "${PEAS_ROOT}/data/steady/canonical.npz"
+  },
+  "training": {
+    "objective": "e04_relative",
+    "epochs": 9000,
+    "lr": 0.005,
+    "log_every": 100,
+    "batch_sizes": {
+      "pde": 8192,
+      "ic": 1024,
+      "bc_rx": 1024,
+      "bc_far": 1024
+    },
+    "loss_weights": {
+      "pde": 1.0,
+      "ic": 2.0,
+      "bc_rx": 5.0,
+      "bc_far": 2.0
+    },
+    "lr_schedule": [
+      {
+        "epochs": 2500,
+        "lr": 0.005,
+        "loss_weights": {
+          "pde": 1.0,
+          "ic": 2.0,
+          "bc_rx": 5.5,
+          "bc_far": 1.5
+        }
+      },
+      {
+        "epochs": 2500,
+        "lr": 0.002,
+        "loss_weights": {
+          "pde": 2.0,
+          "ic": 3.5,
+          "bc_rx": 2.0,
+          "bc_far": 2.5
+        }
+      },
+      {
+        "epochs": 2500,
+        "lr": 0.0001,
+        "loss_weights": {
+          "pde": 5.0,
+          "ic": 2.0,
+          "bc_rx": 2.5,
+          "bc_far": 0.5
+        }
+      },
+      {
+        "epochs": 1500,
+        "lr": 2e-05,
+        "loss_weights": {
+          "pde": 5.0,
+          "ic": 0.8,
+          "bc_rx": 4.0,
+          "bc_far": 0.2
+        }
+      }
+    ],
+    "adam_reset_each_stage": false,
+    "checkpoint_every": 250,
+    "lbfgs": {
+      "enabled": false
+    }
+  },
+  "sampling": {
+    "canonical_mode": "stratified"
+  },
+  "residual": {
+    "loss_balance": {
+      "mode": "full",
+      "eps": 0.05
+    },
+    "q_infty": {
+      "mode": "fem",
+      "outer_radius": 200.0,
+      "num_elements": 2048,
+      "mesh_power": 1.6,
+      "robin_kappa": 0.005,
+      "clamp_min": 1e-06
+    },
+    "response_scale_floor": 0.02
+  },
+  "evaluation": {
+    "raw_predictions": true,
+    "reference": "${PEAS_ROOT}/data/validation/canonical.npz",
+    "t_min": 0.0,
+    "t_max": 20.0,
+    "time_points": 641
+  },
+  "runtime": {
+    "device": "auto",
+    "dtype": "float32",
+    "threads": 1,
+    "prediction_batch_size": 4096
+  },
+  "paths": {
+    "output_root": "${PEAS_ROOT}/outputs/training"
+  },
+  "seed": 40,
+  "ablation": {
+    "schema_version": 1,
+    "variant": "no_features",
+    "source_id": null,
+    "source": null,
+    "smoke": false,
+    "baseline_config_sha256": "16c4476a8a1d47f42a5319487d354ea21fd47948a4e3453cce7219e4440e44db",
+    "grid_sha256": "1466341734364245e6f16c25cf3b3a84d553b76ddf9856638bce178f90d80d3c",
+    "network_input_dim": 2,
+    "forward": {
+      "sigma_max": 0.1,
+      "clearance_divisor": 4.0,
+      "ic_local_fraction": 0.75,
+      "ic_local_scale": 2.0,
+      "pde_source_fraction": 0.25,
+      "integration_points": 2048,
+      "surface_polar": 32,
+      "surface_azimuth": 64
+    }
+  },
+  "experiment": {
+    "protocol": "canonical_floor020_t20_v1",
+    "split": "validation",
+    "archived_package_sha256": "1b53047ae8496e475eb261c587aa4911f0bbd4387aeff1d1eadf939f3de46701"
+  }
+}

@@ -1,0 +1,1371 @@
+{
+  "version": "complementary-8GPU-2026-11-15",
+  "package_sha256": "1b53047ae8496e475eb261c587aa4911f0bbd4387aeff1d1eadf939f3de46701",
+  "runs": [
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 40,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_40/selected.pt",
+      "checkpoint_sha256": "1dc9f3d549d1ce7015c077d023cb4d41d656fb1a582637ea382ccb097dc50115",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 7250,
+        "server_score": 4.307055593401966,
+        "cpu_score": 4.307120813441592,
+        "difference_pp": 6.522003962583511e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 18,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_18/selected.pt",
+      "checkpoint_sha256": "6199a4e15970c1b489b7956f21c1aa5b2ea89a7e8744a388140c6dc2fb490c42",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 9000,
+        "server_score": 3.672764523040783,
+        "cpu_score": 3.6727320401416876,
+        "difference_pp": -3.248289909540958e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 1414717112,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_1414717112/selected.pt",
+      "checkpoint_sha256": "dccaee5928ba9687aa9a2deb378e6695c01b9b06776665ed103fb2636eebd5ba",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 7500,
+        "server_score": 5.374253546233558,
+        "cpu_score": 5.374244595802432,
+        "difference_pp": -8.950431126031333e-06
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 1408723788,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_1408723788/selected.pt",
+      "checkpoint_sha256": "8e64d022dfdeb61c53046939465d6f3ec7f34e99fb48ea17193e44190ed04e90",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 9000,
+        "server_score": 4.093439551975807,
+        "cpu_score": 4.093613404302586,
+        "difference_pp": 0.00017385232677824547
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 413920016,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_413920016/selected.pt",
+      "checkpoint_sha256": "7ca6140ae9bb5d4599df7f56fd4d7cba595f3336807f4bd785a84fd76f88f273",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 7500,
+        "server_score": 1.9427476958300343,
+        "cpu_score": 1.942808480481029,
+        "difference_pp": 6.078465099479402e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 457922981,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_457922981/selected.pt",
+      "checkpoint_sha256": "1945516615fb7f705cff156cd30c6bcc444cbeae90b205a2f0244340e9fee1a7",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 5250,
+        "server_score": 2.6384988600888137,
+        "cpu_score": 2.638445155448843,
+        "difference_pp": -5.3704639970675316e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 1911457450,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_1911457450/selected.pt",
+      "checkpoint_sha256": "24dccd4765ab1997e61e54feb2f3ecea537275c12ca9509c83f0bae1b376434d",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 8500,
+        "server_score": 2.3998864513918745,
+        "cpu_score": 2.3998877644885326,
+        "difference_pp": 1.3130966580732206e-06
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 1491018049,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_1491018049/selected.pt",
+      "checkpoint_sha256": "216b89d791619edfd639bd7fcefa732387f77cf5e2b794158822d7c20df9386e",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 9000,
+        "server_score": 1.72783357609039,
+        "cpu_score": 1.7278714853903607,
+        "difference_pp": 3.790929997071757e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 578775788,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_578775788/selected.pt",
+      "checkpoint_sha256": "3af80dd1419b45dd99c304f427bcfb078962d9e426427473c7055cc69dd67d36",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 8500,
+        "server_score": 2.3742674948984765,
+        "cpu_score": 2.374282656156019,
+        "difference_pp": 1.5161257542306572e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "seed": 107458023,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_features/canonical/seed_107458023/selected.pt",
+      "checkpoint_sha256": "037a5061fc972a412cfd2fb6c453a1811804f57ed7e896ac1aa0beb4558a40f0",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 8750,
+        "server_score": 1.9592874500363948,
+        "cpu_score": 1.9593611507036424,
+        "difference_pp": 7.370066724754487e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 3297,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 40,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_40/selected.pt",
+      "checkpoint_sha256": "a4ae1efcbc2d88f01dea3582f876337f53710458a4622591621eab5b856c0b58",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 7000,
+        "server_score": 5.620166101688544,
+        "cpu_score": 5.621363726606061,
+        "difference_pp": 0.0011976249175171816
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 18,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_18/selected.pt",
+      "checkpoint_sha256": "1669cb97469c771ff2b2e26c230288173633429fd4775a2d06f7d9138a55e3d0",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 8000,
+        "server_score": 6.498693603281646,
+        "cpu_score": 6.498967273943956,
+        "difference_pp": 0.0002736706623096552
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 1414717112,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_1414717112/selected.pt",
+      "checkpoint_sha256": "9115cc9c30e6fb4a3d7e68904dd0b8a0a904fee7b4f3bdf19ac7f6f2f3aa1d73",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 6000,
+        "server_score": 1.825419743680626,
+        "cpu_score": 1.8263914885783763,
+        "difference_pp": 0.0009717448977502041
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 1408723788,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_1408723788/selected.pt",
+      "checkpoint_sha256": "4f20686590cf274ce17581192688f9852c9869cae749c1a165a4e311b1987a5c",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 5750,
+        "server_score": 6.291084826415455,
+        "cpu_score": 6.291671893189971,
+        "difference_pp": 0.0005870667745160318
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 413920016,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_413920016/selected.pt",
+      "checkpoint_sha256": "9eba134c630eaecfa00fc1cf281f4ac3afc3bf9751c8e91745bd73c5f4c49ced",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 6500,
+        "server_score": 4.230908359528023,
+        "cpu_score": 4.230882761159827,
+        "difference_pp": -2.559836819582273e-05
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 457922981,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_457922981/selected.pt",
+      "checkpoint_sha256": "38318521cb5ca848b822398dc308af4cfebec40a450f88731cb6fd3588c725cb",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 5500,
+        "server_score": 4.928190809209989,
+        "cpu_score": 4.928829557047391,
+        "difference_pp": 0.0006387478374021427
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 1911457450,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_1911457450/selected.pt",
+      "checkpoint_sha256": "b720e742a3f650e9efb003d9390f6a2f7c62dd857d1d1011286450f4a9ec6f8b",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 7500,
+        "server_score": 9.240996963169152,
+        "cpu_score": 9.241850098085981,
+        "difference_pp": 0.0008531349168290348
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 1491018049,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_1491018049/selected.pt",
+      "checkpoint_sha256": "69ba5615dcbbacb5f4c91974af508e37554958086a46d8122a54d27cd9563c8b",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 8750,
+        "server_score": 5.505728173067798,
+        "cpu_score": 5.507492829478364,
+        "difference_pp": 0.0017646564105664453
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 578775788,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_578775788/selected.pt",
+      "checkpoint_sha256": "b491cd6aecbe191a040fffebcd6efefbc73c3e4b28a7ecede3671ad3e1c20f01",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 6250,
+        "server_score": 15.862188436106385,
+        "cpu_score": 15.862030794043218,
+        "difference_pp": -0.0001576420631668185
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "seed": 107458023,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/canonical/validation/no_steady/canonical/seed_107458023/selected.pt",
+      "checkpoint_sha256": "68f10996b5e8fdb46d335cce90dfd211f1a1c2ab8b91396139824cac88877fd1",
+      "checkpoint_kind": "selected.pt",
+      "validation_selection": {
+        "best_epoch": 8500,
+        "server_score": 7.413468044528287,
+        "cpu_score": 7.410722211360057,
+        "difference_pp": -0.0027458331682295167
+      },
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 3393,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 1994417097,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_1994417097/model.pt",
+      "checkpoint_sha256": "0cc42bd4cb356f0b7687980a426ac9730c6961e6e923fb6ef0f73459ea50b538",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 1282743659,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_1282743659/model.pt",
+      "checkpoint_sha256": "83336e2423e073432f597666d85c41479b2cd4bf917fd88110b237655a30db5c",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 618710921,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_618710921/model.pt",
+      "checkpoint_sha256": "e6184e794979f090461c8abb35f56ffcd7d515c0c0d543f5d087b6ae25b4b499",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 991641046,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_991641046/model.pt",
+      "checkpoint_sha256": "02a23de360b6110c88e0b1e393a3708eb48b2ebc3c2f5f281f7729fea6dde41f",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 782149014,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_782149014/model.pt",
+      "checkpoint_sha256": "c23cb3d49a5d6e1c40e57654495874ba6954458eb320d5bbb4b19daffbacea94",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 1768164280,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_1768164280/model.pt",
+      "checkpoint_sha256": "769033500f098fc63dd48eb0c9ab276692c2e2d708231659f3e7a24514ece6fa",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 643716315,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_643716315/model.pt",
+      "checkpoint_sha256": "d3221de289e0e87c734af3412b1c0d93f78d733bc7fbdf53514c86c562de6051",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 863298792,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_863298792/model.pt",
+      "checkpoint_sha256": "5abadb7426dce93de0e89fe7780345e6cc8baf8e6aff93f8172e061560b60672",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 485171464,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_485171464/model.pt",
+      "checkpoint_sha256": "55485137ce70206a278fa1c6cb8cfeab4098d37c5292a286fb3835636fc537ce",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "seed": 1945409320,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_features/eccentric/seed_1945409320/model.pt",
+      "checkpoint_sha256": "54cfb7a271a93b211a008ab8b57b34069b897ff37e13065b6845794dad374e3e",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 21185,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 1994417097,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_1994417097/model.pt",
+      "checkpoint_sha256": "130b80ff8a2cc32fd2cd72e0c09ee1860f911090b7bf2eaba87ba93c8f9d505c",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 1282743659,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_1282743659/model.pt",
+      "checkpoint_sha256": "f70800faa9810791dde2569f36b2c135ff22a90cc4e0b392eaa61bf8b2f402cf",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 618710921,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_618710921/model.pt",
+      "checkpoint_sha256": "4b19210d8d1ee96d9cf3b2e67d86616561a0de8136f37cd5b77d36d2c7092575",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 991641046,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_991641046/model.pt",
+      "checkpoint_sha256": "350beff0db23be6479c7558c2df45273bc08d967a16ac5672deaf6f6cb2e7a70",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 782149014,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_782149014/model.pt",
+      "checkpoint_sha256": "3368da443ee59ac4eeb8cd89bb6e564ed7b90f5feb98c8df8587ceb95eb556d2",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 1768164280,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_1768164280/model.pt",
+      "checkpoint_sha256": "17ac495b2b374c1520da75092d0d83f1e8d71ff59eac59cd7b824a1d2f2516ad",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 643716315,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_643716315/model.pt",
+      "checkpoint_sha256": "8b53d45106383a8010b00fb22d80b5b756db08c85da82093936ec4a7ad9ce014",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 863298792,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_863298792/model.pt",
+      "checkpoint_sha256": "039b5667533b9af2ce34998dcf29cb1d530fe817e57042243693013afa2938d0",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 485171464,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_485171464/model.pt",
+      "checkpoint_sha256": "999f1db81057e03d0dd50dcf40fb3e41c451d3a382f83140f5fc28f0d2dfb722",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "seed": 1945409320,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/eccentric/no_steady/eccentric/seed_1945409320/model.pt",
+      "checkpoint_sha256": "d3ec6ab72bdb8e097b455dfdad74c8fdce41e243c5da57ce12c3de9efa6ba0ba",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 21569,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 73,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_73/model.pt",
+      "checkpoint_sha256": "982abbebf114f5e5a677f1b3b889ad9ed7e1bb60b2b743f3d691f55ea00bced1",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 882042114,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_882042114/model.pt",
+      "checkpoint_sha256": "cad899f2b3ce0cd8a7d7d70449676d6df86f29400806f735a8e5fe01cb2b5ac5",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 412759459,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_412759459/model.pt",
+      "checkpoint_sha256": "c2a658f81bd8345dc1866b2b949b382132fab513ac3c6a01df3e5c8e078b9a85",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 1093245665,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_1093245665/model.pt",
+      "checkpoint_sha256": "310d8f45fdce3e2130811cfbbf75cb6285086c5f68bff913a63f7559d7d2cddb",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 1001596411,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_1001596411/model.pt",
+      "checkpoint_sha256": "1f5e76a304d346f9357a77086e33ce4106d763692e811ed6b95046ba295890e6",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 624755225,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_624755225/model.pt",
+      "checkpoint_sha256": "0b1bb4ba79b9d51c8219eb2332363ba2eec4b5b52a7975f19f983db27cba1ee1",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 1360709925,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_1360709925/model.pt",
+      "checkpoint_sha256": "8fce35a6f9647708871bec3873057afbb6bf953d5557953cae6f29d23b540314",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 70948605,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_70948605/model.pt",
+      "checkpoint_sha256": "f3f0e7c0feb1a15702b8cf7e256a94a29a72dfe32e9e678dc69ac803432ac0b8",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 147553448,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_147553448/model.pt",
+      "checkpoint_sha256": "336011d20713d2cea361ecf966174ff6a52e1917a02cd5c8c5300e376776230f",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "seed": 188206319,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_features/pipe/seed_188206319/model.pt",
+      "checkpoint_sha256": "e6fb124cae90ad1b12faaa047c130197f9239fb24870203cc3cbd5438088eda5",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 181281,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 73,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_73/model.pt",
+      "checkpoint_sha256": "980b7eda482df0ab697b242a90a9488d9fde3a300541ad69adcf8a15da2b4e27",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 882042114,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_882042114/model.pt",
+      "checkpoint_sha256": "94489607b4c0afe1a2c6d10221beba134422adf6347895ab3e34da33ba41f189",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 412759459,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_412759459/model.pt",
+      "checkpoint_sha256": "c8b9246a9557dd61978111e83a1dd47d500b10b8a885d1fdfe934d9920417031",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 1093245665,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_1093245665/model.pt",
+      "checkpoint_sha256": "3f27b8b1914f7441177cd3c0ecebfa571fe05a8dcd63cb64542c7d282291a6b2",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 1001596411,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_1001596411/model.pt",
+      "checkpoint_sha256": "78dc15b4a2e28ccd2098611546f8932368f500e2d35a6f8c983a9acbdbad05d0",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 624755225,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_624755225/model.pt",
+      "checkpoint_sha256": "4c693bdaaf0f3b40f588a399c838905ee5900583ef721391f192f0a7504266d8",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:4",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 1360709925,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_1360709925/model.pt",
+      "checkpoint_sha256": "d144a8c6e099d6937e4ecafce9fca833e3f53254072c47b214e9b01673751af5",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:0",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 70948605,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_70948605/model.pt",
+      "checkpoint_sha256": "f23e45212db9067677b809fada9cce07c771b0265e33b3bdab8ca374acdaf667",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:1",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 147553448,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_147553448/model.pt",
+      "checkpoint_sha256": "89907d8f97d9d9c70285b05a18f4ad0f3c1f8afde1a1e2b7ccaadb6f9b9aa78e",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:2",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "seed": 188206319,
+      "source_checkpoint": "PEAS/outputs/ablations/complementary-8GPU/pipe/no_steady/pipe/seed_188206319/model.pt",
+      "checkpoint_sha256": "b0620915cb9896b2c16c8614baf7942308f03db663c3f532ca6d29b2ba0c3dcb",
+      "checkpoint_kind": "model.pt",
+      "validation_selection": null,
+      "training_environment": {
+        "python": "3.11.16",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.2.6",
+        "device": "cuda:3",
+        "cuda": "13.0",
+        "parameters": 182401,
+        "smoke": false,
+        "source_q": null
+      }
+    }
+  ],
+  "groups": [
+    {
+      "scene": "canonical",
+      "variant": "no_features",
+      "n": 10,
+      "full_mean_pct": 0.30743716335796545,
+      "full_std_pct": 0.0655742128551817,
+      "old_mean_pct": 8.421389170156115,
+      "old_std_pct": 3.850457797589671,
+      "new_mean_pct": 2.575110617029362,
+      "new_std_pct": 1.0145191524219752,
+      "full_better_run_pairs": 10,
+      "full_better_mean_positions": 20,
+      "old_seed_set_matches": true,
+      "old_prediction_identical": false,
+      "old_prediction_max_abs_difference": 0.03218187391757965
+    },
+    {
+      "scene": "canonical",
+      "variant": "no_steady",
+      "n": 10,
+      "full_mean_pct": 0.30743716335796545,
+      "full_std_pct": 0.0655742128551817,
+      "old_mean_pct": 37.90624517632309,
+      "old_std_pct": 19.482578852886178,
+      "new_mean_pct": 5.570935916882901,
+      "new_std_pct": 2.9983107221058614,
+      "full_better_run_pairs": 10,
+      "full_better_mean_positions": 20,
+      "old_seed_set_matches": true,
+      "old_prediction_identical": false,
+      "old_prediction_max_abs_difference": 0.003976099193096161
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_features",
+      "n": 10,
+      "full_mean_pct": 2.2375705830060726,
+      "full_std_pct": 0.9912392935900175,
+      "old_mean_pct": 23.592466277045197,
+      "old_std_pct": 15.072959872693517,
+      "new_mean_pct": 23.592466277045197,
+      "new_std_pct": 15.072959872693517,
+      "full_better_run_pairs": 10,
+      "full_better_mean_positions": 20,
+      "old_seed_set_matches": true,
+      "old_prediction_identical": true,
+      "old_prediction_max_abs_difference": 0.0
+    },
+    {
+      "scene": "eccentric",
+      "variant": "no_steady",
+      "n": 10,
+      "full_mean_pct": 2.2375705830060726,
+      "full_std_pct": 0.9912392935900175,
+      "old_mean_pct": 46.02832680481967,
+      "old_std_pct": 12.123352291318351,
+      "new_mean_pct": 46.02832680481967,
+      "new_std_pct": 12.123352291318351,
+      "full_better_run_pairs": 10,
+      "full_better_mean_positions": 20,
+      "old_seed_set_matches": true,
+      "old_prediction_identical": true,
+      "old_prediction_max_abs_difference": 0.0
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_features",
+      "n": 10,
+      "full_mean_pct": 3.9041337336796706,
+      "full_std_pct": 1.489219409933476,
+      "old_mean_pct": 11.29143478396443,
+      "old_std_pct": 1.4418159314569066,
+      "new_mean_pct": 11.649514012096311,
+      "new_std_pct": 1.2233451413567284,
+      "full_better_run_pairs": 10,
+      "full_better_mean_positions": 20,
+      "old_seed_set_matches": true,
+      "old_prediction_identical": false,
+      "old_prediction_max_abs_difference": 0.011689633131027222
+    },
+    {
+      "scene": "pipe",
+      "variant": "no_steady",
+      "n": 10,
+      "full_mean_pct": 3.9041337336796706,
+      "full_std_pct": 1.489219409933476,
+      "old_mean_pct": 46.442443364568774,
+      "old_std_pct": 8.94307376816036,
+      "new_mean_pct": 46.546783136956044,
+      "new_std_pct": 8.528576263168206,
+      "full_better_run_pairs": 10,
+      "full_better_mean_positions": 20,
+      "old_seed_set_matches": true,
+      "old_prediction_identical": false,
+      "old_prediction_max_abs_difference": 0.018537908792495728
+    }
+  ],
+  "selection_candidates": [
+    3500,
+    3750,
+    4000,
+    4250,
+    4500,
+    4750,
+    5000,
+    5250,
+    5500,
+    5750,
+    6000,
+    6250,
+    6500,
+    6750,
+    7000,
+    7250,
+    7500,
+    7750,
+    8000,
+    8250,
+    8500,
+    8750,
+    9000
+  ],
+  "canonical_validation_max_abs_cpu_cuda_difference_pp": 0.0027458331682295167,
+  "note": "Six completed groups only; historical no_reformulation predictions retained. Source checkpoint paths are provenance identifiers, not required runtime inputs."
+}

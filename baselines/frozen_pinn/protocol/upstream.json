@@ -1,0 +1,86 @@
+{
+  "commit": "0090e67a87ae31197229521d5a2d4134b96ef629",
+  "repository": "https://gitlab.com/felix.dietrich/swimpde-paper",
+  "files": {
+    "Ansatz/__init__.py": {
+      "upstream_sha256": "a86d34d6aa40384b1c60b5af841aab53f74e5df67ed2f0ba52282ee3a1311166",
+      "vendored_sha256": "a86d34d6aa40384b1c60b5af841aab53f74e5df67ed2f0ba52282ee3a1311166"
+    },
+    "Ansatz/ansatz.py": {
+      "upstream_sha256": "df96f7c4b1463d353466a72d8144d37c25e1e3fd645e54c7afe649699b2d1309",
+      "vendored_sha256": "df96f7c4b1463d353466a72d8144d37c25e1e3fd645e54c7afe649699b2d1309"
+    },
+    "Ansatz/basic_ansatz.py": {
+      "upstream_sha256": "d25c10e968c2fa50d8ab298c1b0e1d1a5995e98e1398635ec99729a9d5f85947",
+      "vendored_sha256": "d25c10e968c2fa50d8ab298c1b0e1d1a5995e98e1398635ec99729a9d5f85947"
+    },
+    "Ansatz/boundary_compliant_ansatz.py": {
+      "upstream_sha256": "83707de688034eafa5c35e8f58d2c94f99b4bb0806c57f483279a77e13612609",
+      "vendored_sha256": "1db8421622559a83ddbf04d44f4ad28b28b3c4eb50d15da4a0c255f0f9bc7f9a"
+    },
+    "Domain/__init__.py": {
+      "upstream_sha256": "0aa5d94415aa6d72a87b39832855fa7cba6a4cfdf61852a9bb30f14fe2797aaf",
+      "vendored_sha256": "0aa5d94415aa6d72a87b39832855fa7cba6a4cfdf61852a9bb30f14fe2797aaf"
+    },
+    "Domain/domain.py": {
+      "upstream_sha256": "d76b248cb19b770d4414a4c5ed9897399d4c620d933baef5cbb4bfa3dd4a1f8b",
+      "vendored_sha256": "d76b248cb19b770d4414a4c5ed9897399d4c620d933baef5cbb4bfa3dd4a1f8b"
+    },
+    "Solver/__init__.py": {
+      "upstream_sha256": "9573554c146705f86a4ecfdfd98a7820872f1296162fb977b1353a5a024a9653",
+      "vendored_sha256": "9573554c146705f86a4ecfdfd98a7820872f1296162fb977b1353a5a024a9653"
+    },
+    "Solver/advection_solver.py": {
+      "upstream_sha256": "31ac0f5f688b81e32eaad4d0fc81d5df977d2771edd2d598ac50ff1c532ed595",
+      "vendored_sha256": "31ac0f5f688b81e32eaad4d0fc81d5df977d2771edd2d598ac50ff1c532ed595"
+    },
+    "Solver/burgers_solver.py": {
+      "upstream_sha256": "80a384a2e6cc7fd5d6630a6b25408ae76bfde71a3d64c23c411804fad7c382b4",
+      "vendored_sha256": "80a384a2e6cc7fd5d6630a6b25408ae76bfde71a3d64c23c411804fad7c382b4"
+    },
+    "Solver/diffusion_solver.py": {
+      "upstream_sha256": "d50c5ef042215161b14ea704766dd431627b3deb7646f2bc0893eb52bd510a5a",
+      "vendored_sha256": "65c61776abba7f58bac613655ce27d3a7bb7ca7929b8fd6984308c05a73f3871"
+    },
+    "Solver/euler_bernoulli_solver.py": {
+      "upstream_sha256": "4cfa73b11da3acb75b143b03ea95fdd5db84f4e51c9a6ac50d9a0a19487eaf1f",
+      "vendored_sha256": "4cfa73b11da3acb75b143b03ea95fdd5db84f4e51c9a6ac50d9a0a19487eaf1f"
+    },
+    "Solver/euler_bernoulli_winkler.py": {
+      "upstream_sha256": "990c90c5cf5901204ee11b683de91f4da7bdb5631f0b2d6a79915b9f45d16f41",
+      "vendored_sha256": "990c90c5cf5901204ee11b683de91f4da7bdb5631f0b2d6a79915b9f45d16f41"
+    },
+    "Solver/kuramoto_sivashinsky_solver.py": {
+      "upstream_sha256": "f274e99fd68cf3fb14e1f899239d23a62115472bbad174d8486a07f58b388209",
+      "vendored_sha256": "f274e99fd68cf3fb14e1f899239d23a62115472bbad174d8486a07f58b388209"
+    },
+    "Solver/nonlinear_diffusion.py": {
+      "upstream_sha256": "fc79a417d4a8eb8fb3204beaf932594f0641dcb5d22b42121949409bade59896",
+      "vendored_sha256": "fc79a417d4a8eb8fb3204beaf932594f0641dcb5d22b42121949409bade59896"
+    },
+    "Solver/poisson_solver.py": {
+      "upstream_sha256": "bc9ea91ed1ab8d839bc352a0e8b60e132ef095a931851f197bde4a8e79b6212d",
+      "vendored_sha256": "bc9ea91ed1ab8d839bc352a0e8b60e132ef095a931851f197bde4a8e79b6212d"
+    },
+    "Solver/reaction_diffusion_solver.py": {
+      "upstream_sha256": "b2f0488fa6fb1ed999013ba88e698b3a2aa50cf86c4386d1d8b0d675d57fa999",
+      "vendored_sha256": "b2f0488fa6fb1ed999013ba88e698b3a2aa50cf86c4386d1d8b0d675d57fa999"
+    },
+    "Solver/wave_solver.py": {
+      "upstream_sha256": "3a87b1b795d8414c8fbc5d2f7d103111b6fb724388ab621fd3d1eef1c64581a5",
+      "vendored_sha256": "3a87b1b795d8414c8fbc5d2f7d103111b6fb724388ab621fd3d1eef1c64581a5"
+    },
+    "__init__.py": {
+      "upstream_sha256": "e6b8463ab20c95d280690962e0c76d8f42ed328ab45e40a9062122661d46965c",
+      "vendored_sha256": "e6b8463ab20c95d280690962e0c76d8f42ed328ab45e40a9062122661d46965c"
+    },
+    "utils/__init__.py": {
+      "upstream_sha256": "203da5ef595958aa3c311755843764024f503be8ce81c7ce642e206881efc153",
+      "vendored_sha256": "203da5ef595958aa3c311755843764024f503be8ce81c7ce642e206881efc153"
+    },
+    "utils/utils.py": {
+      "upstream_sha256": "bb4cd4adfcfc8c205d0acf3e88be78dc8d2c0424637bf20b953915b2760f3561",
+      "vendored_sha256": "bb4cd4adfcfc8c205d0acf3e88be78dc8d2c0424637bf20b953915b2760f3561"
+    }
+  }
+}

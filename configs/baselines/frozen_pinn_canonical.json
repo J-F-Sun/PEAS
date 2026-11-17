@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "scene": "canonical",
+  "representation": "radial",
+  "geometry": {
+    "rx_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rx_radius": 1.0,
+    "diffusivity": 1.0
+  },
+  "time": {
+    "end": 25.0,
+    "output_points": 801
+  },
+  "model": {
+    "architecture": "boundary_compliant_svd",
+    "activation": "tanh",
+    "sampling": "swim_uniform_pairs",
+    "inner_basis": 1536,
+    "outer_basis": 768
+  },
+  "source": {
+    "sigma_max": 0.15,
+    "boundary_sigma_margin": 4.0
+  },
+  "sampling": {
+    "interior_points": 4096,
+    "surface_points": 384,
+    "source_fraction": 0.25,
+    "source_spread": 6.0
+  },
+  "numerics": {
+    "outer_cutoff": 30.0,
+    "boundary_weight": 100.0,
+    "lstsq_rcond": 1e-10,
+    "svd_cutoff": 1e-07,
+    "ode_method": "LSODA",
+    "rtol": 1e-06,
+    "atol": 1e-08
+  },
+  "evaluation": {
+    "surface_points": 2048,
+    "integration_points": 4001
+  },
+  "runtime": {
+    "threads": 4,
+    "timeout_seconds": 600
+  },
+  "seed": 42,
+  "tuning_ids": [
+    "canonical_test_002",
+    "canonical_test_009",
+    "canonical_test_020"
+  ]
+}

@@ -1,0 +1,89 @@
+schema_version = 1
+scenario = "eccentric"
+seed = 40
+
+[geometry]
+rx_center = [3.0, 0.0, 0.0]
+rx_radius = 1.0
+outer_center = [0.0, 0.0, 0.0]
+outer_radius = 10.0
+kappa = 5.0
+
+[data]
+ams_run = "../../AMS-MOD/outputs/data/eccentric"
+manifest = "../../data/training/eccentric_positions.csv"
+
+[data.counts]
+train = 160
+validation = 20
+test = 20
+
+[time]
+t_min = 0.0
+t_max = 20.0
+n_samples = 801
+zero_padding = 10
+
+[model]
+max_entities = 15
+entity_dim = 13
+numerical_dim = 7
+num_transformer_layers = 2
+num_heads = 16
+key_dim = 13
+ff_dim = 32
+dropout = 0.1
+shared_widths = [400, 800, 1600]
+shape_hidden = 1622
+max_widths = [1600, 800, 400]
+postprocess_window = 3
+
+[training]
+epochs = 2000
+batch_size = 64
+curve_loss_mode = "raw"
+monotonic_weight = 0.0001
+gradient_clip = 0.0
+log_interval = 50
+
+[training.learning_rate_schedule]
+warmup_epochs = 25
+decay_epochs = 175
+initial_lr = 1e-05
+base_lr = 0.001
+min_lr = 5e-05
+
+[training.loss_weight_schedule]
+warmup_epochs = 30
+decay_epochs = 200
+
+[runtime]
+threads = 1
+
+[outputs]
+root = "../../outputs/mcvd_transformer"
+
+[smoke]
+
+[smoke.model]
+num_heads = 2
+key_dim = 4
+shared_widths = [16, 24]
+shape_hidden = 32
+max_widths = [24, 12]
+
+[smoke.training]
+epochs = 3
+batch_size = 2
+log_interval = 1
+
+[smoke.time]
+t_max = 0.2
+n_samples = 41
+
+[author_source]
+commit = "c580cca0ef956866e49fbcc84d38e331bcf24de0"
+version = "author_scene_adapter_v1"
+amplitude_epsilon = 1.0
+rotation = "Rz(theta) @ Ry(phi), rigid full geometry"
+boundary_adapter = "class5_shell_class6_cylinder_class7_8_cap"

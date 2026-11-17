@@ -1,0 +1,72 @@
+{
+  "case_id": "eccentric_r10",
+  "physics": {
+    "domain": {
+      "rx_center": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "outer_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rx_radius": 1.0,
+      "outer_radius": 10.0,
+      "boundary_eps": 0.0001
+    },
+    "boundary": {
+      "kappa": 5.0
+    },
+    "nondimensionalization": {
+      "length_scale": 1.0,
+      "diffusivity": 1.0
+    }
+  },
+  "split_counts": {
+    "train": 160,
+    "validation": 20,
+    "test": 20
+  },
+  "steady_method": "bispherical Q1 FEM, 96 x 128 nodes",
+  "reference_method": "Independent 3D P1 FEM, lumped mass, implicit Euler",
+  "reference_diagnostics": {
+    "nodes": 98883,
+    "elements": 585438,
+    "time_step": 0.005,
+    "min_time_step": 0.005,
+    "time_steps": 4000,
+    "mesh_size": 0.4,
+    "radial_elements": null,
+    "min_probability": -1.1962844733337725e-19,
+    "max_probability": 0.669234662602356,
+    "min_temporal_increment": -1.166653253946873e-19
+  },
+  "output_time_points": 801,
+  "elapsed_seconds": 604.1822124579921,
+  "transient_solver_origin": "PEAS_4_InSphere/src/peas_4_insphere/transient_fem.py",
+  "transient_solver_sha256": "d623b5e335f7fbb16012af1ddcc8e238b42404cfee2aa1cea829014875548069",
+  "files": {
+    "base.yaml": "22b32a92dd863732bf2fbc332f03db48bff21877cdfc79459af0fb97c1379f3f",
+    "positions.csv": "0848cbd465a6bb773cf80c2ba2b0ca2be5326d99c3e9a886f2dbb3a81993fdc4",
+    "steady.npz": "a16644955a12eba2e4f4118ca22bd5015e2d63ff6ab6b059a22e29e3356074da",
+    "test_fem.npz": "766a5ea599e77632c2efebb24e6804767bec020ce9101426e55f51b5e4cbdc20",
+    "validation_fem.npz": "5983257098fe06e738fda24951b00bf46c76a5579674dc795db53f455a3444f3"
+  },
+  "note": "FEM discretization is the historical comparison recipe; finite-mesh reference, not an exact solution. Validation FEM is exported for comparisons, not for model selection.",
+  "feature_scaling": {
+    "input_scale_rule": "outer_radius",
+    "resolved_spatial_scale": 10.0,
+    "outer_radius": 10.0
+  },
+  "recipe": "eccentric_r10_10runs_radius_scaled_v2",
+  "paired_seed_source": "Completed eccentric_r10_peas_server_20261007; same ten seeds, fresh initialization",
+  "reused_asset_sha256": {
+    "positions.csv": "0848cbd465a6bb773cf80c2ba2b0ca2be5326d99c3e9a886f2dbb3a81993fdc4",
+    "steady.npz": "a16644955a12eba2e4f4118ca22bd5015e2d63ff6ab6b059a22e29e3356074da",
+    "test_fem.npz": "766a5ea599e77632c2efebb24e6804767bec020ce9101426e55f51b5e4cbdc20",
+    "validation_fem.npz": "5983257098fe06e738fda24951b00bf46c76a5579674dc795db53f455a3444f3",
+    "seeds.json": "eefcf2bc00b23f0c0bd345b55476c42517278ce0fbf6b9f42d88e26ee958a124"
+  }
+}

@@ -1,0 +1,36 @@
+--- upstream/Ansatz/boundary_compliant_ansatz.py
++++ src/swimpde/Ansatz/boundary_compliant_ansatz.py
+@@ -155,7 +155,9 @@
+         '''
+         
+         # choose the correct boundary condition
+-        if boundary_condition.lower() in ["zero derivative", "zero neumann"]:
++        if not isinstance(boundary_condition, str):
++            self._boundary_condition = boundary_condition
++        elif boundary_condition.lower() in ["zero derivative", "zero neumann"]:
+             if domain.normal_vectors is None:
+                 raise ValueError("Neumann boundary condition requires the normal_vectors property of the domain to be set")
+             self._boundary_condition = ZeroNeumann()
+--- upstream/Solver/diffusion_solver.py
++++ src/swimpde/Solver/diffusion_solver.py
+@@ -192,7 +192,7 @@
+         '''
+         if initial_sol is None:
+             if outer_basis:
+-                c0 = np.linalg.lstsq(self._A, self.u0(self.domain.all_points), self.regularization_scale)[0]
++                c0 = np.linalg.lstsq(self._A, self.u0(self.domain.interior_points), self.regularization_scale)[0]
+                 
+             else:
+                 c0 = self._A_boundary_inv @ np.concatenate([self.u0(self.domain.interior_points), self.u0(self.domain.boundary_points)])
+@@ -299,8 +299,10 @@
+         event_func.terminal = False
+         
+         # solve the ODE
++        ode_started = time.perf_counter()
+         solver = solve_ivp(fun=self.ODE_coefficients, t_span=t_span, y0=c_0, dense_output=True, method=self.ode_solver, rtol=rtol, atol=atol,events=event_func)
+-        self._coefficients_c = solver.sol 
++        self._coefficients_c = solver.sol
++        self._fit_info = dict(nfev=solver.nfev, njev=solver.njev, nlu=solver.nlu, seconds=time.perf_counter()-ode_started) 
+         
+         print('Number of functon evaluations of the ODE solver: ', solver.nfev)
+         # Check if the integration was successful and the event was triggered

@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "scenes": {
+    "canonical": "unbounded domain",
+    "eccentric": "spherical confinement",
+    "pipe": "cylindrical confinement"
+  },
+  "evaluation_window": [
+    0,
+    20
+  ],
+  "seeds": {
+    "canonical": [
+      40,
+      18,
+      1414717112,
+      1408723788,
+      413920016,
+      457922981,
+      1911457450,
+      1491018049,
+      578775788,
+      107458023
+    ],
+    "eccentric": [
+      1994417097,
+      1282743659,
+      618710921,
+      991641046,
+      782149014,
+      1768164280,
+      643716315,
+      863298792,
+      485171464,
+      1945409320
+    ],
+    "pipe": [
+      73,
+      882042114,
+      412759459,
+      1093245665,
+      1001596411,
+      624755225,
+      1360709925,
+      70948605,
+      147553448,
+      188206319
+    ]
+  },
+  "checkpoint_selection": {
+    "canonical": "minimum validation mean per-position relative L2; epochs 3500:250:9000, earliest tie; no test selection",
+    "eccentric": "final Adam + L-BFGS",
+    "pipe": "without late loss; best fixed physics-validation L-BFGS state"
+  },
+  "canonical_screening_seeds": [
+    40,
+    18,
+    1414717112
+  ],
+  "ablation_protocol": "Three scenarios x three variants; 10 paired seeds within each scenario, shared paper evaluation grids in [0,20]. U horizon/time scale 20, response floor 0.02 and independent validation selection.",
+  "statistic": "100*L2(prediction-reference)/L2(reference) per run and position, then equal-weight mean over positions and runs. MC uses error of 128-run averaged curve.",
+  "plot1_interval": "Pointwise Student t 95% CI of mean probability (n=10 models, n=128 MC simulations)",
+  "plot2_plot3": "No uncertainty bands; scene means three decimals.",
+  "canonical_selection_repeats_include_screening": true,
+  "checkpoints": [
+    {
+      "scene": "canonical",
+      "seed": 40,
+      "checkpoint": "checkpoints/peas/canonical/seed_40.pt",
+      "epoch": 7750,
+      "source_sha256": "c48cd61d89afcad6eaacee5c87d62f931a4a35c82c5d381f83a104aea7ad7246"
+    },
+    {
+      "scene": "canonical",
+      "seed": 18,
+      "checkpoint": "checkpoints/peas/canonical/seed_18.pt",
+      "epoch": 7750,
+      "source_sha256": "ed41992ef017f942cc69723c2fabca4354e425d7468b2ccd9ce221fd50b05711"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1414717112,
+      "checkpoint": "checkpoints/peas/canonical/seed_1414717112.pt",
+      "epoch": 5750,
+      "source_sha256": "f914afb03726f0af599194372a74b330b08dd8bee0d6d843057f539a2e7fbde4"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1408723788,
+      "checkpoint": "checkpoints/peas/canonical/seed_1408723788.pt",
+      "epoch": 5750,
+      "source_sha256": "4c961cee82f7ee77d0922f5161980949ca880d8de44ded01fde4c300f391dc74"
+    },
+    {
+      "scene": "canonical",
+      "seed": 413920016,
+      "checkpoint": "checkpoints/peas/canonical/seed_413920016.pt",
+      "epoch": 6000,
+      "source_sha256": "f5035aaef4506d94007efc340bd027e8c272b09378b4f298d39132f3f12d39f3"
+    },
+    {
+      "scene": "canonical",
+      "seed": 457922981,
+      "checkpoint": "checkpoints/peas/canonical/seed_457922981.pt",
+      "epoch": 7750,
+      "source_sha256": "64634abe4fb3835b29f4ca154254cca1bf1f0fbc638b51e720c973a54ccf06e3"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1911457450,
+      "checkpoint": "checkpoints/peas/canonical/seed_1911457450.pt",
+      "epoch": 6000,
+      "source_sha256": "cbe202ac2bd45a4002fa547cc22d72df4bcc18ba02ed81de2bee9136a025bcf9"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1491018049,
+      "checkpoint": "checkpoints/peas/canonical/seed_1491018049.pt",
+      "epoch": 7250,
+      "source_sha256": "32591ea40db9bd6643986dea2615a5a18aa8b56cf9a24ce0c17a95bf43de2b38"
+    },
+    {
+      "scene": "canonical",
+      "seed": 578775788,
+      "checkpoint": "checkpoints/peas/canonical/seed_578775788.pt",
+      "epoch": 7750,
+      "source_sha256": "492ece9a966bec8389e27c21079e98ba8adc3acda849ccc930c438c0240e198b"
+    },
+    {
+      "scene": "canonical",
+      "seed": 107458023,
+      "checkpoint": "checkpoints/peas/canonical/seed_107458023.pt",
+      "epoch": 8250,
+      "source_sha256": "7a43419954e6d6c1c4df2c6f888ccc9b87dbb3ef6a1de91a8399940d09173b66"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1994417097,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1994417097.pt",
+      "epoch": null,
+      "source_sha256": "f6464c58af5b1230321f4fe7111fa99e9a2dada6757037f867724ed7e1383b92"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1282743659,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1282743659.pt",
+      "epoch": null,
+      "source_sha256": "d3cf2b3c3d41fb24b60b654c7efa10df0f69318c14a9032b89333ba169f31640"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 618710921,
+      "checkpoint": "checkpoints/peas/eccentric/seed_618710921.pt",
+      "epoch": null,
+      "source_sha256": "a01bd1b010971c1f4ea5e01a220e5382463b20a40fdb03c7afd8c1d9bddbff6c"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 991641046,
+      "checkpoint": "checkpoints/peas/eccentric/seed_991641046.pt",
+      "epoch": null,
+      "source_sha256": "acde6c7ecce67a3009e9c89e706f0e36ddb034c762f0a649e07330f36107dd57"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 782149014,
+      "checkpoint": "checkpoints/peas/eccentric/seed_782149014.pt",
+      "epoch": null,
+      "source_sha256": "62af780385a8e07396b1ec1539c312f1c575e9f9be895b5d254641fbae134496"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1768164280,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1768164280.pt",
+      "epoch": null,
+      "source_sha256": "29c5aa4e7513b484b0f5ba69a0749aeb8ed19f7511141f609908c4f8edf90c95"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 643716315,
+      "checkpoint": "checkpoints/peas/eccentric/seed_643716315.pt",
+      "epoch": null,
+      "source_sha256": "909344c5bce9b2a5a7d8e2cf19a8a4eab25a4dab7320278bf1f0416358293322"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 863298792,
+      "checkpoint": "checkpoints/peas/eccentric/seed_863298792.pt",
+      "epoch": null,
+      "source_sha256": "08e4c64ecdecbd13e29a55489a2f423ed1aa2c23435d2fcda0cadd17cac7f650"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 485171464,
+      "checkpoint": "checkpoints/peas/eccentric/seed_485171464.pt",
+      "epoch": null,
+      "source_sha256": "301d92300d388bc56f025a376bf9b6d0a00163178a5af258cb0d815c52250b29"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1945409320,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1945409320.pt",
+      "epoch": null,
+      "source_sha256": "4e09be630dd305af42d76bf4b655a51645f5a45d791d1dea9d652a16ba136627"
+    },
+    {
+      "scene": "pipe",
+      "seed": 73,
+      "checkpoint": "checkpoints/peas/pipe/seed_73.pt",
+      "epoch": null,
+      "source_sha256": "40a8a6ec0e42de8804315e82f0a289786d16fc5e53679a8bd7fc214344d7d7d8"
+    },
+    {
+      "scene": "pipe",
+      "seed": 882042114,
+      "checkpoint": "checkpoints/peas/pipe/seed_882042114.pt",
+      "epoch": null,
+      "source_sha256": "e428d9d6d8e4def5573161835562f06cb44e70b42fc7aa90d479586ef4d25d6f"
+    },
+    {
+      "scene": "pipe",
+      "seed": 412759459,
+      "checkpoint": "checkpoints/peas/pipe/seed_412759459.pt",
+      "epoch": null,
+      "source_sha256": "425f0ea95314eb0c38a59eab47a00631500815d009c5baae73a1f56d7c14e393"
+    },
+    {
+      "scene": "pipe",
+      "seed": 1093245665,
+      "checkpoint": "checkpoints/peas/pipe/seed_1093245665.pt",
+      "epoch": null,
+      "source_sha256": "4e6f38fdc79ee914c95ce88af85454583ba2de1630e3476f514cee830ff994d5"
+    },
+    {
+      "scene": "pipe",
+      "seed": 1001596411,
+      "checkpoint": "checkpoints/peas/pipe/seed_1001596411.pt",
+      "epoch": null,
+      "source_sha256": "8e2d40d2c82d1a8037cdb50c78a80ed5d4effe5e84bac3cdf8d192972ef9a216"
+    },
+    {
+      "scene": "pipe",
+      "seed": 624755225,
+      "checkpoint": "checkpoints/peas/pipe/seed_624755225.pt",
+      "epoch": null,
+      "source_sha256": "6147cf50cb5c2701225e2466b512400a48f7c24925812d80dd907f3c1c420eb8"
+    },
+    {
+      "scene": "pipe",
+      "seed": 1360709925,
+      "checkpoint": "checkpoints/peas/pipe/seed_1360709925.pt",
+      "epoch": null,
+      "source_sha256": "e1ccb476a186f40b3a73b2a38a023ecc083dcf4f2c3fd4a7b546f75fd2e65670"
+    },
+    {
+      "scene": "pipe",
+      "seed": 70948605,
+      "checkpoint": "checkpoints/peas/pipe/seed_70948605.pt",
+      "epoch": null,
+      "source_sha256": "8c86019ecd0a7575bd7c6da56791ee86dfa5fbf6ae988bf018f878ad25f43d3b"
+    },
+    {
+      "scene": "pipe",
+      "seed": 147553448,
+      "checkpoint": "checkpoints/peas/pipe/seed_147553448.pt",
+      "epoch": null,
+      "source_sha256": "0563829c93932b6426394e4671dea0aad50837f4ca438e1e89e18d933d1baf0f"
+    },
+    {
+      "scene": "pipe",
+      "seed": 188206319,
+      "checkpoint": "checkpoints/peas/pipe/seed_188206319.pt",
+      "epoch": null,
+      "source_sha256": "589950c151ea1421dd8d4f0970d9b14724bb2dc7a7004229139bd755b8317ef5"
+    }
+  ],
+  "ablation_revision": "forward-split-2026-11-17",
+  "ablation_sources": {
+    "no_reformulation": "Completed split-server campaign; forward_run_provenance.json",
+    "no_features": "Completed complementary campaign; run_provenance.json",
+    "no_steady": "Completed complementary campaign; run_provenance.json"
+  },
+  "ablation_independent_runs_per_group": 10,
+  "ablation_checkpoint_selection": {
+    "canonical": {
+      "no_features": "minimum validation mean Rel-L2 at 3500:250:9000; earliest tie; selected.pt",
+      "no_steady": "minimum validation mean Rel-L2 at 3500:250:9000; earliest tie; selected.pt",
+      "no_reformulation": "Per-seed mean over 20 independent validation-source models, epochs 3500:250:9000; selected epoch applied to all 20 test-source models"
+    },
+    "eccentric": "final Adam + L-BFGS model",
+    "pipe": "without late loss; best fixed physics-validation L-BFGS state"
+  },
+  "ablation_previous_archive": "data/predictions/ablations_previous; previous figure selected an earlier campaign by mistake; see docs/ablation_versions.md"
+}

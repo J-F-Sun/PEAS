@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "scene": "pipe",
+  "representation": "cartesian3d",
+  "geometry": {
+    "rx_center": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "rx_radius": 1.0,
+    "pipe_radius": 5.0,
+    "z_min": -70.0,
+    "z_max": 70.0,
+    "kappa": 1.0,
+    "diffusivity": 1.0,
+    "end_boundary": "absorbing"
+  },
+  "time": {
+    "end": 20.0,
+    "output_points": 801
+  },
+  "model": {
+    "architecture": "boundary_compliant_svd",
+    "activation": "tanh",
+    "sampling": "swim_uniform_pairs",
+    "inner_basis": 4096,
+    "outer_basis": 512
+  },
+  "source": {
+    "sigma_max": 0.5,
+    "boundary_sigma_margin": 1.0
+  },
+  "sampling": {
+    "interior_points": 12288,
+    "surface_points": 4096,
+    "source_fraction": 0.15,
+    "source_spread": 4.0
+  },
+  "numerics": {
+    "outer_cutoff": 60.0,
+    "boundary_weight": 100.0,
+    "lstsq_rcond": 1e-05,
+    "svd_cutoff": 0.01,
+    "ode_method": "LSODA",
+    "rtol": 1e-06,
+    "atol": 1e-08
+  },
+  "evaluation": {
+    "surface_points": 2048,
+    "integration_points": 4001
+  },
+  "runtime": {
+    "threads": 4,
+    "timeout_seconds": 600
+  },
+  "seed": 42,
+  "tuning_ids": [
+    "pipe_test_004",
+    "pipe_test_010",
+    "pipe_test_017"
+  ]
+}

@@ -1,0 +1,14 @@
+# Generated environments, caches, and user experiments only.
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+outputs/
+/build/
+/dist/
+# Intentionally retain data/, checkpoints/, results/, and uv.lock.

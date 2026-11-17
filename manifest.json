@@ -1,0 +1,2204 @@
+{
+  "schema_version": 1,
+  "target": "point-to-sphere PEAS paper figures 1, 2 and 3",
+  "license_status": "pending",
+  "python": "3.12.12",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 256,
+      "sha256": "21941a7701e15c95b7a6affeb40506a13547c7c76c2833ec49de0f6714d0f957",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": ".python-version",
+      "bytes": 8,
+      "sha256": "f01d748a75eb195e6fd73201279bfb23f09036ddd360eb3e9ff40ef042acbc8a",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 505,
+      "sha256": "25e50874d8b5d20fe8ec6f7dfb4a27d20938f1a797c203c1e19d30f965fe6e85",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 229,
+      "sha256": "0ffb2602b83dd4d39633673f06b1f9bcb4dad3c8009438303cab123bc8bc5400",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "README.md",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 12829,
+      "sha256": "6d54654f826170b5ce4b66b74a0d7013e356426eacb9c4728a2cf6c0a8831e66"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 11995,
+      "sha256": "c992a83d741acc0c081e8953628e8a1e9803bc6a54a4413bf9e32c9b0968f696"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 2202,
+      "sha256": "ae6637c9133f47cb974eeeec8f0ef99020416c95cf28e8e23c7a9ce3a2047147",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "baselines/frozen_pinn/.python-version",
+      "bytes": 8,
+      "sha256": "f01d748a75eb195e6fd73201279bfb23f09036ddd360eb3e9ff40ef042acbc8a",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "baselines/frozen_pinn/FIDELITY.md",
+      "bytes": 3612,
+      "sha256": "035eeeed2eaa09626dd4d7ae30559e8ab4800e0a088a2b32eacf17e8c3f682b3",
+      "source": "Frozen-PINN/FIDELITY.md",
+      "source_sha256": "afda435a3e83371157b978b1c7bf1d9304b09283f43359e972f1a76c8f9a1d42"
+    },
+    {
+      "path": "baselines/frozen_pinn/LICENSE.upstream",
+      "bytes": 1107,
+      "sha256": "3b67a6c2e8e13d33c308e90ed38b8db95179d4cf291dbafc6226f7e435f17852",
+      "source": "Frozen-PINN/LICENSE.upstream",
+      "source_sha256": "3b67a6c2e8e13d33c308e90ed38b8db95179d4cf291dbafc6226f7e435f17852"
+    },
+    {
+      "path": "baselines/frozen_pinn/protocol/upstream.json",
+      "bytes": 4655,
+      "sha256": "6be1a2f6e1856f5f7e9506babeaeeb770f9a803a2981f64cd1bf8e655b2632a1",
+      "source": "Frozen-PINN/protocol/upstream.json",
+      "source_sha256": "6be1a2f6e1856f5f7e9506babeaeeb770f9a803a2981f64cd1bf8e655b2632a1"
+    },
+    {
+      "path": "baselines/frozen_pinn/protocol/upstream.patch",
+      "bytes": 1948,
+      "sha256": "a8f2013d168966644a12e4ab85994ba779614f61d6026290a5886ba284e1eafc",
+      "source": "Frozen-PINN/protocol/upstream.patch",
+      "source_sha256": "a8f2013d168966644a12e4ab85994ba779614f61d6026290a5886ba284e1eafc"
+    },
+    {
+      "path": "baselines/frozen_pinn/pyproject.toml",
+      "bytes": 492,
+      "sha256": "4b172db25c116fe7d533501ad0760f31749826a0ad3db0d8267de3d9b4809e90",
+      "source": "Frozen-PINN/pyproject.toml",
+      "source_sha256": "851c9f08f09f3a452ab99fae21b0a8a5cb539eb4251a4ae0e9b05dc9bcb89c50"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/frozen_pinn/__init__.py",
+      "bytes": 22,
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "source": "Frozen-PINN/src/frozen_pinn/__init__.py",
+      "source_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/frozen_pinn/common/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "Frozen-PINN/src/frozen_pinn/common/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/frozen_pinn/common/adapters.py",
+      "bytes": 1513,
+      "sha256": "2ddee1594c4a19cfdcc5fc5222170f400d4b234ff2e8c47ecedbc1f7ef94d1ba",
+      "source": "Frozen-PINN/src/frozen_pinn/common/adapters.py",
+      "source_sha256": "2ddee1594c4a19cfdcc5fc5222170f400d4b234ff2e8c47ecedbc1f7ef94d1ba"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/frozen_pinn/common/geometry.py",
+      "bytes": 5980,
+      "sha256": "1a8e8bcac1a700145a0fa353f9c3b3a5bb4202a532984b6b4aa31b17c2ce66fe",
+      "source": "Frozen-PINN/src/frozen_pinn/common/geometry.py",
+      "source_sha256": "1a8e8bcac1a700145a0fa353f9c3b3a5bb4202a532984b6b4aa31b17c2ce66fe"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/frozen_pinn/common/model.py",
+      "bytes": 2157,
+      "sha256": "37002af6e6f38158b6a973aeb1bdb291be3cfdafd7004cec4a0e908adb2cd3e8",
+      "source": "Frozen-PINN/src/frozen_pinn/common/model.py",
+      "source_sha256": "37002af6e6f38158b6a973aeb1bdb291be3cfdafd7004cec4a0e908adb2cd3e8"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/frozen_pinn/common/solver.py",
+      "bytes": 8021,
+      "sha256": "e6b4118c474c0a8a59f6ff124d9665fd53704ac83ff4163bbf64bd4d2d58f7ea",
+      "source": "Frozen-PINN/src/frozen_pinn/common/solver.py",
+      "source_sha256": "e6b4118c474c0a8a59f6ff124d9665fd53704ac83ff4163bbf64bd4d2d58f7ea"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Ansatz/__init__.py",
+      "bytes": 181,
+      "sha256": "a86d34d6aa40384b1c60b5af841aab53f74e5df67ed2f0ba52282ee3a1311166",
+      "source": "Frozen-PINN/src/swimpde/Ansatz/__init__.py",
+      "source_sha256": "a86d34d6aa40384b1c60b5af841aab53f74e5df67ed2f0ba52282ee3a1311166"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Ansatz/ansatz.py",
+      "bytes": 1279,
+      "sha256": "df96f7c4b1463d353466a72d8144d37c25e1e3fd645e54c7afe649699b2d1309",
+      "source": "Frozen-PINN/src/swimpde/Ansatz/ansatz.py",
+      "source_sha256": "df96f7c4b1463d353466a72d8144d37c25e1e3fd645e54c7afe649699b2d1309"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Ansatz/basic_ansatz.py",
+      "bytes": 9665,
+      "sha256": "d25c10e968c2fa50d8ab298c1b0e1d1a5995e98e1398635ec99729a9d5f85947",
+      "source": "Frozen-PINN/src/swimpde/Ansatz/basic_ansatz.py",
+      "source_sha256": "d25c10e968c2fa50d8ab298c1b0e1d1a5995e98e1398635ec99729a9d5f85947"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Ansatz/boundary_compliant_ansatz.py",
+      "bytes": 33928,
+      "sha256": "1db8421622559a83ddbf04d44f4ad28b28b3c4eb50d15da4a0c255f0f9bc7f9a",
+      "source": "Frozen-PINN/src/swimpde/Ansatz/boundary_compliant_ansatz.py",
+      "source_sha256": "1db8421622559a83ddbf04d44f4ad28b28b3c4eb50d15da4a0c255f0f9bc7f9a"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Domain/__init__.py",
+      "bytes": 48,
+      "sha256": "0aa5d94415aa6d72a87b39832855fa7cba6a4cfdf61852a9bb30f14fe2797aaf",
+      "source": "Frozen-PINN/src/swimpde/Domain/__init__.py",
+      "source_sha256": "0aa5d94415aa6d72a87b39832855fa7cba6a4cfdf61852a9bb30f14fe2797aaf"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Domain/domain.py",
+      "bytes": 1345,
+      "sha256": "d76b248cb19b770d4414a4c5ed9897399d4c620d933baef5cbb4bfa3dd4a1f8b",
+      "source": "Frozen-PINN/src/swimpde/Domain/domain.py",
+      "source_sha256": "d76b248cb19b770d4414a4c5ed9897399d4c620d933baef5cbb4bfa3dd4a1f8b"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/__init__.py",
+      "bytes": 1153,
+      "sha256": "9573554c146705f86a4ecfdfd98a7820872f1296162fb977b1353a5a024a9653",
+      "source": "Frozen-PINN/src/swimpde/Solver/__init__.py",
+      "source_sha256": "9573554c146705f86a4ecfdfd98a7820872f1296162fb977b1353a5a024a9653"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/advection_solver.py",
+      "bytes": 12946,
+      "sha256": "31ac0f5f688b81e32eaad4d0fc81d5df977d2771edd2d598ac50ff1c532ed595",
+      "source": "Frozen-PINN/src/swimpde/Solver/advection_solver.py",
+      "source_sha256": "31ac0f5f688b81e32eaad4d0fc81d5df977d2771edd2d598ac50ff1c532ed595"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/burgers_solver.py",
+      "bytes": 20287,
+      "sha256": "80a384a2e6cc7fd5d6630a6b25408ae76bfde71a3d64c23c411804fad7c382b4",
+      "source": "Frozen-PINN/src/swimpde/Solver/burgers_solver.py",
+      "source_sha256": "80a384a2e6cc7fd5d6630a6b25408ae76bfde71a3d64c23c411804fad7c382b4"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/diffusion_solver.py",
+      "bytes": 19457,
+      "sha256": "65c61776abba7f58bac613655ce27d3a7bb7ca7929b8fd6984308c05a73f3871",
+      "source": "Frozen-PINN/src/swimpde/Solver/diffusion_solver.py",
+      "source_sha256": "65c61776abba7f58bac613655ce27d3a7bb7ca7929b8fd6984308c05a73f3871"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/euler_bernoulli_solver.py",
+      "bytes": 6893,
+      "sha256": "4cfa73b11da3acb75b143b03ea95fdd5db84f4e51c9a6ac50d9a0a19487eaf1f",
+      "source": "Frozen-PINN/src/swimpde/Solver/euler_bernoulli_solver.py",
+      "source_sha256": "4cfa73b11da3acb75b143b03ea95fdd5db84f4e51c9a6ac50d9a0a19487eaf1f"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/euler_bernoulli_winkler.py",
+      "bytes": 7163,
+      "sha256": "990c90c5cf5901204ee11b683de91f4da7bdb5631f0b2d6a79915b9f45d16f41",
+      "source": "Frozen-PINN/src/swimpde/Solver/euler_bernoulli_winkler.py",
+      "source_sha256": "990c90c5cf5901204ee11b683de91f4da7bdb5631f0b2d6a79915b9f45d16f41"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/kuramoto_sivashinsky_solver.py",
+      "bytes": 25952,
+      "sha256": "f274e99fd68cf3fb14e1f899239d23a62115472bbad174d8486a07f58b388209",
+      "source": "Frozen-PINN/src/swimpde/Solver/kuramoto_sivashinsky_solver.py",
+      "source_sha256": "f274e99fd68cf3fb14e1f899239d23a62115472bbad174d8486a07f58b388209"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/nonlinear_diffusion.py",
+      "bytes": 18608,
+      "sha256": "fc79a417d4a8eb8fb3204beaf932594f0641dcb5d22b42121949409bade59896",
+      "source": "Frozen-PINN/src/swimpde/Solver/nonlinear_diffusion.py",
+      "source_sha256": "fc79a417d4a8eb8fb3204beaf932594f0641dcb5d22b42121949409bade59896"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/poisson_solver.py",
+      "bytes": 2636,
+      "sha256": "bc9ea91ed1ab8d839bc352a0e8b60e132ef095a931851f197bde4a8e79b6212d",
+      "source": "Frozen-PINN/src/swimpde/Solver/poisson_solver.py",
+      "source_sha256": "bc9ea91ed1ab8d839bc352a0e8b60e132ef095a931851f197bde4a8e79b6212d"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/reaction_diffusion_solver.py",
+      "bytes": 19235,
+      "sha256": "b2f0488fa6fb1ed999013ba88e698b3a2aa50cf86c4386d1d8b0d675d57fa999",
+      "source": "Frozen-PINN/src/swimpde/Solver/reaction_diffusion_solver.py",
+      "source_sha256": "b2f0488fa6fb1ed999013ba88e698b3a2aa50cf86c4386d1d8b0d675d57fa999"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/Solver/wave_solver.py",
+      "bytes": 7049,
+      "sha256": "3a87b1b795d8414c8fbc5d2f7d103111b6fb724388ab621fd3d1eef1c64581a5",
+      "source": "Frozen-PINN/src/swimpde/Solver/wave_solver.py",
+      "source_sha256": "3a87b1b795d8414c8fbc5d2f7d103111b6fb724388ab621fd3d1eef1c64581a5"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/__init__.py",
+      "bytes": 85,
+      "sha256": "e6b8463ab20c95d280690962e0c76d8f42ed328ab45e40a9062122661d46965c",
+      "source": "Frozen-PINN/src/swimpde/__init__.py",
+      "source_sha256": "e6b8463ab20c95d280690962e0c76d8f42ed328ab45e40a9062122661d46965c"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/utils/__init__.py",
+      "bytes": 355,
+      "sha256": "203da5ef595958aa3c311755843764024f503be8ce81c7ce642e206881efc153",
+      "source": "Frozen-PINN/src/swimpde/utils/__init__.py",
+      "source_sha256": "203da5ef595958aa3c311755843764024f503be8ce81c7ce642e206881efc153"
+    },
+    {
+      "path": "baselines/frozen_pinn/src/swimpde/utils/utils.py",
+      "bytes": 2100,
+      "sha256": "bb4cd4adfcfc8c205d0acf3e88be78dc8d2c0424637bf20b953915b2760f3561",
+      "source": "Frozen-PINN/src/swimpde/utils/utils.py",
+      "source_sha256": "bb4cd4adfcfc8c205d0acf3e88be78dc8d2c0424637bf20b953915b2760f3561"
+    },
+    {
+      "path": "baselines/frozen_pinn/uv.lock",
+      "bytes": 39833,
+      "sha256": "386a7a5deee6e6f201d79231b37ae2e992480531d33b6efc8601a5b5f93d3131",
+      "source": "Frozen-PINN/uv.lock",
+      "source_sha256": "386a7a5deee6e6f201d79231b37ae2e992480531d33b6efc8601a5b5f93d3131"
+    },
+    {
+      "path": "baselines/mcvd_transformer/METHOD.md",
+      "bytes": 2356,
+      "sha256": "0cd2c9d252ce204e3394a3c9dc3629a668e1795ca4727c3970abb87c160b63b4",
+      "source": "MCvD-Transformer/docs/method.md",
+      "source_sha256": "d0eb24de4e478d8b72afc887664691fcd0399797d36ec28a6b7efb548e59093c"
+    },
+    {
+      "path": "baselines/mcvd_transformer/scripts/author_adapted_scenes.py",
+      "bytes": 12607,
+      "sha256": "3d6412755326a09fed4ff523689e8b145b2be863830989b20619b97073bbfab5",
+      "source": "MCvD-Transformer/scripts/author_adapted_scenes.py",
+      "source_sha256": "557fa9ee95c3209f631c59b28d9b3ac53a8ca9eab26edea6288167399401d41d"
+    },
+    {
+      "path": "baselines/mcvd_transformer/scripts/author_verified_canonical.py",
+      "bytes": 15399,
+      "sha256": "6038ccef00c95638a8fd5dc73ffa3b97cba1481e3bdf044258a267d1e6fa57ac",
+      "source": "MCvD-Transformer/scripts/author_verified_canonical.py",
+      "source_sha256": "6989ba130550e15ccfdee63b9d0aa968715c670e93b9037a8da77a9f59b03bee"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/__init__.py",
+      "bytes": 104,
+      "sha256": "a234431f52518490015a0b726c0d3776557427c1e22d3f8ec505a68c066f3a1d",
+      "source": "MCvD-Transformer/src/mcvd_transformer/__init__.py",
+      "source_sha256": "a234431f52518490015a0b726c0d3776557427c1e22d3f8ec505a68c066f3a1d"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/author_scene_adapter.py",
+      "bytes": 5442,
+      "sha256": "7ba90ca8cccabddc51143b6908e709d3fecfc36d67aacf96bce96ca88ed5f454",
+      "source": "MCvD-Transformer/src/mcvd_transformer/author_scene_adapter.py",
+      "source_sha256": "7ba90ca8cccabddc51143b6908e709d3fecfc36d67aacf96bce96ca88ed5f454"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/checkpoints.py",
+      "bytes": 2287,
+      "sha256": "2889c7257ea103f02892a4470d5f16af66513654c1f9b0dcfecf4339cfa040fe",
+      "source": "MCvD-Transformer/src/mcvd_transformer/checkpoints.py",
+      "source_sha256": "2889c7257ea103f02892a4470d5f16af66513654c1f9b0dcfecf4339cfa040fe"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/config.py",
+      "bytes": 5481,
+      "sha256": "2f9eb1238a13d0522f3cab3b894ba27cd6c01eefdd3018c955e7116760258ca3",
+      "source": "MCvD-Transformer/src/mcvd_transformer/config.py",
+      "source_sha256": "2f9eb1238a13d0522f3cab3b894ba27cd6c01eefdd3018c955e7116760258ca3"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/data.py",
+      "bytes": 11814,
+      "sha256": "fa020416439dc704464df6002bf52fa8539f281b93f4799f6001000fc1f5fa39",
+      "source": "MCvD-Transformer/src/mcvd_transformer/data.py",
+      "source_sha256": "fa020416439dc704464df6002bf52fa8539f281b93f4799f6001000fc1f5fa39"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/encoders.py",
+      "bytes": 3949,
+      "sha256": "a490388b528973c6d93c73c7805381872f0e4208c95ed67d35fba39c1171142b",
+      "source": "MCvD-Transformer/src/mcvd_transformer/encoders.py",
+      "source_sha256": "a490388b528973c6d93c73c7805381872f0e4208c95ed67d35fba39c1171142b"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/evaluate.py",
+      "bytes": 5071,
+      "sha256": "8723a6f146cafad65cf15c25939be3c116a23e2c3b7d511830bfe846bacc7e08",
+      "source": "MCvD-Transformer/src/mcvd_transformer/evaluate.py",
+      "source_sha256": "8723a6f146cafad65cf15c25939be3c116a23e2c3b7d511830bfe846bacc7e08"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/io.py",
+      "bytes": 1106,
+      "sha256": "c1ee8d8a48e751b7559013540df15eb129083d08ad9733cf70e4154d9115b723",
+      "source": "MCvD-Transformer/src/mcvd_transformer/io.py",
+      "source_sha256": "c1ee8d8a48e751b7559013540df15eb129083d08ad9733cf70e4154d9115b723"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/metrics.py",
+      "bytes": 1163,
+      "sha256": "a4e9adcb869c27f9d2752f86f25ba3ef452562ed26ad18b9f238321e3c36a563",
+      "source": "MCvD-Transformer/src/mcvd_transformer/metrics.py",
+      "source_sha256": "a4e9adcb869c27f9d2752f86f25ba3ef452562ed26ad18b9f238321e3c36a563"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/model.py",
+      "bytes": 6157,
+      "sha256": "7eb15c215aff6f8b9e1a1008b6434d1d76c4e63c3cd982d6ecb0db9d4d78e668",
+      "source": "MCvD-Transformer/src/mcvd_transformer/model.py",
+      "source_sha256": "7eb15c215aff6f8b9e1a1008b6434d1d76c4e63c3cd982d6ecb0db9d4d78e668"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/postprocess.py",
+      "bytes": 1290,
+      "sha256": "3fd80fa5624921e71a35033a5986d5d7daba5aff7d02c822ee2f45b4cf773b09",
+      "source": "MCvD-Transformer/src/mcvd_transformer/postprocess.py",
+      "source_sha256": "3fd80fa5624921e71a35033a5986d5d7daba5aff7d02c822ee2f45b4cf773b09"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/predict.py",
+      "bytes": 4612,
+      "sha256": "f543d7e0b56a6db89c3c2ac260f10d2bb8ebc38bb5c4ad22eba4ceb67088026a",
+      "source": "MCvD-Transformer/src/mcvd_transformer/predict.py",
+      "source_sha256": "f543d7e0b56a6db89c3c2ac260f10d2bb8ebc38bb5c4ad22eba4ceb67088026a"
+    },
+    {
+      "path": "baselines/mcvd_transformer/src/mcvd_transformer/runtime.py",
+      "bytes": 1425,
+      "sha256": "45b1ad02532816c8b24f8e53d54e3d1ca0332363195d97de7f541f1858b27e84",
+      "source": "MCvD-Transformer/src/mcvd_transformer/runtime.py",
+      "source_sha256": "45b1ad02532816c8b24f8e53d54e3d1ca0332363195d97de7f541f1858b27e84"
+    },
+    {
+      "path": "baselines/monte_carlo/Project.toml",
+      "bytes": 485,
+      "sha256": "0abb274ee504bcf3ee2f2b3b6c383af61c66c71d13e595ed793dba054cc5dbe7",
+      "source": "AMS-MOD/Project.toml",
+      "source_sha256": "0abb274ee504bcf3ee2f2b3b6c383af61c66c71d13e595ed793dba054cc5dbe7"
+    },
+    {
+      "path": "baselines/monte_carlo/scripts/ams_mod.jl",
+      "bytes": 86,
+      "sha256": "a8482820b8afab5f55756fa62ff64a33eb4d85abcb1a5ea7609509822d49544a",
+      "source": "AMS-MOD/scripts/ams_mod.jl",
+      "source_sha256": "a8482820b8afab5f55756fa62ff64a33eb4d85abcb1a5ea7609509822d49544a"
+    },
+    {
+      "path": "baselines/monte_carlo/src/AMSMod.jl",
+      "bytes": 463,
+      "sha256": "2c598418ed800d3d6f94e9924352e6b5d7e8a05888e0cfdd94d8f97ee6e0e5d9",
+      "source": "AMS-MOD/src/AMSMod.jl",
+      "source_sha256": "2c598418ed800d3d6f94e9924352e6b5d7e8a05888e0cfdd94d8f97ee6e0e5d9"
+    },
+    {
+      "path": "baselines/monte_carlo/src/boundaries.jl",
+      "bytes": 4702,
+      "sha256": "c5e7b2372fe33a947fab328d7b9d7054d0d99a2a17aa32a1bf4941882de3dcb9",
+      "source": "AMS-MOD/src/boundaries.jl",
+      "source_sha256": "c5e7b2372fe33a947fab328d7b9d7054d0d99a2a17aa32a1bf4941882de3dcb9"
+    },
+    {
+      "path": "baselines/monte_carlo/src/cli.jl",
+      "bytes": 2269,
+      "sha256": "e92604416902e85ced3d0e4168c56889d528f203e13dd2a7762a42959b713f3d",
+      "source": "AMS-MOD/src/cli.jl",
+      "source_sha256": "e92604416902e85ced3d0e4168c56889d528f203e13dd2a7762a42959b713f3d"
+    },
+    {
+      "path": "baselines/monte_carlo/src/config.jl",
+      "bytes": 3404,
+      "sha256": "432913e1fc648eaaec1b4953c19ef55444b4bcc0beb84731a1ba3ef9ebdfaf3e",
+      "source": "AMS-MOD/src/config.jl",
+      "source_sha256": "432913e1fc648eaaec1b4953c19ef55444b4bcc0beb84731a1ba3ef9ebdfaf3e"
+    },
+    {
+      "path": "baselines/monte_carlo/src/datasets.jl",
+      "bytes": 8254,
+      "sha256": "cad5648b0c8d169adda64bcd76c688e962be39bae72b397279d96ba68cdb1ab7",
+      "source": "AMS-MOD/src/datasets.jl",
+      "source_sha256": "cad5648b0c8d169adda64bcd76c688e962be39bae72b397279d96ba68cdb1ab7"
+    },
+    {
+      "path": "baselines/monte_carlo/src/domains.jl",
+      "bytes": 2088,
+      "sha256": "d120413fdf901a5ad7f90333b37cb2f907068888d4af91d50633796b83395216",
+      "source": "AMS-MOD/src/domains.jl",
+      "source_sha256": "d120413fdf901a5ad7f90333b37cb2f907068888d4af91d50633796b83395216"
+    },
+    {
+      "path": "baselines/monte_carlo/src/engine.jl",
+      "bytes": 9340,
+      "sha256": "abf26433a6d9780bedd1bb12c697b5b755c60ff3560ad3d7892a62a4572c85b1",
+      "source": "AMS-MOD/src/engine.jl",
+      "source_sha256": "abf26433a6d9780bedd1bb12c697b5b755c60ff3560ad3d7892a62a4572c85b1"
+    },
+    {
+      "path": "baselines/monte_carlo/src/io.jl",
+      "bytes": 1947,
+      "sha256": "e134b50c675cbcca4d274ed0a5bc530b5e4575c425b33092deaacf0bf6f97583",
+      "source": "AMS-MOD/src/io.jl",
+      "source_sha256": "e134b50c675cbcca4d274ed0a5bc530b5e4575c425b33092deaacf0bf6f97583"
+    },
+    {
+      "path": "baselines/monte_carlo/src/runner.jl",
+      "bytes": 7443,
+      "sha256": "6ede40ece4be21880540a1d8b3211845650cd1adefef158c0a8fac470835a18c",
+      "source": "AMS-MOD/src/runner.jl",
+      "source_sha256": "6ede40ece4be21880540a1d8b3211845650cd1adefef158c0a8fac470835a18c"
+    },
+    {
+      "path": "baselines/monte_carlo/src/seeds.jl",
+      "bytes": 577,
+      "sha256": "c296f3d44c7968dfff392dc53a1e0b86c45739f51c80081bc1360bd1541a6f8c",
+      "source": "AMS-MOD/src/seeds.jl",
+      "source_sha256": "c296f3d44c7968dfff392dc53a1e0b86c45739f51c80081bc1360bd1541a6f8c"
+    },
+    {
+      "path": "baselines/monte_carlo/src/statistics.jl",
+      "bytes": 840,
+      "sha256": "fe230ec6ae6671c5e2184d0423d3e962b01fa5d05b97ac7c4b5ebed93043947a",
+      "source": "AMS-MOD/src/statistics.jl",
+      "source_sha256": "fe230ec6ae6671c5e2184d0423d3e962b01fa5d05b97ac7c4b5ebed93043947a"
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_107458023.pt",
+      "bytes": 20341,
+      "sha256": "f0a38aab9689f296000e735cd938c49d16c116063cb39df7945858e03d92f3d8",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/runs/floor020_seed107458023/best_validation.pt",
+      "source_sha256": "7a43419954e6d6c1c4df2c6f888ccc9b87dbb3ef6a1de91a8399940d09173b66",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_1408723788.pt",
+      "bytes": 20357,
+      "sha256": "3a1f2d8c732f0c6e9bf3f15694256682b5f6aaa93bf872284088d2b795d5272d",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/runs/floor020_seed1408723788/best_validation.pt",
+      "source_sha256": "4c961cee82f7ee77d0922f5161980949ca880d8de44ded01fde4c300f391dc74",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_1414717112.pt",
+      "bytes": 20357,
+      "sha256": "95338176add53302145211d3e59e621a37b9da3b91b57eb3da0f3f11a0064616",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/runs/floor020_seed1414717112/best_validation.pt",
+      "source_sha256": "f914afb03726f0af599194372a74b330b08dd8bee0d6d843057f539a2e7fbde4",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_1491018049.pt",
+      "bytes": 20357,
+      "sha256": "d9922a729a9eba84e698662a15ba8e738864af6e47678df060036b7dc4bbc181",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/runs/floor020_seed1491018049/best_validation.pt",
+      "source_sha256": "32591ea40db9bd6643986dea2615a5a18aa8b56cf9a24ce0c17a95bf43de2b38",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_18.pt",
+      "bytes": 19589,
+      "sha256": "10a99e925d824270e7004416929db94d63e65fc05301bca06ffc39a99b4111cb",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/runs/floor020_seed18/best_validation.pt",
+      "source_sha256": "ed41992ef017f942cc69723c2fabca4354e425d7468b2ccd9ce221fd50b05711",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_1911457450.pt",
+      "bytes": 20357,
+      "sha256": "aa6c1eafc462771356ce0d205ea0c43d04d7fb2f9a65b0ef80f1844ce47c5516",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/runs/floor020_seed1911457450/best_validation.pt",
+      "source_sha256": "cbe202ac2bd45a4002fa547cc22d72df4bcc18ba02ed81de2bee9136a025bcf9",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_40.pt",
+      "bytes": 19589,
+      "sha256": "1d4048ed148be3ab7fd4a3a1a295baae975bb7cdc2ded5778d99ad004bf72bcd",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/runs/floor020_seed40/best_validation.pt",
+      "source_sha256": "c48cd61d89afcad6eaacee5c87d62f931a4a35c82c5d381f83a104aea7ad7246",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_413920016.pt",
+      "bytes": 20341,
+      "sha256": "d584af04c0329febf79edd9e9d08681191f37fcb659dabf6df1e0ddf86309c82",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/runs/floor020_seed413920016/best_validation.pt",
+      "source_sha256": "f5035aaef4506d94007efc340bd027e8c272b09378b4f298d39132f3f12d39f3",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_457922981.pt",
+      "bytes": 20341,
+      "sha256": "aead11f0d2a0ff994c3d0d0f8050749e0f2976425a75316bfc748d09d543e936",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/runs/floor020_seed457922981/best_validation.pt",
+      "source_sha256": "64634abe4fb3835b29f4ca154254cca1bf1f0fbc638b51e720c973a54ccf06e3",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/canonical/seed_578775788.pt",
+      "bytes": 20341,
+      "sha256": "5be6dca813ea3d6ec1eb8b47605fb8cb42275fc3c2f98ea57aa19b3f224cbf0d",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/runs/floor020_seed578775788/best_validation.pt",
+      "source_sha256": "492ece9a966bec8389e27c21079e98ba8adc3acda849ccc930c438c0240e198b",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_1282743659.pt",
+      "bytes": 95961,
+      "sha256": "371cc9cfcfde24d8d0094fc1d56c5fc8bb9084ce3c5cd76c01203c954721f932",
+      "source": "PEAS/outputs/data/eccentric/models/seed_1282743659/model.pt",
+      "source_sha256": "d3cf2b3c3d41fb24b60b654c7efa10df0f69318c14a9032b89333ba169f31640",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_1768164280.pt",
+      "bytes": 95961,
+      "sha256": "caae132d0fd14c68861fce52c6f187cf644c9a4eae88f9b3d850d7cffce83513",
+      "source": "PEAS/outputs/data/eccentric/models/seed_1768164280/model.pt",
+      "source_sha256": "29c5aa4e7513b484b0f5ba69a0749aeb8ed19f7511141f609908c4f8edf90c95",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_1945409320.pt",
+      "bytes": 95961,
+      "sha256": "1a7e8c191c8650f8ceb8cffedaf7fa1c136468be8b264196fed6f4e9dfb6c9da",
+      "source": "PEAS/outputs/data/eccentric/models/seed_1945409320/model.pt",
+      "source_sha256": "4e09be630dd305af42d76bf4b655a51645f5a45d791d1dea9d652a16ba136627",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_1994417097.pt",
+      "bytes": 95961,
+      "sha256": "ac87e7d61639b1435fff73223c0c37d33f72a03bc24d9adf1c212d7ba9a90796",
+      "source": "PEAS/outputs/data/eccentric/models/seed_1994417097/model.pt",
+      "source_sha256": "f6464c58af5b1230321f4fe7111fa99e9a2dada6757037f867724ed7e1383b92",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_485171464.pt",
+      "bytes": 95941,
+      "sha256": "6aa9672a97510d94a98909d51887e36e99313d73814c760736c10d3d9da2eff3",
+      "source": "PEAS/outputs/data/eccentric/models/seed_485171464/model.pt",
+      "source_sha256": "301d92300d388bc56f025a376bf9b6d0a00163178a5af258cb0d815c52250b29",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_618710921.pt",
+      "bytes": 95941,
+      "sha256": "639a57a09e0f01386aebfc76044e189ae9b475d6cd88c7c376ae739658990324",
+      "source": "PEAS/outputs/data/eccentric/models/seed_618710921/model.pt",
+      "source_sha256": "a01bd1b010971c1f4ea5e01a220e5382463b20a40fdb03c7afd8c1d9bddbff6c",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_643716315.pt",
+      "bytes": 95941,
+      "sha256": "a937836279050385c66d834662965e4890b05a79dba7355434cdcc4be811d334",
+      "source": "PEAS/outputs/data/eccentric/models/seed_643716315/model.pt",
+      "source_sha256": "909344c5bce9b2a5a7d8e2cf19a8a4eab25a4dab7320278bf1f0416358293322",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_782149014.pt",
+      "bytes": 95941,
+      "sha256": "65576bdb4f5b00537bcd3c4bd172271a0d4cd4b6da7bf646902c719492d5963d",
+      "source": "PEAS/outputs/data/eccentric/models/seed_782149014/model.pt",
+      "source_sha256": "62af780385a8e07396b1ec1539c312f1c575e9f9be895b5d254641fbae134496",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_863298792.pt",
+      "bytes": 95941,
+      "sha256": "705fab24a4da3ab05f878acfc7c519f9f83c6abbb3d2e1ac180c4470a9419378",
+      "source": "PEAS/outputs/data/eccentric/models/seed_863298792/model.pt",
+      "source_sha256": "08e4c64ecdecbd13e29a55489a2f423ed1aa2c23435d2fcda0cadd17cac7f650",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/eccentric/seed_991641046.pt",
+      "bytes": 95941,
+      "sha256": "85237a77f292c9cbf93a1d568e62ca033f8792c977e4ad63b3137c76f5e115dc",
+      "source": "PEAS/outputs/data/eccentric/models/seed_991641046/model.pt",
+      "source_sha256": "acde6c7ecce67a3009e9c89e706f0e36ddb034c762f0a649e07330f36107dd57",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_1001596411.pt",
+      "bytes": 740909,
+      "sha256": "ecabab4bdaf11484d32fa6523ef8329280ac5cc8ce1f36dade997342e61e2318",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_1001596411/model.pt",
+      "source_sha256": "8e2d40d2c82d1a8037cdb50c78a80ed5d4effe5e84bac3cdf8d192972ef9a216",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_1093245665.pt",
+      "bytes": 740909,
+      "sha256": "5f132215b226e220176f872f1414c99fe7bdcba809b57bb03b62253b67fb2e48",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_1093245665/model.pt",
+      "source_sha256": "4e6f38fdc79ee914c95ce88af85454583ba2de1630e3476f514cee830ff994d5",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_1360709925.pt",
+      "bytes": 740909,
+      "sha256": "691c8a44d81cd2931227fa060000c69060635c193ed4eec237769f6842375fda",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_1360709925/model.pt",
+      "source_sha256": "e1ccb476a186f40b3a73b2a38a023ecc083dcf4f2c3fd4a7b546f75fd2e65670",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_147553448.pt",
+      "bytes": 740885,
+      "sha256": "181c5da05d00eedf9ba53431934d4ea8c86f956f2b33c46fda78d90b017cc49d",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_147553448/model.pt",
+      "source_sha256": "0563829c93932b6426394e4671dea0aad50837f4ca438e1e89e18d933d1baf0f",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_188206319.pt",
+      "bytes": 740885,
+      "sha256": "106f6c972c2a6270c100967fbd489a7e4a850b21a95f39fd3dde02f499eb7578",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_188206319/model.pt",
+      "source_sha256": "589950c151ea1421dd8d4f0970d9b14724bb2dc7a7004229139bd755b8317ef5",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_412759459.pt",
+      "bytes": 740885,
+      "sha256": "03aa9790a5f32c89d71e05abd63186eb1214ce72237d7b55bdd93d95f3010561",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_412759459/model.pt",
+      "source_sha256": "425f0ea95314eb0c38a59eab47a00631500815d009c5baae73a1f56d7c14e393",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_624755225.pt",
+      "bytes": 740885,
+      "sha256": "2c96d2233ab7423b4e3bef6877124cc0d716756ea9374d25a15335680b98bedd",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_624755225/model.pt",
+      "source_sha256": "6147cf50cb5c2701225e2466b512400a48f7c24925812d80dd907f3c1c420eb8",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_70948605.pt",
+      "bytes": 740861,
+      "sha256": "fdb0bddee6eedb486986a686b115b9056f6510b89c31a7ccce0aeb96e13e98c1",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_70948605/model.pt",
+      "source_sha256": "8c86019ecd0a7575bd7c6da56791ee86dfa5fbf6ae988bf018f878ad25f43d3b",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_73.pt",
+      "bytes": 740141,
+      "sha256": "13c4c14c39c2ba62b9dc034086779605ffadf2dbff97deb945b6253e725d6e0c",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_73/model.pt",
+      "source_sha256": "40a8a6ec0e42de8804315e82f0a289786d16fc5e53679a8bd7fc214344d7d7d8",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "checkpoints/peas/pipe/seed_882042114.pt",
+      "bytes": 740885,
+      "sha256": "9b286d0b9a586d780fec7331d7c6d403eaeecd7fbeeb7a6c0adc7c9ace4cc3fd",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/models/seed_882042114/model.pt",
+      "source_sha256": "e428d9d6d8e4def5573161835562f06cb44e70b42fc7aa90d479586ef4d25d6f",
+      "transformation": "Identical model_state_dict; portable asset paths; optimizer state omitted."
+    },
+    {
+      "path": "configs/README.md",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 23855,
+      "sha256": "ad3f8db5dfd430cbbf9ef172aca5b56601e5a190674b98cdf64267754be1e90e"
+    },
+    {
+      "path": "configs/README.zh-CN.md",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 22315,
+      "sha256": "07440f6870f9d8f66c10be6f8c80e5c6ea2883ea5e1aace50b6bace9d35985db"
+    },
+    {
+      "path": "configs/ablations/canonical_forward_selection.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 585,
+      "sha256": "8cf6b291792bf3e1d5c7fd0440ef0da7ed5923cd40cb5412c1233ec3389ccbb7"
+    },
+    {
+      "path": "configs/ablations/canonical_no_features.json",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "derived_from": "Actual server run config; portable release asset paths. See configs/ablations/run_provenance.json.",
+      "bytes": 3826,
+      "sha256": "894ed9f984892345e47db3241a73d4588d3760da148ad814abace7e00b3781dd"
+    },
+    {
+      "path": "configs/ablations/canonical_no_reformulation.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 3904,
+      "sha256": "1dc0cdfcbce020947bb52332cc2e5015f462f46577671c5b3facd268bc959ccd"
+    },
+    {
+      "path": "configs/ablations/canonical_no_steady.json",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "derived_from": "Actual server run config; portable release asset paths. See configs/ablations/run_provenance.json.",
+      "bytes": 3788,
+      "sha256": "24260e85da25301bf9508a73af0a9ada5239eeeb9ed3a10a6c7be5d28122785e"
+    },
+    {
+      "path": "configs/ablations/eccentric_no_features.json",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "derived_from": "Actual server run config; portable release asset paths. See configs/ablations/run_provenance.json.",
+      "bytes": 4921,
+      "sha256": "367e1d22afebbf490d1f0e929d14bfb277d3dad62d5c791e0ed0cb0cfaa49dab"
+    },
+    {
+      "path": "configs/ablations/eccentric_no_reformulation.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 4997,
+      "sha256": "f21c4b587eb3a741df8bfd6f5b0dc69dc793561b1a6daa41c5262f8b461d59fe"
+    },
+    {
+      "path": "configs/ablations/eccentric_no_steady.json",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "derived_from": "Actual server run config; portable release asset paths. See configs/ablations/run_provenance.json.",
+      "bytes": 4884,
+      "sha256": "f65522b9523011b679e89d1ea33b41ba394c09ed77ecac91b1db3a1e925744b1"
+    },
+    {
+      "path": "configs/ablations/forward_run_provenance.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 645142,
+      "sha256": "335123ce84e6e9323e30f1935f3c9f0c007b3382b13ea6578a243c1eca9dfb67"
+    },
+    {
+      "path": "configs/ablations/pipe_no_features.json",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "derived_from": "Actual server run config; portable release asset paths. See configs/ablations/run_provenance.json.",
+      "bytes": 6938,
+      "sha256": "b74c701254fac769d2cb7c49e96056057529cc7f6a8ff3c1284b61cfeb85d729"
+    },
+    {
+      "path": "configs/ablations/pipe_no_reformulation.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 7017,
+      "sha256": "cfabf652892ec573f93f230fda1ec1f9afbbaa1f0bb599157c75bb27851993d3"
+    },
+    {
+      "path": "configs/ablations/pipe_no_steady.json",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "derived_from": "Actual server run config; portable release asset paths. See configs/ablations/run_provenance.json.",
+      "bytes": 6906,
+      "sha256": "a669e06a822ba86fd7148bde3ce7672a86ab61a4b3ab09c35804fe20ad19f6a2"
+    },
+    {
+      "path": "configs/ablations/previous/canonical_no_reformulation.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 3691,
+      "sha256": "5dc9c3998499ac70b608e565a0c9d9fb3a894c3ac18a9b40d8f5632aef488720"
+    },
+    {
+      "path": "configs/ablations/previous/eccentric_no_reformulation.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 4848,
+      "sha256": "a5de43b0f65e780ecd994491b713c7469fca0bbf02cf9814cf56007d80d4a640"
+    },
+    {
+      "path": "configs/ablations/previous/pipe_no_reformulation.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 6868,
+      "sha256": "6b8898cf17770f17f958cc730cb71e4e0f4f60ce2f585d1af2bbcf5744c7f144"
+    },
+    {
+      "path": "configs/ablations/run_provenance.json",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "bytes": 46227,
+      "sha256": "92f08b8151078273246c8fce832e2e0ba7fb3902e98cb1d2b877e2a2ae6b7af5"
+    },
+    {
+      "path": "configs/baselines/frozen_pinn_archive.json",
+      "bytes": 6452,
+      "sha256": "1535677b7c98017494a433290331609932688e53a1e523b0ef7d73210a1e0b5f",
+      "source": "Frozen-PINN/outputs/benchmark/full-10seeds/manifest.json",
+      "source_sha256": "1535677b7c98017494a433290331609932688e53a1e523b0ef7d73210a1e0b5f"
+    },
+    {
+      "path": "configs/baselines/frozen_pinn_canonical.json",
+      "bytes": 1098,
+      "sha256": "9fefa238f1347c0d4bf9d9b8f209212d19cb72394e7750692235396ede5d91c5",
+      "source": "Frozen-PINN/configs/canonical.json",
+      "source_sha256": "9fefa238f1347c0d4bf9d9b8f209212d19cb72394e7750692235396ede5d91c5"
+    },
+    {
+      "path": "configs/baselines/frozen_pinn_eccentric.json",
+      "bytes": 1208,
+      "sha256": "06c747fb14703a4f491572b60beabc85d635c34ee4acdd9f7dd61478bb42f757",
+      "source": "Frozen-PINN/configs/eccentric.json",
+      "source_sha256": "06c747fb14703a4f491572b60beabc85d635c34ee4acdd9f7dd61478bb42f757"
+    },
+    {
+      "path": "configs/baselines/frozen_pinn_pipe.json",
+      "bytes": 1197,
+      "sha256": "da3583ed6bc7b22a0c43b1d4ba3a75bf9002fda3a074d821443a835df9fcbeee",
+      "source": "Frozen-PINN/configs/pipe.json",
+      "source_sha256": "da3583ed6bc7b22a0c43b1d4ba3a75bf9002fda3a074d821443a835df9fcbeee"
+    },
+    {
+      "path": "configs/baselines/mcvd_transformer_canonical.toml",
+      "bytes": 1312,
+      "sha256": "4308d59482f68d5934831a091a640e5a83257dc52eca9abd16a2341fbe39b0f5",
+      "derived_from": "baselines/mcvd_transformer/configs/canonical.toml"
+    },
+    {
+      "path": "configs/baselines/mcvd_transformer_canonical_archive.json",
+      "bytes": 10531,
+      "sha256": "ec2de99909b4dc17d7ecbf131b3842c1e5aa075de66005396214acfa45e77cb5",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/baselines/mcvd_transformer_eccentric.toml",
+      "bytes": 1514,
+      "sha256": "ebaa0cc46534fefe05c3ba0c4ca72c304d6505fe6d3b6a121eff52a52ce18658",
+      "derived_from": "baselines/mcvd_transformer/configs/eccentric.toml"
+    },
+    {
+      "path": "configs/baselines/mcvd_transformer_eccentric_archive.json",
+      "bytes": 9531,
+      "sha256": "5e12f26b3001b720187d09fd99f3caeba5551d9453b2adb7c4b78b1cdf51b564",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/baselines/mcvd_transformer_pipe.toml",
+      "bytes": 1525,
+      "sha256": "9444283b8b684c59f2f1e0c8e2b303d266d752ed85c5d47f2146774de66a62df",
+      "derived_from": "baselines/mcvd_transformer/configs/pipe.toml"
+    },
+    {
+      "path": "configs/baselines/mcvd_transformer_pipe_archive.json",
+      "bytes": 9540,
+      "sha256": "56dc95bd05c6a3e973c2569579fe1897bdc0deb64b4eaf616c9665767f2b49e0",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/baselines/monte_carlo_canonical.toml",
+      "bytes": 671,
+      "sha256": "6643974bab18aca9237172354beedd736737bd16962e3b44b01991a611f6c530",
+      "source": "AMS-MOD/configs/canonical.toml",
+      "source_sha256": "ea69f30c19fc70813059f9c79674fa68c05ec7302b5deac311253d70ab53275c"
+    },
+    {
+      "path": "configs/baselines/monte_carlo_canonical_archive.json",
+      "bytes": 93417,
+      "sha256": "c1361ffc1f8b1d88036e2a188098a1cbf258af6563ebcedcd2286e1444897f74",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/baselines/monte_carlo_eccentric.toml",
+      "bytes": 735,
+      "sha256": "38c259570018a2e3a7c70db2ac531749bfba081f18d9e5aed9488cd6ae498c91",
+      "source": "AMS-MOD/configs/eccentric.toml",
+      "source_sha256": "6973ee21acea76a2b8ce67f78a73a8bdb28a28fdec39f0f5016dc0707677561d"
+    },
+    {
+      "path": "configs/baselines/monte_carlo_eccentric_archive.json",
+      "bytes": 93456,
+      "sha256": "eb7fbdfaf188d973ff3ff287ba6e855956a47b0eb1920c83f9502a7b0bc828cb",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/baselines/monte_carlo_pipe.toml",
+      "bytes": 754,
+      "sha256": "292dd597173a0f6221cf702250ccecc7e100c89cd0677b3fc2bd317012633005",
+      "source": "AMS-MOD/configs/pipe.toml",
+      "source_sha256": "5d5f5fe67fc9034820d64aa6468d92fab6ea4ccaeccaf0decf60c889d2654a6f"
+    },
+    {
+      "path": "configs/baselines/monte_carlo_pipe_archive.json",
+      "bytes": 89539,
+      "sha256": "ac8ea6c3d7a35ac000bef25c5df38bbfc0dcb0f3632bfc68e6ac61153768f151",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/paper_protocol.yaml",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 10080,
+      "sha256": "7c07a99f4127399c2e656c37d6a73a415e81d40fd349d72ef99fa8e81313e84a"
+    },
+    {
+      "path": "configs/peas/canonical.json",
+      "bytes": 3022,
+      "sha256": "e63607e56106e28e2de42e78e7e10d9d5927018c155931f406b0b87cc0b173d2",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/peas/eccentric.json",
+      "bytes": 4139,
+      "sha256": "0aeb2594963f5fece1bc8db292a19bd8438162318cc8e9562aa47c4579bd0689",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/peas/pipe.json",
+      "bytes": 6156,
+      "sha256": "bf13192cc17208b96606772d8d89bd7bd4a8ea3672657462f081a7c5091a0710",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/scenarios/canonical.json",
+      "bytes": 353,
+      "sha256": "3463283182b93fa5aa5d501d6b85a0b2ce323f10424f6890e93e5b69511750f7",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/scenarios/eccentric.json",
+      "bytes": 532,
+      "sha256": "af36dfccff6c66d52388b78c9e1b264e12cf0dd9633f5636453d059d83f46204",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "configs/scenarios/eccentric_reference.json",
+      "bytes": 2649,
+      "sha256": "c8cde399c45c5a14d93006697b30bd7fab2f1b585d2b3c58de66475e476abb34",
+      "source": "historical-PEAS/work/eccentric_r10_peas_radius_scaled_assets_20261008/assets_manifest.json",
+      "source_sha256": "c8cde399c45c5a14d93006697b30bd7fab2f1b585d2b3c58de66475e476abb34"
+    },
+    {
+      "path": "configs/scenarios/pipe.json",
+      "bytes": 508,
+      "sha256": "0a128dbfe3512d2e54bb99e23a3f8d34a063fc32789b5afa734b4237279e6365",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "data/predictions/ablations/canonical/full.npz",
+      "bytes": 566935,
+      "sha256": "94f4a82235f9280aacf7f807f872651572408296e37c45f171af2992cc9da3b1",
+      "derived_from": "data/predictions/comparison/canonical/peas.npz"
+    },
+    {
+      "path": "data/predictions/ablations/canonical/no_features.npz",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "source": "PEAS/outputs/analysis/complementary_8gpu_audit/canonical_no_features.npz",
+      "source_sha256": "ab2ada3f00f74ab0e087a326f3e260d801e4882bbec8f3271801a8d1c831aeed",
+      "transformation": "Copied verified raw predictions: selected.pt for U, model.pt for S/C; 10 paired seeds on original paper test grids. Checkpoint provenance in configs/ablations/run_provenance.json.",
+      "bytes": 570832,
+      "sha256": "ab2ada3f00f74ab0e087a326f3e260d801e4882bbec8f3271801a8d1c831aeed"
+    },
+    {
+      "path": "data/predictions/ablations/canonical/no_reformulation.npz",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "source": "PEAS/outputs/analysis/forward_split_audit/canonical_no_reformulation.npz",
+      "transformation": "Copy of audited raw signed flux predictions on paper reference grids; 10 paired seeds x 20 sources.",
+      "bytes": 1082160,
+      "sha256": "1f112c76b1f604bcff140483a0fb69a1a142362c0982aaeb118a40b3b41daf70"
+    },
+    {
+      "path": "data/predictions/ablations/canonical/no_steady.npz",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "source": "PEAS/outputs/analysis/complementary_8gpu_audit/canonical_no_steady.npz",
+      "source_sha256": "ab2331e73b8ec4c215227431ce5b4249e97770fabeee706ade5d14bdc34c8e90",
+      "transformation": "Copied verified raw predictions: selected.pt for U, model.pt for S/C; 10 paired seeds on original paper test grids. Checkpoint provenance in configs/ablations/run_provenance.json.",
+      "bytes": 484102,
+      "sha256": "ab2331e73b8ec4c215227431ce5b4249e97770fabeee706ade5d14bdc34c8e90"
+    },
+    {
+      "path": "data/predictions/ablations/eccentric/full.npz",
+      "bytes": 732299,
+      "sha256": "94f3d489bc8e7d86df44bffe1cc406ac7da69356f2494d3d23c385943c7d16c2",
+      "derived_from": "data/predictions/comparison/eccentric/peas.npz"
+    },
+    {
+      "path": "data/predictions/ablations/eccentric/no_features.npz",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "source": "PEAS/outputs/analysis/complementary_8gpu_audit/eccentric_no_features.npz",
+      "source_sha256": "ee35fe5c62c9558bc98a4d958ee55b045f4effe248ca9f851b246ef065ea6663",
+      "transformation": "Copied verified raw predictions: selected.pt for U, model.pt for S/C; 10 paired seeds on original paper test grids. Checkpoint provenance in configs/ablations/run_provenance.json.",
+      "bytes": 682840,
+      "sha256": "ee35fe5c62c9558bc98a4d958ee55b045f4effe248ca9f851b246ef065ea6663"
+    },
+    {
+      "path": "data/predictions/ablations/eccentric/no_reformulation.npz",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "source": "PEAS/outputs/analysis/forward_split_audit/eccentric_no_reformulation.npz",
+      "transformation": "Copy of audited raw signed flux predictions on paper reference grids; 10 paired seeds x 20 sources.",
+      "bytes": 1331409,
+      "sha256": "95de22dfc3a35b9e65d5e03321ff7cae59809275d4d177efda4d6b03edc727f0"
+    },
+    {
+      "path": "data/predictions/ablations/eccentric/no_steady.npz",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "source": "PEAS/outputs/analysis/complementary_8gpu_audit/eccentric_no_steady.npz",
+      "source_sha256": "167a6e5cbd2859166ee572e8d5c5dab1ba67d4e07ea62fd3ab100369f2070ce0",
+      "transformation": "Copied verified raw predictions: selected.pt for U, model.pt for S/C; 10 paired seeds on original paper test grids. Checkpoint provenance in configs/ablations/run_provenance.json.",
+      "bytes": 657918,
+      "sha256": "167a6e5cbd2859166ee572e8d5c5dab1ba67d4e07ea62fd3ab100369f2070ce0"
+    },
+    {
+      "path": "data/predictions/ablations/pipe/full.npz",
+      "bytes": 699148,
+      "sha256": "d0706cbf4ec229edd68d00c47f2447e02442bf7bfd1966ace054878524bad5dc",
+      "derived_from": "data/predictions/comparison/pipe/peas.npz"
+    },
+    {
+      "path": "data/predictions/ablations/pipe/no_features.npz",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "source": "PEAS/outputs/analysis/complementary_8gpu_audit/pipe_no_features.npz",
+      "source_sha256": "8701933f52c20abd9bbbfc87e72c5a043f308c70f328bf731581441f53cc68a7",
+      "transformation": "Copied verified raw predictions: selected.pt for U, model.pt for S/C; 10 paired seeds on original paper test grids. Checkpoint provenance in configs/ablations/run_provenance.json.",
+      "bytes": 690175,
+      "sha256": "8701933f52c20abd9bbbfc87e72c5a043f308c70f328bf731581441f53cc68a7"
+    },
+    {
+      "path": "data/predictions/ablations/pipe/no_reformulation.npz",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "source": "PEAS/outputs/analysis/forward_split_audit/pipe_no_reformulation.npz",
+      "transformation": "Copy of audited raw signed flux predictions on paper reference grids; 10 paired seeds x 20 sources.",
+      "bytes": 1333774,
+      "sha256": "1b7feb41f51189ff4ef44e0b6a8ea0230cf4ca2a9d696306288417948d0040f4"
+    },
+    {
+      "path": "data/predictions/ablations/pipe/no_steady.npz",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "source": "PEAS/outputs/analysis/complementary_8gpu_audit/pipe_no_steady.npz",
+      "source_sha256": "a50233599eda12168d08384ef30de12b87f72502c0525fba28058503395c7e00",
+      "transformation": "Copied verified raw predictions: selected.pt for U, model.pt for S/C; 10 paired seeds on original paper test grids. Checkpoint provenance in configs/ablations/run_provenance.json.",
+      "bytes": 677353,
+      "sha256": "a50233599eda12168d08384ef30de12b87f72502c0525fba28058503395c7e00"
+    },
+    {
+      "path": "data/predictions/ablations_previous/canonical/no_reformulation.npz",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "source": "Previous release data/predictions/ablations/canonical/no_reformulation.npz",
+      "transformation": "Unchanged archived copy.",
+      "bytes": 1082148,
+      "sha256": "7381a6a75ef4cc253cf0765368533f13a866c8b35d72e2d074e1db7152123bef"
+    },
+    {
+      "path": "data/predictions/ablations_previous/eccentric/no_reformulation.npz",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "source": "Previous release data/predictions/ablations/eccentric/no_reformulation.npz",
+      "transformation": "Unchanged archived copy.",
+      "bytes": 1332356,
+      "sha256": "b8bb2adf1000a6dba11f39a100a41f52eb1b3de6be4735667fdcc65985c31881"
+    },
+    {
+      "path": "data/predictions/ablations_previous/pipe/no_reformulation.npz",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "source": "Previous release data/predictions/ablations/pipe/no_reformulation.npz",
+      "transformation": "Unchanged archived copy.",
+      "bytes": 1335991,
+      "sha256": "df1006cdd58592eba9082669576e3af62136cb17c485478756a5ca822514f811"
+    },
+    {
+      "path": "data/predictions/comparison/canonical/frozen_pinn.npz",
+      "bytes": 1079379,
+      "sha256": "caaa5039a1b749c978056307cda053e03532ef4ed04b27f49ea4a4bd56b4b418",
+      "source": "Frozen-PINN/outputs/benchmark/full-10seeds/predictions_canonical.npz",
+      "source_sha256": "eb974efea43a58842f8cd244057bc5f0067fe02b9c50da85750f8f176bdec9a5",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/canonical/mcvd_transformer.npz",
+      "bytes": 628865,
+      "sha256": "21590b0b75c040916cc574f583ce397297e3aeffdee8872365380247b283cb82",
+      "source": "MCvD-Transformer/outputs/data/canonical/predictions/main.npz",
+      "source_sha256": "44333d22d4b7fbe6aac2136e034973b47d2ac2d1a53aeeed3e76dc0311909d24",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/canonical/monte_carlo.npz",
+      "bytes": 1574138,
+      "sha256": "1d271909b9365ee74a72164ef0589f5d889aeb7776bb367564b8c93b715024a3",
+      "source": "AMS-MOD/outputs/data/canonical/predictions/main.npz",
+      "source_sha256": "75f0ff20c3c6936ff35d6822ced7eab8b5cd1f7de98f07a7cac73ae0f0a4afce",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/canonical/peas.npz",
+      "bytes": 566935,
+      "sha256": "94f4a82235f9280aacf7f807f872651572408296e37c45f171af2992cc9da3b1",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/ten_seeds/predictions.npz",
+      "source_sha256": "3fa14e3b74221658d4535e8160acc5315a5fb55fd4797f28a5d7e1152ed46a15",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/eccentric/frozen_pinn.npz",
+      "bytes": 1309356,
+      "sha256": "69c05ddcfb40fdb08bd184ef8799dcd14f4f691a349f8072ae00703123069e0d",
+      "source": "Frozen-PINN/outputs/benchmark/full-10seeds/predictions_eccentric.npz",
+      "source_sha256": "9b55ffb97b70389b0cb0a38b3182c982086b9c66cad3fcb94bca85299123f289",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/eccentric/mcvd_transformer.npz",
+      "bytes": 741030,
+      "sha256": "bafccb1cdc4515e9586597ff2028ed6d875637dcc768de2122260d0007bf15ef",
+      "source": "MCvD-Transformer/outputs/data/eccentric/predictions/main.npz",
+      "source_sha256": "14f7a0f5153c2473a37d64e8cc00cd1710de4b013dd1b941f2f9dd8cef9f6d01",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/eccentric/monte_carlo.npz",
+      "bytes": 2923663,
+      "sha256": "110d1701db4bf1a7903a4bf26098d95f58b93c423ae550b07168f608c16d5f35",
+      "source": "AMS-MOD/outputs/data/eccentric/predictions/main.npz",
+      "source_sha256": "6dc23f8c1e1f93d9563221ba909dbcddeb44e32afbd6806a1b5017509e16edf7",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/eccentric/peas.npz",
+      "bytes": 732299,
+      "sha256": "94f3d489bc8e7d86df44bffe1cc406ac7da69356f2494d3d23c385943c7d16c2",
+      "source": "PEAS/outputs/data/eccentric/predictions/main.npz",
+      "source_sha256": "a5d0bc2c0f2d32fbe5d4c80194c07bd9ef0e278c96cff96f33d0ca82e7225b4e",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/pipe/frozen_pinn.npz",
+      "bytes": 1288246,
+      "sha256": "f6aa9fd8701dd37d3ebc3c84d66a10d5a92680880c13b4f89385d29a6b88ed6c",
+      "source": "Frozen-PINN/outputs/benchmark/full-10seeds/predictions_pipe.npz",
+      "source_sha256": "737038574b96096171ff0b19ab14d5091b494b6b0de0360970623ea22f21571a",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/pipe/mcvd_transformer.npz",
+      "bytes": 733414,
+      "sha256": "6d349bf85d9b84b4742283f0627339d75feac3842fb1c911e60ff83ea98fd9d5",
+      "source": "MCvD-Transformer/outputs/data/pipe/predictions/main.npz",
+      "source_sha256": "ebae1a15e89d6fa756a89c25a427531b14068d29a320da6b0c07c6e35c07c764",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/pipe/monte_carlo.npz",
+      "bytes": 2951304,
+      "sha256": "01031b3428bbd34c8a025e634d58da35febd26f048acc3dc34bc26fe9b686253",
+      "source": "AMS-MOD/outputs/data/pipe/predictions/main.npz",
+      "source_sha256": "675cb3c68680a76d249ec13bc86504546a7002ddce6942f6948f082aa7da481b",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/predictions/comparison/pipe/peas.npz",
+      "bytes": 699148,
+      "sha256": "d0706cbf4ec229edd68d00c47f2447e02442bf7bfd1966ace054878524bad5dc",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/predictions/main.npz",
+      "source_sha256": "168656c184700dd0a54d51c8f13ade310b73f576a676c3c94a12de3fa3790e02",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/reference/canonical.npz",
+      "bytes": 99854,
+      "sha256": "7869d50774027a11c48e8c9115c399dda721dcb5bb8eb1e6fc11f4f19c28752d",
+      "source": "PEAS/outputs/data/canonical/references/main.npz",
+      "source_sha256": "fd2ab1eb2e644e43f0a69d34d9987cd6213a3351cfb464f2fc94a07e33b38b65",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/reference/canonical_training_grid.npz",
+      "bytes": 123634,
+      "sha256": "fd2ab1eb2e644e43f0a69d34d9987cd6213a3351cfb464f2fc94a07e33b38b65",
+      "source": "PEAS/outputs/data/canonical/references/main.npz",
+      "source_sha256": "fd2ab1eb2e644e43f0a69d34d9987cd6213a3351cfb464f2fc94a07e33b38b65",
+      "transformation": "Retained numerical grid arrays."
+    },
+    {
+      "path": "data/reference/eccentric.npz",
+      "bytes": 123089,
+      "sha256": "8f6b6780c818333c99f02583544de67ce64c656488a0ee576f20cb3b3c97b9a2",
+      "source": "PEAS/outputs/data/eccentric/references/main.npz",
+      "source_sha256": "af3d9ee0fc4a80cd12aeea49cd90e63381cb71d0a80596bdde39b19f8c9524e1",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/reference/eccentric_training_grid.npz",
+      "bytes": 122146,
+      "sha256": "af3d9ee0fc4a80cd12aeea49cd90e63381cb71d0a80596bdde39b19f8c9524e1",
+      "source": "PEAS/outputs/data/eccentric/references/main.npz",
+      "source_sha256": "af3d9ee0fc4a80cd12aeea49cd90e63381cb71d0a80596bdde39b19f8c9524e1",
+      "transformation": "Retained numerical grid arrays."
+    },
+    {
+      "path": "data/reference/pipe.npz",
+      "bytes": 122705,
+      "sha256": "e9871764ae97e5717a46ecdf48d12baf859d0703c1c38a98bb33a4c073bf9551",
+      "source": "PEAS/outputs/data/pipe/references/main.npz",
+      "source_sha256": "40f873abfdbba3d45c78d63281594f324dd2aa3cbf89415c7f780f95ae2603e5",
+      "transformation": "Retained named numerical arrays; prediction has run axis; evaluation times restricted to [0,20]."
+    },
+    {
+      "path": "data/reference/pipe_training_grid.npz",
+      "bytes": 121752,
+      "sha256": "1a9ca140cd39ab7b49f4ff6e784599a49be19c46e746b2a7e3cf92f99991e26a",
+      "source": "PEAS/outputs/data/pipe/references/main.npz",
+      "source_sha256": "40f873abfdbba3d45c78d63281594f324dd2aa3cbf89415c7f780f95ae2603e5",
+      "transformation": "Retained numerical grid arrays."
+    },
+    {
+      "path": "data/steady/canonical.npz",
+      "bytes": 31617,
+      "sha256": "18eacb4e7a77a9fc8237c624e198a708652dd915d3911126d33369a62f98ece3",
+      "source": "PEAS/outputs/analysis/canonical/retuning_t0_20/baseline_snapshot/outputs/data/canonical/steady/steady.npz",
+      "source_sha256": "18eacb4e7a77a9fc8237c624e198a708652dd915d3911126d33369a62f98ece3"
+    },
+    {
+      "path": "data/steady/eccentric.npz",
+      "bytes": 260328,
+      "sha256": "41120b5fb7df922fe2fdef184e170b905a95067ab3a0244c261bf76ec1f085c0",
+      "source": "PEAS/outputs/data/eccentric/steady/steady.npz",
+      "source_sha256": "41120b5fb7df922fe2fdef184e170b905a95067ab3a0244c261bf76ec1f085c0"
+    },
+    {
+      "path": "data/steady/pipe.npz",
+      "bytes": 6299907,
+      "sha256": "8c6c994a606893b11b2fd5f8e06bd4e2afff9deeaf27bf4dce8b2c2d82c4c8d6",
+      "source": "PEAS/outputs/data/pipe-wo-late-loss/steady/steady.npz",
+      "source_sha256": "8c6c994a606893b11b2fd5f8e06bd4e2afff9deeaf27bf4dce8b2c2d82c4c8d6"
+    },
+    {
+      "path": "data/training/canonical.npz",
+      "bytes": 5132921,
+      "sha256": "cb43b74947450b027fbf52a87c5c2268680fb03c77de4a5047bd205af409e5e9",
+      "source": "MCvD-Transformer/outputs/data/canonical/datasets/dataset.npz",
+      "source_sha256": "e17ba5b62de8b9239eaafd8272fe5f303dd845789bc97e993019525b3029249c",
+      "transformation": "Identical numerical arrays and fingerprint fields; nonfunctional *_path provenance made portable."
+    },
+    {
+      "path": "data/training/canonical_positions.csv",
+      "bytes": 14221,
+      "sha256": "222a16583ed5d97675169f66563d45f4a1f6fba7f8f3becb1c6cec8e2f027efc",
+      "source": "AMS-MOD/datasets/canonical.csv",
+      "source_sha256": "222a16583ed5d97675169f66563d45f4a1f6fba7f8f3becb1c6cec8e2f027efc"
+    },
+    {
+      "path": "data/training/eccentric.npz",
+      "bytes": 5687290,
+      "sha256": "35e116320f4963a8099ba2f41d308e1c7f2049dacd04eb2b84d3b988352ca5a5",
+      "source": "MCvD-Transformer/outputs/data/eccentric/datasets/dataset.npz",
+      "source_sha256": "14ed3e756bfd5fb284485ef87567635c814924049d4f5254bf758da41c1e9805",
+      "transformation": "Identical numerical arrays and fingerprint fields; nonfunctional *_path provenance made portable."
+    },
+    {
+      "path": "data/training/eccentric_positions.csv",
+      "bytes": 22488,
+      "sha256": "0848cbd465a6bb773cf80c2ba2b0ca2be5326d99c3e9a886f2dbb3a81993fdc4",
+      "source": "AMS-MOD/datasets/eccentric.csv",
+      "source_sha256": "0848cbd465a6bb773cf80c2ba2b0ca2be5326d99c3e9a886f2dbb3a81993fdc4"
+    },
+    {
+      "path": "data/training/pipe.npz",
+      "bytes": 5473278,
+      "sha256": "793f370f656bd1ba7e5edf843a0b20daceab17677f7d83b09bc6f25d10724f6f",
+      "source": "MCvD-Transformer/outputs/data/pipe/datasets/dataset.npz",
+      "source_sha256": "3519aedeeb1ab6654c1bf59ebf6155217242674a9e8cf16d3b867fae1d96a855",
+      "transformation": "Identical numerical arrays and fingerprint fields; nonfunctional *_path provenance made portable."
+    },
+    {
+      "path": "data/training/pipe_positions.csv",
+      "bytes": 21717,
+      "sha256": "f186ce19d29dcc3d97869092020988a1ad7a8f9ca3038c1bfd038136be819411",
+      "source": "AMS-MOD/datasets/pipe.csv",
+      "source_sha256": "f186ce19d29dcc3d97869092020988a1ad7a8f9ca3038c1bfd038136be819411"
+    },
+    {
+      "path": "data/validation/canonical.npz",
+      "bytes": 99734,
+      "sha256": "77f7ff17bcc79c85ca09d7d42b115e929d5795edf9cc4a330dcb361098f3c50e",
+      "source": "PEAS/outputs/analysis/canonical/retuning_t0_20/baseline_snapshot/validation_t0_20.npz",
+      "source_sha256": "77f7ff17bcc79c85ca09d7d42b115e929d5795edf9cc4a330dcb361098f3c50e"
+    },
+    {
+      "path": "data/validation/canonical_forward_scores.json",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 172703,
+      "sha256": "cf923579e7b7679ff36252bb4305710fd359bd386a59d2beb54ddeec7e27964a"
+    },
+    {
+      "path": "data/validation/frozen_pinn_tuning_points.json",
+      "bytes": 383,
+      "sha256": "82719510512e0b308a34ac42f9df80854bf9d31f6a65aaad95fbd7a7f2f666b4",
+      "source": "Frozen-PINN/protocol/tuning_points.json",
+      "source_sha256": "82719510512e0b308a34ac42f9df80854bf9d31f6a65aaad95fbd7a7f2f666b4"
+    },
+    {
+      "path": "data/validation/mcvd_transformer_canonical.npz",
+      "bytes": 102038,
+      "sha256": "2d9d765cae22db601d74b1091830e71c948e6bc3341d4767c2c0bb2a80154738",
+      "derived_from": "data/training/canonical.npz",
+      "transformation": "Select split == validation, preserve original labels."
+    },
+    {
+      "path": "data/validation/mcvd_transformer_eccentric.npz",
+      "bytes": 118432,
+      "sha256": "e45490c3eb4bcd6e3a8a970af2018a08de2bab09d83d54fdfd470f3a68057e2a",
+      "derived_from": "data/training/eccentric.npz",
+      "transformation": "Select split == validation, preserve original labels."
+    },
+    {
+      "path": "data/validation/mcvd_transformer_pipe.npz",
+      "bytes": 113558,
+      "sha256": "bd616b36af67ba9ce60b5d776a9da642d90c883b0b953b31f90babf5a74159e6",
+      "derived_from": "data/training/pipe.npz",
+      "transformation": "Select split == validation, preserve original labels."
+    },
+    {
+      "path": "docs/ablation_versions.md",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 2706,
+      "sha256": "fc3c4e4a0a15d0d41d86ba6c2c049414756a7873bdb356738a9219545be0688b"
+    },
+    {
+      "path": "docs/assets/ablation-comparison-previous.png",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 205965,
+      "sha256": "bc5113e6512238fdc51c77a43f7be474a1bb75a44b8fd0238929da47da5610ab"
+    },
+    {
+      "path": "docs/assets/ablation-comparison.png",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 206046,
+      "sha256": "d98bd0d118bdf9540a7e2c25506d6cab7c07c215eb5ddb78d98d84258bcc1f57"
+    },
+    {
+      "path": "docs/assets/peas-framework.png",
+      "bytes": 425410,
+      "sha256": "28a70e8afa5cfc1f5a9395f915465adb7df4da14e463e35461e8faaba1d361ef",
+      "source": "IEEE-TMBMC-2026-PEAS/PEAS-framework-mod2.pdf",
+      "source_sha256": "78f72c59af4e90105da8ded0de2b38def81559e74a3f61d6253b1bdec4583428",
+      "transformation": "Poppler PDF-to-PNG preview; longest edge 2200 pixels; complete original figure preserved; shared by both README languages"
+    },
+    {
+      "path": "docs/assets/probability-comparison.png",
+      "bytes": 349687,
+      "sha256": "58d954085d2823f05cc5f5a0436de7eb15e07ba6b2a9a220478ff6a146799891",
+      "source": "results/figures/exp1_probability_error_3x4.pdf",
+      "source_sha256": "aafa44c0748277429d75da838a29e0fe8e88ee58c4aa564da2f11626f697a4ca",
+      "transformation": "Poppler PDF-to-PNG preview; longest edge 2200 pixels; complete original figure preserved; shared by both README languages"
+    },
+    {
+      "path": "docs/assets/relative-l2-comparison.png",
+      "bytes": 158645,
+      "sha256": "fde30aaaae58f9d6b0a52e09accc3bcbbbbd79613bab1af85716ce91e0fb2295",
+      "source": "results/figures/exp2_relative_l2_positions_and_mean_1x3_new.pdf",
+      "source_sha256": "1adaa86497b7541445409a047f797c49198e2f5bc88b388cca499a07a5601d36",
+      "transformation": "Poppler PDF-to-PNG preview; longest edge 2200 pixels; complete original figure preserved; shared by both README languages"
+    },
+    {
+      "path": "docs/data_format.md",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "bytes": 7713,
+      "sha256": "17b2ed5e976c630f2242dfd36b430c27cbabd4b1e82206b38aac375b5f5aaa86"
+    },
+    {
+      "path": "docs/protocol.md",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 6357,
+      "sha256": "8c0d01a504ecb93df2eca0feb31ece2ad143bb5383474ad591c591a43f5ab616"
+    },
+    {
+      "path": "docs/reproduction.md",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 8314,
+      "sha256": "ca22e67c7d28362232f277c9ab9ecc29cce966bd7564b83fd7a1cadf8574ab62"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1048,
+      "sha256": "c4cea1b59c36df4f457b3a8ee9d770863d007b03dcce373d4d6ca5b37b28759b",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "results/ablation_metrics.csv",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 817,
+      "sha256": "5b2c71284db02a9f88fe4ab51a5e5f37273f7d480a05f7607eeb3527a6640639"
+    },
+    {
+      "path": "results/ablation_per_run_position.csv",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 158185,
+      "sha256": "267e7a3bada26a36ea6ec4b15246316140bdf5f20f0c9da4d8b359d78a114f38"
+    },
+    {
+      "path": "results/ablation_plotted_metrics.csv",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 20945,
+      "sha256": "3c76f6a05405101454d1392eac0ab74e33e731a2d4820aadd7251b40692e7546"
+    },
+    {
+      "path": "results/ablation_version_metrics.csv",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 368,
+      "sha256": "4e425f169c259c232d1e269ae01a717aa5b7aa45c9d74539265a0fc2432a1edc"
+    },
+    {
+      "path": "results/expected_metrics.csv",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 89656,
+      "sha256": "9f0e55c97446c7b857f10f9f18d4f58f972c85a193a0f7ed3396f728e979dc68"
+    },
+    {
+      "path": "results/figures/archive/exp3_ablation_previous.pdf",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 26149,
+      "sha256": "b7144cecdcdf19f9b989acf5968e05c23cb13013dac0379bd41dd5138fabe184"
+    },
+    {
+      "path": "results/figures/exp1_probability_error_3x4.pdf",
+      "bytes": 377527,
+      "sha256": "aafa44c0748277429d75da838a29e0fe8e88ee58c4aa564da2f11626f697a4ca",
+      "source": "paper/exp1_probability_error_3x4.pdf",
+      "source_sha256": "aafa44c0748277429d75da838a29e0fe8e88ee58c4aa564da2f11626f697a4ca"
+    },
+    {
+      "path": "results/figures/exp2_relative_l2_positions_and_mean_1x3_new.pdf",
+      "bytes": 26335,
+      "sha256": "1adaa86497b7541445409a047f797c49198e2f5bc88b388cca499a07a5601d36",
+      "source": "paper/exp2_relative_l2_positions_and_mean_1x3_new.pdf",
+      "source_sha256": "1adaa86497b7541445409a047f797c49198e2f5bc88b388cca499a07a5601d36"
+    },
+    {
+      "path": "results/figures/exp3_ablation_relative_l2_positions_and_mean_1x3.pdf",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 26154,
+      "sha256": "0e92d21177ad19c622037033227999100154e89191a8fc47c143736d2ff3bbb3"
+    },
+    {
+      "path": "results/paper_plotted_metrics.csv",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 65064,
+      "sha256": "93d9d2f6cce64eadd33d9980bb49e89f0d5cf3967b9b8d5c0ef2a71a0bc7c407"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 614,
+      "sha256": "295f66dee1184d763388e220bf25e80f130dd15752cd23697f649b6b32d0765f",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "scripts/generate_mc_data.sh",
+      "bytes": 196,
+      "sha256": "73b09d52516edb694663d58ee86f2207b33396a58b450867c58e9064d74835d6",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "scripts/generate_reference.py",
+      "bytes": 1696,
+      "sha256": "2468d21ffda22270da489ad5a4247e9d2f864befe15bd33b11bb1bb1f166f8c4",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "scripts/predict.py",
+      "bytes": 1055,
+      "sha256": "4bc9899e8d22a4c4f5f2dd17107e61de4432b7b292cbba85b5eac4ebbcf84783",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "scripts/reproduce_figures.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 1631,
+      "sha256": "a06f4c0b0a13bf61768e18bb29d859f5ca40669618d6aab779948fb5121878e8"
+    },
+    {
+      "path": "scripts/select_forward.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 489,
+      "sha256": "4dd2edb4a72ca9d31df2aab0c6f54c4efc50e069031cc624e7530a06a397405c"
+    },
+    {
+      "path": "scripts/train.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 3304,
+      "sha256": "7ce8815375e074c47ae188d4a21fec397e5451bd0f26407fbf35acc8c468aa2d"
+    },
+    {
+      "path": "scripts/train_frozen_pinn.py",
+      "bytes": 1900,
+      "sha256": "6aebb0099576b61fc9d47c5e50a01d952989734ae1c6938803a92244934f80cd",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "scripts/train_mcvd_transformer.py",
+      "bytes": 1504,
+      "sha256": "a5c9c5bde40245494df45c63847704e2527fb5e32821e4e157c85e8f41fd7a6f",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "bytes": 3120,
+      "sha256": "fcc9c0804ed8c2436f430a2256750b20a25187724b5c9929461849da0969e068"
+    },
+    {
+      "path": "src/peas/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "PEAS/src/peas/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/peas/ablations/__init__.py",
+      "bytes": 761,
+      "sha256": "94ceb6b1cc3c7ba0da8fdbca63c470993582bf60486ce4addf542a3af96c9042",
+      "source": "PEAS/src/ablations/__init__.py",
+      "source_sha256": "94ceb6b1cc3c7ba0da8fdbca63c470993582bf60486ce4addf542a3af96c9042"
+    },
+    {
+      "path": "src/peas/ablations/config.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 4378,
+      "sha256": "9e3deb86ec2249a90e5490cef5e8518be5b555a5202c3b70c933c6b52e5ba621"
+    },
+    {
+      "path": "src/peas/ablations/model.py",
+      "bytes": 5031,
+      "sha256": "715f959a55479812968135bc322c0860383f8fddc86571a286e8244d98f915ae",
+      "source": "PEAS/src/ablations/model.py",
+      "source_sha256": "449ef88b2a157b1686e304241cbafef314f6e3f21b8ac14e238125e0b6fbd187"
+    },
+    {
+      "path": "src/peas/ablations/no_features.py",
+      "bytes": 1000,
+      "sha256": "71eb65bfa29d7f8bcdc25106d346e9ac94de0e03565e531b32ebb589be7cd641",
+      "source": "PEAS/src/ablations/no_features.py",
+      "source_sha256": "71eb65bfa29d7f8bcdc25106d346e9ac94de0e03565e531b32ebb589be7cd641"
+    },
+    {
+      "path": "src/peas/ablations/no_reformulation.py",
+      "bytes": 12606,
+      "sha256": "ec7f374109b3930c0396117f6daf2612c078f3dddcdf13884daee710f0175a2a",
+      "source": "PEAS/src/ablations/no_reformulation.py",
+      "source_sha256": "ae94594abf98122144d5d4b85871627236f64749039498021f4e6ad10a699d52"
+    },
+    {
+      "path": "src/peas/ablations/no_steady.py",
+      "bytes": 2341,
+      "sha256": "72906dcf815481f0e66f874724963d0e94e9244c8a581d7cf33509e5543751ae",
+      "source": "PEAS/src/ablations/no_steady.py",
+      "source_sha256": "72906dcf815481f0e66f874724963d0e94e9244c8a581d7cf33509e5543751ae"
+    },
+    {
+      "path": "src/peas/ablations/physics.py",
+      "bytes": 10159,
+      "sha256": "0daa6b8954c325cf9a6ef2e3032201b31f60fb27e2ea817dbb02f658e1bcd88b",
+      "source": "PEAS/src/ablations/physics.py",
+      "source_sha256": "5e286fa9fbcaee9e246b6898f99a85139d85e41fbcd4d93689373862464a15e1"
+    },
+    {
+      "path": "src/peas/ablations/selection.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 6505,
+      "sha256": "653f2efb38d4df2e639d84bd4d0ef2109714577474bf03ad5246504a6cf51a95"
+    },
+    {
+      "path": "src/peas/ablations/spheres.py",
+      "bytes": 8482,
+      "sha256": "28de4040778d420a4eefd14c71cae0aa2825ca0f7c5473aef6cc39dcf562af50",
+      "source": "PEAS/src/ablations/spheres.py",
+      "source_sha256": "28de4040778d420a4eefd14c71cae0aa2825ca0f7c5473aef6cc39dcf562af50",
+      "transformation": "Package moved to peas.ablations"
+    },
+    {
+      "path": "src/peas/ablations/training.py",
+      "bytes": 11451,
+      "sha256": "db4b1016712f3492da3223c6f7df0f19f38c6bbbb3247deef63396cbfe4c954a",
+      "source": "PEAS/src/ablations/training.py",
+      "source_sha256": "0d1ecf05e313fd84fecf962ce4d9a951699ffaea5ac88d621cb24d06c45a3232"
+    },
+    {
+      "path": "src/peas/common/__init__.py",
+      "bytes": 64,
+      "sha256": "7467b65c525e005ed33c6a8e3fdf1747224b1eceac6ef8662f6dca73b90356e3",
+      "source": "PEAS/src/peas/common/__init__.py",
+      "source_sha256": "7467b65c525e005ed33c6a8e3fdf1747224b1eceac6ef8662f6dca73b90356e3"
+    },
+    {
+      "path": "src/peas/common/checkpoints.py",
+      "bytes": 3916,
+      "sha256": "852e672e763630508c49632a97aa2f7a9bf2bdca83b56605162a65b703178adf",
+      "source": "PEAS/src/peas/common/checkpoints.py",
+      "source_sha256": "852e672e763630508c49632a97aa2f7a9bf2bdca83b56605162a65b703178adf"
+    },
+    {
+      "path": "src/peas/common/config.py",
+      "bytes": 9792,
+      "sha256": "a684aa0ccd3441f0447a8d895523767c1c763d04e6279d91715f03f0a449d291",
+      "source": "PEAS/src/peas/common/config.py",
+      "source_sha256": "a684aa0ccd3441f0447a8d895523767c1c763d04e6279d91715f03f0a449d291"
+    },
+    {
+      "path": "src/peas/common/geometry.py",
+      "bytes": 8285,
+      "sha256": "e507fb00ab9c2cfd9c3e18876630eb745447e8119233c13be848306b0a81bce5",
+      "source": "PEAS/src/peas/common/geometry.py",
+      "source_sha256": "e507fb00ab9c2cfd9c3e18876630eb745447e8119233c13be848306b0a81bce5"
+    },
+    {
+      "path": "src/peas/common/model.py",
+      "bytes": 3658,
+      "sha256": "2a28d5260567f3800564399e0a53ebd8a084fcfb6e11815a82783934150db5c3",
+      "source": "PEAS/src/peas/common/model.py",
+      "source_sha256": "2a28d5260567f3800564399e0a53ebd8a084fcfb6e11815a82783934150db5c3"
+    },
+    {
+      "path": "src/peas/common/modules/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "PEAS/src/peas/common/modules/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/peas/common/modules/ansatz.py",
+      "bytes": 201,
+      "sha256": "df1d2f27974a68bfca8b280d30e4c05319faa00c90581bcaac2ba0f4a2f24e10",
+      "source": "PEAS/src/peas/common/modules/ansatz.py",
+      "source_sha256": "df1d2f27974a68bfca8b280d30e4c05319faa00c90581bcaac2ba0f4a2f24e10"
+    },
+    {
+      "path": "src/peas/common/modules/features.py",
+      "bytes": 1529,
+      "sha256": "3525243a61f6e9a83f3dbc224a4a754747f086198a2f8d65c6eb1739795e478f",
+      "source": "PEAS/src/peas/common/modules/features.py",
+      "source_sha256": "3525243a61f6e9a83f3dbc224a4a754747f086198a2f8d65c6eb1739795e478f"
+    },
+    {
+      "path": "src/peas/common/modules/input_adapter.py",
+      "bytes": 2182,
+      "sha256": "3bada8c89dbaaaf029d63f9894bb1e92067910a2c50784176f6c272e4ccc7ecd",
+      "source": "PEAS/src/peas/common/modules/input_adapter.py",
+      "source_sha256": "3bada8c89dbaaaf029d63f9894bb1e92067910a2c50784176f6c272e4ccc7ecd"
+    },
+    {
+      "path": "src/peas/common/modules/steady.py",
+      "bytes": 4854,
+      "sha256": "0ba29966f11fafac66e1424ea115b6a5f822a47ff9e6ee8eed85c87521956bd7",
+      "source": "PEAS/src/peas/common/modules/steady.py",
+      "source_sha256": "0ba29966f11fafac66e1424ea115b6a5f822a47ff9e6ee8eed85c87521956bd7"
+    },
+    {
+      "path": "src/peas/common/modules/training.py",
+      "bytes": 1980,
+      "sha256": "e42cae0c298aa9aaf4e6cb0416fce6319f0a0e073adda6ed1abbd252a9e757c3",
+      "source": "PEAS/src/peas/common/modules/training.py",
+      "source_sha256": "e42cae0c298aa9aaf4e6cb0416fce6319f0a0e073adda6ed1abbd252a9e757c3"
+    },
+    {
+      "path": "src/peas/common/modules/transient.py",
+      "bytes": 573,
+      "sha256": "c6a7d1ac83d1f00294f601ce2ff192048bc592952a3df5b2a7a6b656c39e6e3b",
+      "source": "PEAS/src/peas/common/modules/transient.py",
+      "source_sha256": "c6a7d1ac83d1f00294f601ce2ff192048bc592952a3df5b2a7a6b656c39e6e3b"
+    },
+    {
+      "path": "src/peas/common/paths.py",
+      "bytes": 1016,
+      "sha256": "b771abfba4cde3a5c4f67c3358a56566597a10c7728b4ace27293edecd216f3f",
+      "source": "PEAS/src/peas/common/paths.py",
+      "source_sha256": "f4b53223156a9c700724afe47faa1e5849def80f3d57ef46601aaf9a87a04305"
+    },
+    {
+      "path": "src/peas/common/references.py",
+      "bytes": 13582,
+      "sha256": "d3e878e6f5452f26a23be8ae865fa839d76213c1ac1bcb6cc20736efe6d035ec",
+      "source": "PEAS/src/peas/common/references.py",
+      "source_sha256": "d3e878e6f5452f26a23be8ae865fa839d76213c1ac1bcb6cc20736efe6d035ec"
+    },
+    {
+      "path": "src/peas/common/sphere_features.py",
+      "bytes": 4310,
+      "sha256": "98ea204f1db83b7fd35f7437a5b7ebdc8188ed6c64eff416b4ec369d1c6fe032",
+      "source": "PEAS/src/peas/common/sphere_features.py",
+      "source_sha256": "98ea204f1db83b7fd35f7437a5b7ebdc8188ed6c64eff416b4ec369d1c6fe032"
+    },
+    {
+      "path": "src/peas/common/training.py",
+      "bytes": 12057,
+      "sha256": "04d0a57cb75c3bf34e2f776c1c9a9e68455bdc40230dea3094a504cca9ea3eec",
+      "source": "PEAS/src/peas/common/training.py",
+      "source_sha256": "04d0a57cb75c3bf34e2f776c1c9a9e68455bdc40230dea3094a504cca9ea3eec"
+    },
+    {
+      "path": "src/peas/common/utils.py",
+      "bytes": 1408,
+      "sha256": "2d834b57fc96d6cb662cdcc1ef5b98e399ee4a14eee1d64becdffebc12397532",
+      "source": "PEAS/src/peas/common/utils.py",
+      "source_sha256": "2d834b57fc96d6cb662cdcc1ef5b98e399ee4a14eee1d64becdffebc12397532"
+    },
+    {
+      "path": "src/peas/evaluation/__init__.py",
+      "bytes": 44,
+      "sha256": "1fd4435d9f8a6bb375ff05657fef15a09d5cdee171ccabbd70fe72e52bd141b8",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "src/peas/evaluation/archive.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 1994,
+      "sha256": "aedac7c7d7fb505b7768eecee1a089d5de83f2fdb8ab458749913a3a3b339b3b"
+    },
+    {
+      "path": "src/peas/evaluation/metrics.py",
+      "bytes": 2340,
+      "sha256": "881811ff08c5361de775971000d8655bf5d5fbedd4eb019bec56135d156cb3ac",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "src/peas/evaluation/probability_plot.py",
+      "bytes": 6321,
+      "sha256": "3107b016636558f2e1b975d3290ca5365cc4e5c53b5ad783b83ec2173676c6de",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "src/peas/evaluation/relative_plot.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 7448,
+      "sha256": "72b06028ddaba11a5347b087f0e96f42445776a27ffb6fce2f77531941390cb0"
+    },
+    {
+      "path": "src/peas/scenarios/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "PEAS/src/peas/scenarios/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/peas/scenarios/canonical/__init__.py",
+      "bytes": 1115,
+      "sha256": "5961429bd92c6a63eb808f013b9803713849ba718dca8a69f16aea15725545f2",
+      "source": "PEAS/src/peas/scenarios/canonical/__init__.py",
+      "source_sha256": "5961429bd92c6a63eb808f013b9803713849ba718dca8a69f16aea15725545f2"
+    },
+    {
+      "path": "src/peas/scenarios/canonical/features.py",
+      "bytes": 670,
+      "sha256": "7563a86a0d1133418fe28e4b1d42e2aec668adf99d3cc82bf76f18b664dbf509",
+      "source": "PEAS/src/peas/scenarios/canonical/features.py",
+      "source_sha256": "7563a86a0d1133418fe28e4b1d42e2aec668adf99d3cc82bf76f18b664dbf509"
+    },
+    {
+      "path": "src/peas/scenarios/canonical/physics.py",
+      "bytes": 10403,
+      "sha256": "d50ee21bbf39a8c1cfef1fdad215be58b727b4bce5040889fb3b66624a0ead99",
+      "source": "PEAS/outputs/analysis/canonical/normalization_floor_t0_20/physics.py",
+      "source_sha256": "d50ee21bbf39a8c1cfef1fdad215be58b727b4bce5040889fb3b66624a0ead99"
+    },
+    {
+      "path": "src/peas/scenarios/canonical/physics_base.py",
+      "bytes": 8159,
+      "sha256": "13c577224954d1d9eed6a566a3df6c1714a14d2a8a1783059154e9240ee212a8",
+      "source": "PEAS/src/peas/scenarios/canonical/physics_base.py",
+      "source_sha256": "13c577224954d1d9eed6a566a3df6c1714a14d2a8a1783059154e9240ee212a8"
+    },
+    {
+      "path": "src/peas/scenarios/canonical/steady.py",
+      "bytes": 5054,
+      "sha256": "0d63d88948ed69f9dc9dc8df3851accef680d5ab5e4d494ca38608ee7dd3bef7",
+      "source": "PEAS/src/peas/scenarios/canonical/steady.py",
+      "source_sha256": "0d63d88948ed69f9dc9dc8df3851accef680d5ab5e4d494ca38608ee7dd3bef7"
+    },
+    {
+      "path": "src/peas/scenarios/concentric/__init__.py",
+      "bytes": 921,
+      "sha256": "1b19e42724d67d0201d86e16f5232d74e44cc7c163beb1141b5c82e815aeb7fa",
+      "source": "PEAS/src/peas/scenarios/concentric/__init__.py",
+      "source_sha256": "1b19e42724d67d0201d86e16f5232d74e44cc7c163beb1141b5c82e815aeb7fa"
+    },
+    {
+      "path": "src/peas/scenarios/concentric/steady.py",
+      "bytes": 5750,
+      "sha256": "e729d53ecf1906029971793942206fd992975cb624f4a4affed51593c8fd12d7",
+      "source": "PEAS/src/peas/scenarios/concentric/steady.py",
+      "source_sha256": "e729d53ecf1906029971793942206fd992975cb624f4a4affed51593c8fd12d7"
+    },
+    {
+      "path": "src/peas/scenarios/eccentric/__init__.py",
+      "bytes": 920,
+      "sha256": "e9735a1c7b720e8c65a85c0e09f7c4d4a652e430d57fb8562a45b49378f820a4",
+      "source": "PEAS/src/peas/scenarios/eccentric/__init__.py",
+      "source_sha256": "e9735a1c7b720e8c65a85c0e09f7c4d4a652e430d57fb8562a45b49378f820a4"
+    },
+    {
+      "path": "src/peas/scenarios/eccentric/physics.py",
+      "bytes": 6169,
+      "sha256": "85a62961accce5c2e27ecd8459206200dcb9766f353dba0aac203fd44bb012fd",
+      "source": "PEAS/src/peas/scenarios/eccentric/physics.py",
+      "source_sha256": "85a62961accce5c2e27ecd8459206200dcb9766f353dba0aac203fd44bb012fd"
+    },
+    {
+      "path": "src/peas/scenarios/eccentric/reference.py",
+      "bytes": 16952,
+      "sha256": "d623b5e335f7fbb16012af1ddcc8e238b42404cfee2aa1cea829014875548069",
+      "source": "PEAS/src/peas/scenarios/eccentric/reference.py",
+      "source_sha256": "d623b5e335f7fbb16012af1ddcc8e238b42404cfee2aa1cea829014875548069"
+    },
+    {
+      "path": "src/peas/scenarios/eccentric/steady.py",
+      "bytes": 11132,
+      "sha256": "c58d11b701d2b409ef4ff1f66a3c66bac7e38c9948cf5e2f133f4de866035586",
+      "source": "PEAS/src/peas/scenarios/eccentric/steady.py",
+      "source_sha256": "c58d11b701d2b409ef4ff1f66a3c66bac7e38c9948cf5e2f133f4de866035586"
+    },
+    {
+      "path": "src/peas/scenarios/pipe/__init__.py",
+      "bytes": 1116,
+      "sha256": "e25a73f3ce37a8d54c07a04e9d52d1656e764769d19bb9f087f282b34822d8ac",
+      "source": "PEAS/src/peas/scenarios/pipe/__init__.py",
+      "source_sha256": "e25a73f3ce37a8d54c07a04e9d52d1656e764769d19bb9f087f282b34822d8ac"
+    },
+    {
+      "path": "src/peas/scenarios/pipe/features.py",
+      "bytes": 9576,
+      "sha256": "63872c6e3e4439426419bf39644c83ef46be84f0a44e2e408aaef9b541e76be7",
+      "source": "PEAS/src/peas/scenarios/pipe/features.py",
+      "source_sha256": "63872c6e3e4439426419bf39644c83ef46be84f0a44e2e408aaef9b541e76be7"
+    },
+    {
+      "path": "src/peas/scenarios/pipe/physics.py",
+      "bytes": 17366,
+      "sha256": "20ad0724664cfb7868974023a90924c9fc8b4deb40119b6ae062895312d4a955",
+      "source": "PEAS/src/peas/scenarios/pipe/physics.py",
+      "source_sha256": "20ad0724664cfb7868974023a90924c9fc8b4deb40119b6ae062895312d4a955"
+    },
+    {
+      "path": "src/peas/scenarios/pipe/steady.py",
+      "bytes": 16835,
+      "sha256": "38da09d9a2acd41e79a57fca4b1ab697fec7c61fa8bc61b0476a6553208ab91e",
+      "source": "PEAS/src/peas/scenarios/pipe/steady.py",
+      "source_sha256": "38da09d9a2acd41e79a57fca4b1ab697fec7c61fa8bc61b0476a6553208ab91e"
+    },
+    {
+      "path": "src/peas/scenarios/pipe_wo_late_loss/__init__.py",
+      "bytes": 500,
+      "sha256": "fbc567483ae15b3a0d42703e2b4eb3ba295bb8bee84dc363dc23e562804a71dc",
+      "source": "PEAS/src/peas/scenarios/pipe_wo_late_loss/__init__.py",
+      "source_sha256": "fbc567483ae15b3a0d42703e2b4eb3ba295bb8bee84dc363dc23e562804a71dc"
+    },
+    {
+      "path": "tests/test_ablation_selection.py",
+      "origin": "Submission snapshot update: completed complementary-8GPU ablations; historical forward variants retained.",
+      "bytes": 2018,
+      "sha256": "e8f6b8f3dc18c06fb3cd7aa6280173902ca73c6361c73f8a333a48322f10aa59"
+    },
+    {
+      "path": "tests/test_forward_selection.py",
+      "origin": "2026-11-17 forward ablation update; current and previous campaigns retained. See docs/ablation_versions.md.",
+      "bytes": 1323,
+      "sha256": "19353713f24764474201d43f8065b67a63b5df08402ac0bd8ef75d3a9c65e1b1"
+    },
+    {
+      "path": "tests/test_release.py",
+      "bytes": 1830,
+      "sha256": "276906b25319eaf538b63e314bb83636d9f9f4d6926b04502c7885793da2324d",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 69531,
+      "sha256": "5ef6647c422b426d81cc76ded26cb783e265f3ef66595e23a1ae916b1261abae",
+      "origin": "Release integration, documentation, or derived numerical summary"
+    }
+  ],
+  "seeds": {
+    "canonical": [
+      40,
+      18,
+      1414717112,
+      1408723788,
+      413920016,
+      457922981,
+      1911457450,
+      1491018049,
+      578775788,
+      107458023
+    ],
+    "eccentric": [
+      1994417097,
+      1282743659,
+      618710921,
+      991641046,
+      782149014,
+      1768164280,
+      643716315,
+      863298792,
+      485171464,
+      1945409320
+    ],
+    "pipe": [
+      73,
+      882042114,
+      412759459,
+      1093245665,
+      1001596411,
+      624755225,
+      1360709925,
+      70948605,
+      147553448,
+      188206319
+    ]
+  },
+  "checkpoints": [
+    {
+      "scene": "canonical",
+      "seed": 40,
+      "checkpoint": "checkpoints/peas/canonical/seed_40.pt",
+      "epoch": 7750,
+      "source_sha256": "c48cd61d89afcad6eaacee5c87d62f931a4a35c82c5d381f83a104aea7ad7246"
+    },
+    {
+      "scene": "canonical",
+      "seed": 18,
+      "checkpoint": "checkpoints/peas/canonical/seed_18.pt",
+      "epoch": 7750,
+      "source_sha256": "ed41992ef017f942cc69723c2fabca4354e425d7468b2ccd9ce221fd50b05711"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1414717112,
+      "checkpoint": "checkpoints/peas/canonical/seed_1414717112.pt",
+      "epoch": 5750,
+      "source_sha256": "f914afb03726f0af599194372a74b330b08dd8bee0d6d843057f539a2e7fbde4"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1408723788,
+      "checkpoint": "checkpoints/peas/canonical/seed_1408723788.pt",
+      "epoch": 5750,
+      "source_sha256": "4c961cee82f7ee77d0922f5161980949ca880d8de44ded01fde4c300f391dc74"
+    },
+    {
+      "scene": "canonical",
+      "seed": 413920016,
+      "checkpoint": "checkpoints/peas/canonical/seed_413920016.pt",
+      "epoch": 6000,
+      "source_sha256": "f5035aaef4506d94007efc340bd027e8c272b09378b4f298d39132f3f12d39f3"
+    },
+    {
+      "scene": "canonical",
+      "seed": 457922981,
+      "checkpoint": "checkpoints/peas/canonical/seed_457922981.pt",
+      "epoch": 7750,
+      "source_sha256": "64634abe4fb3835b29f4ca154254cca1bf1f0fbc638b51e720c973a54ccf06e3"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1911457450,
+      "checkpoint": "checkpoints/peas/canonical/seed_1911457450.pt",
+      "epoch": 6000,
+      "source_sha256": "cbe202ac2bd45a4002fa547cc22d72df4bcc18ba02ed81de2bee9136a025bcf9"
+    },
+    {
+      "scene": "canonical",
+      "seed": 1491018049,
+      "checkpoint": "checkpoints/peas/canonical/seed_1491018049.pt",
+      "epoch": 7250,
+      "source_sha256": "32591ea40db9bd6643986dea2615a5a18aa8b56cf9a24ce0c17a95bf43de2b38"
+    },
+    {
+      "scene": "canonical",
+      "seed": 578775788,
+      "checkpoint": "checkpoints/peas/canonical/seed_578775788.pt",
+      "epoch": 7750,
+      "source_sha256": "492ece9a966bec8389e27c21079e98ba8adc3acda849ccc930c438c0240e198b"
+    },
+    {
+      "scene": "canonical",
+      "seed": 107458023,
+      "checkpoint": "checkpoints/peas/canonical/seed_107458023.pt",
+      "epoch": 8250,
+      "source_sha256": "7a43419954e6d6c1c4df2c6f888ccc9b87dbb3ef6a1de91a8399940d09173b66"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1994417097,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1994417097.pt",
+      "epoch": null,
+      "source_sha256": "f6464c58af5b1230321f4fe7111fa99e9a2dada6757037f867724ed7e1383b92"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1282743659,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1282743659.pt",
+      "epoch": null,
+      "source_sha256": "d3cf2b3c3d41fb24b60b654c7efa10df0f69318c14a9032b89333ba169f31640"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 618710921,
+      "checkpoint": "checkpoints/peas/eccentric/seed_618710921.pt",
+      "epoch": null,
+      "source_sha256": "a01bd1b010971c1f4ea5e01a220e5382463b20a40fdb03c7afd8c1d9bddbff6c"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 991641046,
+      "checkpoint": "checkpoints/peas/eccentric/seed_991641046.pt",
+      "epoch": null,
+      "source_sha256": "acde6c7ecce67a3009e9c89e706f0e36ddb034c762f0a649e07330f36107dd57"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 782149014,
+      "checkpoint": "checkpoints/peas/eccentric/seed_782149014.pt",
+      "epoch": null,
+      "source_sha256": "62af780385a8e07396b1ec1539c312f1c575e9f9be895b5d254641fbae134496"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1768164280,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1768164280.pt",
+      "epoch": null,
+      "source_sha256": "29c5aa4e7513b484b0f5ba69a0749aeb8ed19f7511141f609908c4f8edf90c95"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 643716315,
+      "checkpoint": "checkpoints/peas/eccentric/seed_643716315.pt",
+      "epoch": null,
+      "source_sha256": "909344c5bce9b2a5a7d8e2cf19a8a4eab25a4dab7320278bf1f0416358293322"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 863298792,
+      "checkpoint": "checkpoints/peas/eccentric/seed_863298792.pt",
+      "epoch": null,
+      "source_sha256": "08e4c64ecdecbd13e29a55489a2f423ed1aa2c23435d2fcda0cadd17cac7f650"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 485171464,
+      "checkpoint": "checkpoints/peas/eccentric/seed_485171464.pt",
+      "epoch": null,
+      "source_sha256": "301d92300d388bc56f025a376bf9b6d0a00163178a5af258cb0d815c52250b29"
+    },
+    {
+      "scene": "eccentric",
+      "seed": 1945409320,
+      "checkpoint": "checkpoints/peas/eccentric/seed_1945409320.pt",
+      "epoch": null,
+      "source_sha256": "4e09be630dd305af42d76bf4b655a51645f5a45d791d1dea9d652a16ba136627"
+    },
+    {
+      "scene": "pipe",
+      "seed": 73,
+      "checkpoint": "checkpoints/peas/pipe/seed_73.pt",
+      "epoch": null,
+      "source_sha256": "40a8a6ec0e42de8804315e82f0a289786d16fc5e53679a8bd7fc214344d7d7d8"
+    },
+    {
+      "scene": "pipe",
+      "seed": 882042114,
+      "checkpoint": "checkpoints/peas/pipe/seed_882042114.pt",
+      "epoch": null,
+      "source_sha256": "e428d9d6d8e4def5573161835562f06cb44e70b42fc7aa90d479586ef4d25d6f"
+    },
+    {
+      "scene": "pipe",
+      "seed": 412759459,
+      "checkpoint": "checkpoints/peas/pipe/seed_412759459.pt",
+      "epoch": null,
+      "source_sha256": "425f0ea95314eb0c38a59eab47a00631500815d009c5baae73a1f56d7c14e393"
+    },
+    {
+      "scene": "pipe",
+      "seed": 1093245665,
+      "checkpoint": "checkpoints/peas/pipe/seed_1093245665.pt",
+      "epoch": null,
+      "source_sha256": "4e6f38fdc79ee914c95ce88af85454583ba2de1630e3476f514cee830ff994d5"
+    },
+    {
+      "scene": "pipe",
+      "seed": 1001596411,
+      "checkpoint": "checkpoints/peas/pipe/seed_1001596411.pt",
+      "epoch": null,
+      "source_sha256": "8e2d40d2c82d1a8037cdb50c78a80ed5d4effe5e84bac3cdf8d192972ef9a216"
+    },
+    {
+      "scene": "pipe",
+      "seed": 624755225,
+      "checkpoint": "checkpoints/peas/pipe/seed_624755225.pt",
+      "epoch": null,
+      "source_sha256": "6147cf50cb5c2701225e2466b512400a48f7c24925812d80dd907f3c1c420eb8"
+    },
+    {
+      "scene": "pipe",
+      "seed": 1360709925,
+      "checkpoint": "checkpoints/peas/pipe/seed_1360709925.pt",
+      "epoch": null,
+      "source_sha256": "e1ccb476a186f40b3a73b2a38a023ecc083dcf4f2c3fd4a7b546f75fd2e65670"
+    },
+    {
+      "scene": "pipe",
+      "seed": 70948605,
+      "checkpoint": "checkpoints/peas/pipe/seed_70948605.pt",
+      "epoch": null,
+      "source_sha256": "8c86019ecd0a7575bd7c6da56791ee86dfa5fbf6ae988bf018f878ad25f43d3b"
+    },
+    {
+      "scene": "pipe",
+      "seed": 147553448,
+      "checkpoint": "checkpoints/peas/pipe/seed_147553448.pt",
+      "epoch": null,
+      "source_sha256": "0563829c93932b6426394e4671dea0aad50837f4ca438e1e89e18d933d1baf0f"
+    },
+    {
+      "scene": "pipe",
+      "seed": 188206319,
+      "checkpoint": "checkpoints/peas/pipe/seed_188206319.pt",
+      "epoch": null,
+      "source_sha256": "589950c151ea1421dd8d4f0970d9b14724bb2dc7a7004229139bd755b8317ef5"
+    }
+  ],
+  "numerical_scope": "Current three-scene ablations with paired seeds and scenario-specific protocols; previous forward campaign retained separately.",
+  "excluded": "Environments, caches, generated outputs, legacy launchers, tuning logs, duplicate baseline configs/data, and implementations not used by the release entry points.",
+  "verification": {
+    "expected_metric_rows": 504,
+    "peas_checkpoints": 30,
+    "inference_rtol": 0.0002,
+    "inference_atol": 2e-06,
+    "max_observed_checkpoint_probability_difference": 4.172325134277344e-07,
+    "platform": "macOS arm64 CPU",
+    "training_smoke": "3 PEAS scenes + 9 ablation scene/variant pairs, 2 optimizer steps each; three MCvD 1-epoch tests; Frozen-PINN all three scenes smoke; Julia all three scenes 1-point/4-repeat smoke",
+    "full_training_rerun": false,
+    "reference_regeneration_max_abs_difference": {
+      "canonical": 0.0,
+      "eccentric": 6.661338147750939e-16,
+      "pipe": 0.0
+    },
+    "frozen_pinn_vendored_hashes_verified": 20,
+    "automated_tests_passed": 7,
+    "clean_distribution": "Dependency-pruned release; environments, caches and generated outputs excluded. Training/figure checks run outside the distribution.",
+    "documentation": {
+      "languages": [
+        "en",
+        "zh-CN"
+      ],
+      "local_links_and_anchors_checked": "Rechecked current local Markdown file links; existing layout/anchor structure retained.",
+      "cli_help_checks": 8,
+      "readme_metric_values_checked": 12,
+      "feature_formula_checks": "80 position/time pairs per scene; all 5/10/11 feature columns match implementation to 1e-12",
+      "custom_position_inference": "2 positions x 641 times; finite predictions",
+      "preview_assets": "4 complete PDF-rendered PNGs visually checked"
+    },
+    "current_plot_metrics": 480,
+    "retained_original_plot_metrics": 300,
+    "updated_checkpoint_audit_plot_metrics": 180,
+    "complementary_source_checkpoints_verified": 60,
+    "updated_canonical_training_smoke": "no_features and no_steady: 2 Adam steps, validation selection and selected checkpoint checked",
+    "ablation_pdf_visual_check": "Both current and previous versions regenerated from release archives",
+    "comparison_figures_unchanged": true,
+    "forward_source_runs_verified": 800,
+    "forward_test_checkpoints_evaluated": 600,
+    "forward_validation_selection_seeds_verified": 10,
+    "updated_canonical_forward_training_smoke": "Validation source and test source: 2 steps; selected checkpoint and validation aggregation tested"
+  },
+  "revision": "forward-split-2026-11-17"
+}

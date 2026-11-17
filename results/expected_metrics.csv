@@ -1,0 +1,505 @@
+group,scene,method,id,distance,mean_percent,std_percent,ci95_low_percent,ci95_high_percent,n_runs,interval
+comparison,canonical,PEAS,canonical_test_001,2.0,0.09650448584013983,0.04195157000340662,0.06649414052189112,0.12651483115838855,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_002,3.0,0.08028885033948102,0.04619112625604758,0.0472457091776545,0.11333199150130754,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_003,4.0,0.0700469364837517,0.042508854423363086,0.03963793390709727,0.10045593906040612,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_004,5.0,0.06695096400690069,0.037475647707585616,0.040142500613555614,0.09375942740024576,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_005,6.0,0.06669218660096651,0.03242498636346431,0.04349674867985769,0.08988762452207533,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_006,7.0,0.06660968074169117,0.03135891171279585,0.04417686668421829,0.08904249479916405,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_007,8.0,0.06861605540598309,0.0332206316994263,0.0448514470990905,0.09238066371287568,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_008,9.0,0.07240042252946542,0.036772643649685306,0.04609485794386473,0.09870598711506612,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_009,10.0,0.07449488317119753,0.040655851426572284,0.045411439085081745,0.10357832725731331,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_010,11.0,0.07619977591533393,0.04282416035736727,0.04556521706129609,0.10683433476937176,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_011,12.0,0.08254735877728843,0.043921906297393405,0.05112751978405163,0.11396719777052522,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_012,13.0,0.10015751148357817,0.045952220358584345,0.06728527330537909,0.13302974966177725,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_013,14.0,0.13543103641293336,0.052141226285745114,0.09813145010364643,0.17273062272222028,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_014,15.0,0.18756354177116122,0.06257640193733596,0.14279908049449186,0.23232800304783058,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_015,16.0,0.25458316179484586,0.07397696745638774,0.20166322724215177,0.3075030963475399,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_016,17.0,0.34351089296997017,0.09075479959314017,0.27858882033103366,0.4084329656089067,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_017,18.0,0.4727316548390369,0.1276979652779471,0.3813820334990553,0.5640812761790185,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_018,19.0,0.6883253233300061,0.18800104779572654,0.553837475459612,0.8228131712004001,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_019,20.0,1.102734473163651,0.2955726502927819,0.8912945365606573,1.3141744097666448,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,canonical_test_020,21.0,2.0423540715819266,0.5180797844788341,1.671742119911199,2.412966023252654,10,Student t CI of mean across model runs
+comparison,canonical,PEAS,__mean__,,0.3074371633579654,0.06557421285518171,0.2605281973384208,0.35434612937751,10,Student t CI of mean across model runs
+comparison,canonical,AMS (mean of 128),canonical_test_001,2.0,2.9748066450107906,0.5979324472773473,1.8315702946287868,4.18875922911019,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_002,3.0,1.65144818739328,0.7084889468142922,0.4325475569876959,3.1763753131164494,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_003,4.0,1.1313976641602306,0.6921275890810868,0.35432899148489033,2.847921907135428,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_004,5.0,3.4838985219835132,0.9337232129333045,1.6967250782244818,5.329967801577266,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_005,6.0,3.893900168561941,1.1659606937918594,1.6019472324481125,6.183842744931185,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_006,7.0,0.9029191256186032,0.7831317481361101,0.5479739136410728,3.577966368113059,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_007,8.0,1.4749422604685047,0.8664724060320269,0.8162528094493756,4.021809981007163,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_008,9.0,3.2189448742868705,1.4290629065301335,0.8917793677123778,6.2446453083446665,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_009,10.0,1.8402747529337806,1.170333959990888,0.6207492295925313,4.84204651955044,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_010,11.0,0.6573954870277873,1.121588194455615,0.667584907389721,4.722079580468502,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_011,12.0,1.837428565913041,1.122328857445548,0.9484037638173506,5.213402433111856,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_012,13.0,0.9648213894506437,1.1522548819403262,0.9386428938626385,5.2664630214905825,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_013,14.0,2.6535259313235677,1.77062704200288,0.9201158476998385,7.356949147167119,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_014,15.0,4.900707569520192,2.2858602792711635,1.5420894046730926,9.947980549086093,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_015,16.0,2.0496643536314596,1.6924988785688344,1.116260888094242,7.553723256386864,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_016,17.0,7.5232027308474345,2.9340572005683065,2.2490302710596777,13.628137505198858,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_017,18.0,2.2651670586399466,2.0305988869708007,1.126021104704234,8.55681971180377,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_018,19.0,6.287373533699195,2.9936264307788383,2.1170550624367124,13.05868277709276,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_019,20.0,2.0109564566343088,2.4840781187349785,1.5470692293433705,11.02495400510994,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),canonical_test_020,21.0,2.7599809227397354,3.5194491752156556,1.2752685372252992,14.128240049985717,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,AMS (mean of 128),__mean__,,2.7241378099922415,0.4048163618953154,2.731195738454065,4.309465048926235,1,Percentile bootstrap CI of error of 128-run mean
+comparison,canonical,MCvD-Transformer,canonical_test_001,2.0,4.275137992374133,2.381140446078922,2.571772730185507,5.978503254562759,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_002,3.0,5.329595564485752,3.43438235927895,2.8727864260317304,7.786404702939773,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_003,4.0,4.93231860319074,3.4906421140820263,2.4352636606101212,7.429373545771358,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_004,5.0,3.5013002362824617,3.0358275151625693,1.329600057975155,5.673000414589769,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_005,6.0,3.221918415293602,2.091857031436581,1.7254940415521498,4.718342789035054,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_006,7.0,3.2055042003442367,2.2410163570010733,1.6023776729702985,4.808630727718175,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_007,8.0,3.70858400480628,1.3938053816684175,2.7115156994506995,4.70565231016186,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_008,9.0,4.034743696223112,1.755551444593994,2.7788978465460215,5.290589545900202,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_009,10.0,5.64778563028626,3.1276958833462993,3.410366780358467,7.885204480214053,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_010,11.0,5.4680796681316775,2.645671394582934,3.5754803650877367,7.360678971175618,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_011,12.0,6.543254395385044,2.7193499717513157,4.597948613341608,8.488560177428479,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_012,13.0,7.329357739826247,3.5113293703233044,4.817504025627846,9.841211454024648,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_013,14.0,7.683020975781593,2.6131077494092443,5.813716301196229,9.552325650366956,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_014,15.0,10.128576232463843,5.732542744874862,6.02776219114558,14.229390273782105,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_015,16.0,11.485341683609597,4.184814510288352,8.49170572346858,14.478977643750614,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_016,17.0,14.294111589086976,5.170885877454111,10.595082666663998,17.993140511509953,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_017,18.0,17.056859919997045,7.212519680910294,11.897334156808533,22.216385683185557,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_018,19.0,19.45442622687365,7.057891120397527,14.405515072308248,24.503337381439053,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_019,20.0,25.195407109511855,6.703087750222097,20.40030699606311,29.9905072229606,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,canonical_test_020,21.0,34.46239552394593,10.04458256132242,27.27693402111143,41.64785702678043,10,Student t CI of mean across model runs
+comparison,canonical,MCvD-Transformer,__mean__,,9.847885970395003,1.629142492760247,8.682467637388697,11.01330430340131,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_001,2.0,0.21424939792731829,0.04755802046394681,0.18022843955413975,0.24827035630049682,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_002,3.0,0.308524804144856,0.2966110960360571,0.09634200820793448,0.5207076000817775,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_003,4.0,0.4770066190125667,0.3258092072458736,0.2439367525804035,0.7100764854447299,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_004,5.0,0.4717918795641771,0.4797568268458306,0.12859452029343982,0.8149892388349145,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_005,6.0,0.6781484131974385,0.6444379411901953,0.21714528149751522,1.1391515448973617,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_006,7.0,0.7224243129824505,0.7572141005082935,0.18074597688547778,1.2641026490794232,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_007,8.0,1.0115640871961669,1.46279517758626,-0.03485654511074898,2.0579847195030827,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_008,9.0,0.7954387527989626,0.9767785752374416,0.0966934533986723,1.4941840521992529,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_009,10.0,0.6407229547161409,0.5051928544465217,0.2793297574407888,1.0021161519914932,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_010,11.0,0.6398679283704981,0.48165205699816727,0.29531480312188296,0.9844210536191133,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_011,12.0,0.6947487138322327,0.5808652989134981,0.2792227108157474,1.110274716848718,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_012,13.0,0.6235547054289057,0.4718644381180362,0.2860032209392011,0.9611061899186102,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_013,14.0,0.5974744001281656,0.48552546672127533,0.25015040448447107,0.94479839577186,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_014,15.0,0.6258373309568241,0.458812389260288,0.2976227197545763,0.954051942159072,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_015,16.0,0.6243009375608036,0.44015031426629403,0.30943637058525186,0.9391655045363554,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_016,17.0,0.6317444490724649,0.43570433768521993,0.32006034214796825,0.9434285559969615,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_017,18.0,0.6349943039757336,0.43218989646636924,0.3258242768477699,0.9441643311036974,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_018,19.0,0.6648762754323756,0.4406585472351753,0.3496481404926926,0.9801044103720586,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_019,20.0,0.65870796201511,0.49442381680859127,0.3050184701847094,1.0123974538455105,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,canonical_test_020,21.0,0.7827447983621717,0.5566870106863834,0.38451490080350215,1.1809746959208414,10,Student t CI of mean across model runs
+comparison,canonical,Frozen-PINN,__mean__,,0.6249361513337681,0.43762098925284393,0.3118809544740322,0.937991348193504,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_001,1.4142135623730951,0.3821867877599626,0.17582277818888387,0.2564107491555962,0.507962826364329,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_002,1.4142135623730951,0.7239210526351747,0.09464749456841955,0.6562143137628348,0.7916277915075146,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_003,2.0,0.8485061592202762,0.4181393962035489,0.5493872544876636,1.1476250639528889,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_004,2.8284271247461903,1.1050457948914865,0.7491185614259566,0.5691586585846189,1.640932931198354,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_005,3.0,1.4258141481709439,0.7527969384249551,0.887295659475079,1.9643326368668088,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_006,3.0,1.0891441365627685,0.7338529015833304,0.5641773954485226,1.6141108776770143,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_007,3.1622776601683795,1.504297359978272,0.8257015603368941,0.9136260465205214,2.0949686734360227,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_008,4.0,1.7852586065908898,1.1880773278745729,0.9353592852686403,2.635157927913139,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_009,5.830951894845301,2.5191578630934086,1.4613633567245126,1.4737614937280565,3.564554232458761,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_010,6.0,2.668534440042237,1.484472381451808,1.6066068702479674,3.730462009836507,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_011,6.082762530298219,1.8017424239046833,1.5043314966259997,0.7256084989240887,2.8778763488852777,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_012,6.324555320336759,1.8525591276338953,1.3772293478875217,0.8673486025170816,2.8377696527507092,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_013,6.4031242374328485,2.2586566962392824,1.3029587111553214,1.3265761840196868,3.190737208458878,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_014,6.4031242374328485,2.3436245626103225,1.5161466853265115,1.2590385607974703,3.428210564423175,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_015,7.0710678118654755,3.1319135895970556,1.573531344760842,2.0062770753610804,4.257550103833031,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_016,9.055385138137417,2.5833857424128617,1.9098272326505996,1.217177642325412,3.9495938425003114,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_017,9.486832980505138,2.286530100174177,1.584097458197698,1.1533350437218772,3.419725156626477,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_018,10.0,5.568638571012856,2.5075365270411747,3.7748549994202554,7.362422142605456,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_019,10.63014581273465,3.503224869224181,1.4112036884405277,2.4937105649669755,4.512739173481386,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,eccentric_test_020,10.770329614269007,5.369269628366708,2.408431795031169,3.646381311231837,7.0921579455015795,10,Student t CI of mean across model runs
+comparison,eccentric,PEAS,__mean__,,2.2375705830060717,0.9912392935900175,1.5284807088669696,2.9466604571451738,10,Student t CI of mean across model runs
+comparison,eccentric,AMS (mean of 128),eccentric_test_001,1.4142135623730951,1.6574335560506313,0.3713058121963151,0.9354766812486668,2.4072399281755605,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_002,1.4142135623730951,2.1055325245677206,0.35325103906979155,1.3901967933634403,2.7890696387844383,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_003,2.0,2.255873885339167,0.554065707714078,1.1759536284918137,3.372479759411852,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_004,2.8284271247461903,1.9497370455335403,0.6566531568352026,0.6872811546271924,3.299618184846149,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_005,3.0,1.6342598905224297,0.6754757770381989,0.4534224118969149,3.039540488799413,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_006,3.0,3.2710435017991606,0.6060209983679335,2.065917520902481,4.458623617910336,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_007,3.1622776601683795,3.1962259401218858,0.6724887680027516,1.892833634326784,4.5864369961665705,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_008,4.0,1.2332812760226162,0.6658249609123267,0.40137927938086904,2.876619749870892,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_009,5.830951894845301,1.407375316840536,0.9076610686837281,0.36891642133217517,3.655210159645787,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_010,6.0,3.2304335927113956,0.9767045036209457,1.347111468527888,5.199969416982888,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_011,6.082762530298219,1.9503582547991518,0.905324848511693,0.5866941023168544,4.019032315418337,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_012,6.324555320336759,2.0653823963968385,0.9154833332083638,0.6137915573014971,4.034101282479072,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_013,6.4031242374328485,3.228197650851157,0.9450249756260657,1.378277262437421,5.0596449579855785,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_014,6.4031242374328485,3.5349000521615794,0.9835126210146207,1.6068513350894515,5.519599968728506,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_015,7.0710678118654755,3.1194263022950537,1.0598010768946184,1.1268422134102156,5.238938009376349,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_016,9.055385138137417,3.8265663107597425,1.4124650036960857,1.1965821420689566,6.7078532003074685,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_017,9.486832980505138,2.518472703837037,1.1689909009006765,0.8359458887188049,5.20518456571598,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_018,10.0,3.0103000225127428,1.2218102299821356,0.9696928268217786,5.705139356102982,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_019,10.63014581273465,2.28716235920789,1.1783535496844868,0.6327989416799071,5.133522957446579,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),eccentric_test_020,10.770329614269007,2.1194573418544733,1.1208558869453467,0.6771219600073737,4.7712308221441555,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,AMS (mean of 128),__mean__,,2.4800709962092373,0.20304820253170933,2.174572100724568,2.9628150707824052,1,Percentile bootstrap CI of error of 128-run mean
+comparison,eccentric,MCvD-Transformer,eccentric_test_001,1.4142135623730951,5.268344475988705,3.0191323500849907,3.108587299315965,7.428101652661446,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_002,1.4142135623730951,6.680304326914279,3.05791415556491,4.492804317865467,8.867804335963092,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_003,2.0,7.035644007060341,4.0321018706613705,4.151252088305494,9.920035925815188,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_004,2.8284271247461903,5.496502854214228,3.3383658958072515,3.108379755991566,7.88462595243689,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_005,3.0,4.145739079552563,4.173339249577942,1.1603120264085507,7.131166132696574,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_006,3.0,2.8498035754267295,1.9234691509404722,1.473836634879932,4.225770515973527,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_007,3.1622776601683795,3.8173264775093045,1.7112754154978338,2.5931537910151103,5.041499164003499,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_008,4.0,13.491647516910504,8.651051058114728,7.303058398583308,19.6802366352377,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_009,5.830951894845301,4.849829567208486,2.6145662290095975,2.979481559168792,6.72017757524818,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_010,6.0,4.464086353305765,2.6427308524920474,2.573590587353837,6.354582119257693,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_011,6.082762530298219,3.4246461895767872,3.2342495101136524,1.111003466884747,5.738288912268827,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_012,6.324555320336759,3.809847609758284,2.6069060769405246,1.944979344401987,5.674715875114581,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_013,6.4031242374328485,3.420184339199854,3.056874714996518,1.2334279011399873,5.60694077725972,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_014,6.4031242374328485,6.986872279201448,3.8681179565644026,4.219787385863967,9.753957172538929,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_015,7.0710678118654755,6.861542179368786,4.087316689424051,3.937651958700137,9.785432400037434,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_016,9.055385138137417,21.2523127272549,21.656759867264952,5.75999999525858,36.74462545925122,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_017,9.486832980505138,23.772429270303867,15.570537248333268,12.633937920035192,34.91092062057254,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_018,10.0,14.604919319789047,10.340105253752036,7.208053618053977,22.001785021524118,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_019,10.63014581273465,35.69552626350877,10.291423255474575,28.333485565437933,43.0575669615796,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,eccentric_test_020,10.770329614269007,19.666939013498364,18.918089141388915,6.133753298437162,33.200124728559565,10,Student t CI of mean across model runs
+comparison,eccentric,MCvD-Transformer,__mean__,,9.87972237127755,3.8795681131833133,7.1044465293282855,12.654998213226815,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_001,1.4142135623730951,98.10471217914076,0.31898453649553216,97.87652438806083,98.3328999702207,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_002,1.4142135623730951,97.77094971070545,0.3335068028059591,97.53237331613,98.0095261052809,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_003,2.0,96.2576441577374,0.3996583533743506,95.9717457946222,96.54354252085261,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_004,2.8284271247461903,89.7078396559535,1.6986065342379828,88.49272974115947,90.92294957074755,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_005,3.0,89.08748885673026,1.1009165277197817,88.29994061572867,89.87503709773185,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_006,3.0,89.3699280158326,1.3592662883186364,88.39756748943076,90.34228854223444,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_007,3.1622776601683795,86.88577413076668,2.1758475756375995,85.3292665411948,88.44228172033856,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_008,4.0,75.79953936989936,3.832498773614718,73.05793490506997,78.54114383472876,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_009,5.830951894845301,67.12035163590801,11.621123349699397,58.8071007925636,75.43360247925241,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_010,6.0,47.450805593881825,12.753062421938898,38.32781431807287,56.57379686969078,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_011,6.082762530298219,72.29140688887392,12.747348169031312,63.172503343344864,81.41031043440297,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_012,6.324555320336759,69.11248340925165,8.708380448983592,62.88288331525132,75.34208350325198,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_013,6.4031242374328485,57.67417682582802,14.094079156851455,47.59187996767713,67.75647368397891,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_014,6.4031242374328485,66.64286900695855,18.229173462579542,53.6025038803651,79.68323413355199,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_015,7.0710678118654755,49.86163293967163,13.85337283629946,39.951527010238394,59.771738869104865,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_016,9.055385138137417,2754.7444308780564,1865.3494938358226,1420.353788413717,4089.135073342396,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_017,9.486832980505138,157.7518199086414,75.8788622552206,103.47135177717254,212.03228804011027,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_018,10.0,102.46543243033587,20.352167069962064,87.90636916536975,117.02449569530198,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_019,10.63014581273465,319.99890791829847,149.84760009363453,212.8043923481866,427.1934234884103,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,eccentric_test_020,10.770329614269007,244.5012652203897,97.4817819099003,174.7669993248163,314.2355311159631,10,Student t CI of mean across model runs
+comparison,eccentric,Frozen-PINN,__mean__,,236.6299729366431,97.3306740505467,167.00380309180474,306.25614278148146,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_001,1.7320508075688772,0.5915137670567935,0.1585489937282643,0.47809464945858005,0.7049328846550069,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_002,2.8284271247461903,1.729055751907103,0.6326802759497304,1.2764635472350374,2.1816479565791687,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_003,2.8284271247461903,1.8380226797448558,0.6529200894776415,1.3709517846900408,2.305093574799671,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_004,3.0,1.9585168404704891,0.7087612179042774,1.4514996085584853,2.465534072382493,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_005,3.1622776601683795,1.9620854764039486,0.7559500092539458,1.4213114167155507,2.5028595360923465,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_006,3.1622776601683795,2.782374526936316,0.6193080749842282,2.33934821857295,3.2254008352996815,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_007,3.3166247903554,2.5090757174548957,0.8509695315289216,1.9003287863050602,3.117822648604731,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_008,4.0,2.2115297957905047,0.9382039587011709,1.540379114724606,2.8826804768564034,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_009,5.385164807134504,5.361671429034601,1.53604235095667,4.2628529254143315,6.460489932654871,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_010,5.830951894845301,2.526602111665379,1.012405308353207,1.8023709826935523,3.2508332406372062,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_011,6.164414002968976,2.4846077823688453,1.3283394572740623,1.53437097813452,3.4348445866031705,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_012,6.4031242374328485,5.055212369086459,1.6642512714079276,3.864678728814339,6.245746009358579,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_013,6.4031242374328485,4.007190717802297,1.585833797199868,2.872753559253689,5.141627876350905,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_014,6.4031242374328485,3.7926700605108747,2.0555583896714498,2.322212170833464,5.263127950188285,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_015,9.055385138137417,5.803271097989096,3.262713153636471,3.46926671133392,8.13727548464427,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_016,9.486832980505138,7.3246668911527735,4.81365762998807,3.8811836625624254,10.768150119743122,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_017,9.643650760992955,6.7915127332097995,3.3443607155643997,4.3991011992738125,9.183924267145787,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_018,9.695359714832659,5.623994907555837,3.0646332482256438,3.431688349170313,7.816301465941361,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_019,9.848857801796104,6.493442076052753,4.1082479002876795,3.554578569142479,9.432305582963028,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,pipe_test_020,9.9498743710662,7.235657941399795,4.656216276666104,3.9048014721936832,10.566514410605908,10,Student t CI of mean across model runs
+comparison,pipe,PEAS,__mean__,,3.904133733679671,1.489219409933476,2.838810344278201,4.969457123081141,10,Student t CI of mean across model runs
+comparison,pipe,AMS (mean of 128),pipe_test_001,1.7320508075688772,1.2174859057461203,0.38680636641194444,0.5325964882938713,2.0219258151956687,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_002,2.8284271247461903,2.200645415847651,0.6071041952891586,1.0654620573513978,3.43601169916839,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_003,2.8284271247461903,0.5345283793555028,0.4699322690919065,0.22237900441085928,1.9059467289597856,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_004,3.0,2.365336792902527,0.7516883481941387,0.953062312845402,3.8204368342928574,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_005,3.1622776601683795,4.1890201493924595,0.7303435217596285,2.8272017586613765,5.629166057749981,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_006,3.1622776601683795,1.9857521798655067,0.7111291286481642,0.6786791668920985,3.4681572316204283,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_007,3.3166247903554,2.6631668366392733,0.7463944662084292,1.1911477748056905,4.127012901382101,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_008,4.0,2.146977026379834,0.8241080442697335,0.5734540375218168,3.7728874711038056,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_009,5.385164807134504,6.884514464480791,0.9184312934870943,5.134540406801262,8.707383447038046,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_010,5.830951894845301,4.541563566821453,0.8731682825622175,2.8541130746620174,6.332438516985941,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_011,6.164414002968976,3.4514452146843895,1.1187547877435269,1.3150431260521238,5.690104757856138,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_012,6.4031242374328485,6.611756907522461,0.94316251219161,4.761039201946384,8.523456421689309,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_013,6.4031242374328485,0.4920343534777351,0.6921674936164287,0.37178022815956685,2.884287789527834,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_014,6.4031242374328485,3.198206168795076,1.0304999570067161,1.2221936447701474,5.257387623936164,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_015,9.055385138137417,4.04823016628991,1.2515684309236328,1.6395498773041712,6.512937736569332,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_016,9.486832980505138,4.623186223697845,1.2128035065996352,2.3373070856880256,7.0806654258732715,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_017,9.643650760992955,8.071140228449293,1.247308203900837,5.780834351038232,10.644835422285531,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_018,9.695359714832659,7.102412082026632,1.2892752525438231,4.517380812707258,9.487826317592425,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_019,9.848857801796104,7.2360382028880466,1.3128264478424845,4.697180833660074,9.863879899174274,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),pipe_test_020,9.9498743710662,3.60125363534852,1.1365952060075826,1.582356755543464,6.065340952627414,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,AMS (mean of 128),__mean__,,3.858234695030551,0.22120476216352,3.4931276494200403,4.373721382648534,1,Percentile bootstrap CI of error of 128-run mean
+comparison,pipe,MCvD-Transformer,pipe_test_001,1.7320508075688772,8.593954783919736,4.94122018161594,5.059218803079152,12.128690764760321,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_002,2.8284271247461903,6.399868623321282,3.016005231802377,4.242348452307796,8.557388794334768,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_003,2.8284271247461903,4.682371537769766,2.9871652100275337,2.5454822755012594,6.819260800038274,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_004,3.0,4.853245162798375,2.952976775466191,2.7408128332976505,6.9656774922991,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_005,3.1622776601683795,8.73278691445934,5.693370827830668,4.6599947745187515,12.805579054399928,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_006,3.1622776601683795,5.712659185852946,1.754030013567361,4.457901702367716,6.967416669338176,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_007,3.3166247903554,5.623225470654452,2.8282912367385498,3.5999878023572185,7.6464631389516855,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_008,4.0,17.529622907587488,13.057425051616084,8.18890372271956,26.870342092455417,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_009,5.385164807134504,12.635690239718354,4.280087842621421,9.573899843338037,15.697480636098671,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_010,5.830951894845301,14.982303168219449,4.121944840636299,12.033641460440121,17.930964875998775,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_011,6.164414002968976,14.524949719598572,5.417659315335606,10.649389714176944,18.4005097250202,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_012,6.4031242374328485,11.6138742830606,8.286359189682333,5.686170011367862,17.541578554753336,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_013,6.4031242374328485,7.589046578430006,6.369419294172331,3.032638499321033,12.145454657538979,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_014,6.4031242374328485,11.472855590033143,2.2997146340074197,9.827738844834137,13.11797233523215,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_015,9.055385138137417,26.391204377646137,8.783522276750924,20.107851058225187,32.67455769706709,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_016,9.486832980505138,30.757462711058707,2.955914038428277,28.6429291902134,32.87199623190401,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_017,9.643650760992955,10.73898112816425,3.5438766504909744,8.203844492327343,13.274117764001156,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_018,9.695359714832659,41.303726200689134,6.892120953595259,36.37339987974964,46.23405252162863,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_019,9.848857801796104,20.441584787963137,4.814952566245141,16.9971752177785,23.885994358147773,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,pipe_test_020,9.9498743710662,9.186128825640427,3.1614982558948928,6.924529215071804,11.44772843620905,10,Student t CI of mean across model runs
+comparison,pipe,MCvD-Transformer,__mean__,,13.688277109829265,1.1539385178336228,12.86279922203143,14.5137549976271,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_001,1.7320508075688772,98.56300559688802,0.9332153643556913,97.89542354123824,99.23058765253779,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_002,2.8284271247461903,92.5054970200164,1.6309625228697642,91.33877671590218,93.67221732413063,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_003,2.8284271247461903,91.82260273111366,3.756958775389707,89.13503632569154,94.51016913653578,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_004,3.0,89.89616082461495,4.075742428375699,86.98055033151874,92.81177131771116,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_005,3.1622776601683795,90.4690653350864,3.0076200800272086,88.31754354030289,92.6205871298699,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_006,3.1622776601683795,89.33830590567686,6.961823675752036,84.35811726107757,94.31849455027616,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_007,3.3166247903554,88.59746408380862,4.127356507111841,85.6449311030432,91.54999706457403,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_008,4.0,82.10086086483699,6.28349331796161,77.60592052621263,86.59580120346135,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_009,5.385164807134504,41.205665375851886,14.914004007964554,30.536829613080272,51.8745011386235,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_010,5.830951894845301,58.1824694462879,19.72548681223566,44.071706231521844,72.29323266105395,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_011,6.164414002968976,56.04502296430337,29.19716498006214,35.15862936105108,76.93141656755566,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_012,6.4031242374328485,42.87527378868788,16.3255906865256,31.196649747031426,54.553897830344326,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_013,6.4031242374328485,47.98318528363607,21.05244704207443,32.92317190450643,63.043198662765704,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_014,6.4031242374328485,62.32314380419477,11.304023029950063,54.23673286446856,70.40955474392098,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_015,9.055385138137417,54.102397261555076,16.090824219011544,42.591715033725144,65.61307948938502,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_016,9.486832980505138,55.66726793788521,10.992703352066812,47.80356167969734,63.530974196073075,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_017,9.643650760992955,82.9091223793655,39.44435519743883,54.692330487317754,111.12591427141325,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_018,9.695359714832659,104.40549213357065,40.02137399546626,75.77592585947909,133.0350584076622,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_019,9.848857801796104,97.46027099831471,47.541970463295115,63.450794103943196,131.46974789268623,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,pipe_test_020,9.9498743710662,93.14949319276428,57.70640887756754,51.86881508342947,134.4301713020991,10,Student t CI of mean across model runs
+comparison,pipe,Frozen-PINN,__mean__,,75.98008834642296,4.912757803099173,72.4657131246147,79.49446356823123,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_001,2.0,0.09650448584013983,0.04195157000340662,0.06649414052189112,0.12651483115838855,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_002,3.0,0.08028885033948102,0.04619112625604758,0.0472457091776545,0.11333199150130754,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_003,4.0,0.0700469364837517,0.042508854423363086,0.03963793390709727,0.10045593906040612,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_004,5.0,0.06695096400690069,0.037475647707585616,0.040142500613555614,0.09375942740024576,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_005,6.0,0.06669218660096651,0.03242498636346431,0.04349674867985769,0.08988762452207533,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_006,7.0,0.06660968074169117,0.03135891171279585,0.04417686668421829,0.08904249479916405,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_007,8.0,0.06861605540598309,0.0332206316994263,0.0448514470990905,0.09238066371287568,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_008,9.0,0.07240042252946542,0.036772643649685306,0.04609485794386473,0.09870598711506612,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_009,10.0,0.07449488317119753,0.040655851426572284,0.045411439085081745,0.10357832725731331,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_010,11.0,0.07619977591533393,0.04282416035736727,0.04556521706129609,0.10683433476937176,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_011,12.0,0.08254735877728843,0.043921906297393405,0.05112751978405163,0.11396719777052522,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_012,13.0,0.10015751148357817,0.045952220358584345,0.06728527330537909,0.13302974966177725,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_013,14.0,0.13543103641293336,0.052141226285745114,0.09813145010364643,0.17273062272222028,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_014,15.0,0.18756354177116122,0.06257640193733596,0.14279908049449186,0.23232800304783058,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_015,16.0,0.25458316179484586,0.07397696745638774,0.20166322724215177,0.3075030963475399,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_016,17.0,0.34351089296997017,0.09075479959314017,0.27858882033103366,0.4084329656089067,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_017,18.0,0.4727316548390369,0.1276979652779471,0.3813820334990553,0.5640812761790185,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_018,19.0,0.6883253233300061,0.18800104779572654,0.553837475459612,0.8228131712004001,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_019,20.0,1.102734473163651,0.2955726502927819,0.8912945365606573,1.3141744097666448,10,Student t CI of mean across model runs
+ablations,canonical,full,canonical_test_020,21.0,2.0423540715819266,0.5180797844788341,1.671742119911199,2.412966023252654,10,Student t CI of mean across model runs
+ablations,canonical,full,__mean__,,0.3074371633579654,0.06557421285518171,0.2605281973384208,0.35434612937751,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_001,2.0,107.94978598748153,1.271544429031312,107.04017789892546,108.8593940760376,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_002,3.0,115.92708166408174,4.951494561093624,112.38499583492722,119.46916749323626,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_003,4.0,99.44160925032756,0.7357998829714372,98.91524972263153,99.96796877802359,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_004,5.0,99.58220710450965,0.8396439630175289,98.98156199700848,100.18285221201081,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_005,6.0,97.07097885521885,5.5883642691397855,93.07330388221,101.06865382822771,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_006,7.0,100.14676639374605,4.631043657574419,96.83391733144855,103.45961545604355,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_007,8.0,99.74868901841208,1.779279371952932,98.4758692320344,101.02150880478976,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_008,9.0,98.6879071523255,8.51229221626575,92.59858012977945,104.77723417487154,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_009,10.0,90.91536919722122,20.132419696687887,76.5135037332957,105.31723466114674,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_010,11.0,103.40998284582906,27.15585943067049,83.98385126453033,122.8361144271278,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_011,12.0,95.24146664365476,9.351828501503888,88.55157154165066,101.93136174565886,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_012,13.0,96.42039201128281,13.989985485426843,86.41255927985335,106.42822474271227,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_013,14.0,107.94745952887813,21.756644320715672,92.38369376330674,123.51122529444952,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_014,15.0,84.29699296957573,48.97538959943004,49.26210979701958,119.33187614213188,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_015,16.0,107.29303906427792,49.87730912771316,71.61296152853464,142.9731166000212,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_016,17.0,148.64119357673752,125.08219863740507,59.16277896747535,238.1196081859997,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_017,18.0,165.9093412654438,126.49199147547334,75.4224216134815,256.3962609174061,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_018,19.0,234.3646479464565,140.8293670514425,133.62138766272955,335.10790823018345,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_019,20.0,713.2947756092791,985.1621742158296,8.552210782910265,1418.0373404356478,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,canonical_test_020,21.0,1269.4887997054711,989.2814571774056,561.7994773648917,1977.1781220460507,10,Student t CI of mean across model runs
+ablations,canonical,no_reformulation,__mean__,,201.7889242895105,72.3224792934903,150.05253926999183,253.52530930902918,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_001,2.0,0.19645239670076092,0.05911009630616788,0.15416758109555265,0.2387372123059692,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_002,3.0,0.18829924817145094,0.05286888162461707,0.15047912859033555,0.22611936775256633,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_003,4.0,0.17826033554955395,0.05511019791480666,0.1388368748817869,0.217683796217321,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_004,5.0,0.18093998989920645,0.062224502835056324,0.13642726207555772,0.2254527177228552,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_005,6.0,0.1912263382691671,0.08779042324364095,0.128424852723741,0.2540278238145932,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_006,7.0,0.2178444985266681,0.12482806269507774,0.12854788181880514,0.307141115234531,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_007,8.0,0.2700287508797927,0.1632632650567479,0.153237246730129,0.38682025502945644,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_008,9.0,0.35207615548973836,0.21450148712017328,0.19863103533734483,0.5055212756421319,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_009,10.0,0.4733294355055865,0.28267995851609434,0.2711123750015974,0.6755464960095756,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_010,11.0,0.6459204807870933,0.3698127388383351,0.3813723841431645,0.9104685774310222,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_011,12.0,0.8797261383713055,0.4886385769900253,0.5301751577978127,1.2292771189447984,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_012,13.0,1.1882863854152295,0.6643010803742665,0.7130740199257244,1.6634987509047345,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_013,14.0,1.6022717016536319,0.908316046899956,0.9525015446997741,2.2520418586074897,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_014,15.0,2.1883294054557796,1.1729255209751088,1.349269033836996,3.0273897770745632,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_015,16.0,3.0066672194112334,1.4951625440125789,1.9370923680031673,4.0762420708192995,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_016,17.0,4.243293185413025,2.162391603449078,2.696411418472748,5.790174952353302,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_017,18.0,6.842166466348274,3.473258945035499,4.357546693792745,9.326786238903804,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_018,19.0,12.777118071386488,6.5767936610715125,8.072363306794891,17.481872835978084,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_019,20.0,25.15266369960377,14.624344351044762,14.691037972790822,35.61428942641672,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,canonical_test_020,21.0,50.64381843482026,31.6892606336527,27.97468699543248,73.31294987420804,10,Student t CI of mean across model runs
+ablations,canonical,no_steady,__mean__,,5.570935916882902,2.9983107221058614,3.4260736355785832,7.71579819818722,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_001,2.0,0.58632252454268,0.26547056724706636,0.3964163209305413,0.7762287281548186,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_002,3.0,0.6470443296922331,0.28784126596208465,0.4411350922629171,0.8529535671215491,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_003,4.0,0.5742395907232045,0.2722059599766338,0.37951517740754515,0.7689640040388639,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_004,5.0,0.5611706412142372,0.2546808530333191,0.3789829341783525,0.7433583482501219,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_005,6.0,0.5907834811594365,0.27009970533703503,0.39756579164594685,0.7840011706729261,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_006,7.0,0.6354651157578961,0.30571136924851006,0.41677237653222654,0.8541578549835657,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_007,8.0,0.7016197938715564,0.3555335626846671,0.44728640450072554,0.9559531832423872,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_008,9.0,0.7842250602192247,0.4043332184962842,0.4949825000545621,1.0734676203838873,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_009,10.0,0.8681411380113524,0.45134541030677344,0.5452680817702389,1.191014194252466,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_010,11.0,0.9681024400150097,0.5066855491594779,0.6056414332682385,1.3305634467617808,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_011,12.0,1.1134223957595721,0.5667828746580755,0.7079703521870122,1.518874439332132,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_012,13.0,1.3083832819057617,0.6222480687144882,0.8632538287239439,1.7535127350875794,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_013,14.0,1.5381004919047077,0.6981262389164974,1.0386910656564652,2.03750991815295,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_014,15.0,1.7992136680600133,0.8724231453329292,1.1751197461174536,2.423307590002573,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_015,16.0,2.1441525036432103,1.2333319647358651,1.2618799653150408,3.02642504197138,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_016,17.0,2.717245998005383,1.722124568972293,1.485312294649299,3.9491797013614667,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_017,18.0,3.652091287020626,2.09120473045281,2.156133541292686,5.148049032748566,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_018,19.0,5.009173567797542,2.4205416042035766,3.2776224150412023,6.740724720553882,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_019,20.0,8.008731321609506,4.208140142532453,4.998409209356539,11.019053433862474,10,Student t CI of mean across model runs
+ablations,canonical,no_features,canonical_test_020,21.0,17.29458370967408,9.251313163111243,10.676592949145137,23.91257447020302,10,Student t CI of mean across model runs
+ablations,canonical,no_features,__mean__,,2.5751106170293614,1.0145191524219752,1.849367335104796,3.300853898953927,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_001,1.4142135623730951,0.3821867877599626,0.17582277818888387,0.2564107491555962,0.507962826364329,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_002,1.4142135623730951,0.7239210526351747,0.09464749456841955,0.6562143137628348,0.7916277915075146,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_003,2.0,0.8485061592202762,0.4181393962035489,0.5493872544876636,1.1476250639528889,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_004,2.8284271247461903,1.1050457948914865,0.7491185614259566,0.5691586585846189,1.640932931198354,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_005,3.0,1.4258141481709439,0.7527969384249551,0.887295659475079,1.9643326368668088,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_006,3.0,1.0891441365627685,0.7338529015833304,0.5641773954485226,1.6141108776770143,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_007,3.1622776601683795,1.504297359978272,0.8257015603368941,0.9136260465205214,2.0949686734360227,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_008,4.0,1.7852586065908898,1.1880773278745729,0.9353592852686403,2.635157927913139,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_009,5.830951894845301,2.5191578630934086,1.4613633567245126,1.4737614937280565,3.564554232458761,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_010,6.0,2.668534440042237,1.484472381451808,1.6066068702479674,3.730462009836507,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_011,6.082762530298219,1.8017424239046833,1.5043314966259997,0.7256084989240887,2.8778763488852777,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_012,6.324555320336759,1.8525591276338953,1.3772293478875217,0.8673486025170816,2.8377696527507092,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_013,6.4031242374328485,2.2586566962392824,1.3029587111553214,1.3265761840196868,3.190737208458878,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_014,6.4031242374328485,2.3436245626103225,1.5161466853265115,1.2590385607974703,3.428210564423175,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_015,7.0710678118654755,3.1319135895970556,1.573531344760842,2.0062770753610804,4.257550103833031,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_016,9.055385138137417,2.5833857424128617,1.9098272326505996,1.217177642325412,3.9495938425003114,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_017,9.486832980505138,2.286530100174177,1.584097458197698,1.1533350437218772,3.419725156626477,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_018,10.0,5.568638571012856,2.5075365270411747,3.7748549994202554,7.362422142605456,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_019,10.63014581273465,3.503224869224181,1.4112036884405277,2.4937105649669755,4.512739173481386,10,Student t CI of mean across model runs
+ablations,eccentric,full,eccentric_test_020,10.770329614269007,5.369269628366708,2.408431795031169,3.646381311231837,7.0921579455015795,10,Student t CI of mean across model runs
+ablations,eccentric,full,__mean__,,2.2375705830060717,0.9912392935900175,1.5284807088669696,2.9466604571451738,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_001,1.4142135623730951,83.16138658963426,2.6183572987643893,81.28832661366447,85.03444656560406,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_002,1.4142135623730951,95.01499084954396,23.76805782491577,78.01234654298037,112.01763515610756,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_003,2.0,66.81371769981824,5.005170722310205,63.23323425805145,70.39420114158503,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_004,2.8284271247461903,23.706864304099078,4.5920255487273725,20.421927115423223,26.991801492774933,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_005,3.0,24.20016507543732,8.62139042896931,18.032793893004733,30.367536257869904,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_006,3.0,20.57826234955213,3.469934021656611,18.09602108389751,23.06050361520675,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_007,3.1622776601683795,20.39655240905271,4.4904229158472875,17.184297365472425,23.608807452632995,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_008,4.0,17.545307878768167,9.684217372872366,10.617636102162832,24.4729796553735,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_009,5.830951894845301,55.60228864038695,47.22826530607391,21.817222896672234,89.38735438410167,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_010,6.0,51.30984774606403,45.06618887269349,19.07143831020442,83.54825718192365,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_011,6.082762530298219,133.7763940301832,24.565458730005766,116.20332347933623,151.3494645810302,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_012,6.324555320336759,161.4431276405,22.743040002321635,145.17373691207214,177.71251836892785,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_013,6.4031242374328485,164.72020932394668,45.196138954221176,132.3888391998348,197.05157944805856,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_014,6.4031242374328485,83.93609834768988,41.063213712837104,54.561244836862556,113.3109518585172,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_015,7.0710678118654755,137.26250305179235,175.09522076015926,12.00692767855432,262.51807842503035,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_016,9.055385138137417,319.4567039499613,204.7955812334464,172.95477060233918,465.95863729758344,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_017,9.486832980505138,124.66722453943956,74.75122605487029,71.19341875131381,178.14103032756532,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_018,10.0,281.77774035337677,179.27044303154128,153.5353908943431,410.02008981241045,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_019,10.63014581273465,463.88845801351636,338.405679046279,221.80761848806844,705.9692975389643,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,eccentric_test_020,10.770329614269007,626.866848086014,606.4187150050101,193.06103239732374,1060.6726637747042,10,Student t CI of mean across model runs
+ablations,eccentric,no_reformulation,__mean__,,147.80623454393884,39.07536910214849,119.8533994033642,175.7590696845135,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_001,1.4142135623730951,1.9004822753515973,0.5029601787919497,1.5406862380245359,2.2602783126786585,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_002,1.4142135623730951,2.3672142357538686,0.5252998662376073,1.9914373487353298,2.7429911227724073,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_003,2.0,5.801311395721738,1.7697804007252418,4.535286764011406,7.06733602743207,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_004,2.8284271247461903,11.482911689696866,3.0257181981513903,9.318443281128154,13.647380098265579,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_005,3.0,14.961236399647479,5.1609987162950945,11.269280326240048,18.65319247305491,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_006,3.0,13.380694557796227,3.2645390117374724,11.045384030939177,15.716005084653277,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_007,3.1622776601683795,14.672994600449234,4.04663192448558,11.778208507347113,17.567780693551356,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_008,4.0,22.69655802683152,7.989030595553202,16.981549818291604,28.41156623537144,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_009,5.830951894845301,42.66728701711411,9.049473380240084,36.19368373916167,49.140890295066555,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_010,6.0,41.52756949871997,12.468687243853878,32.60800797044077,50.44713102699917,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_011,6.082762530298219,49.98047959505222,11.874519755787668,41.485959882664424,58.47499930744002,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_012,6.324555320336759,50.309209450077525,15.39287240679484,39.29781187115155,61.3206070290035,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_013,6.4031242374328485,42.771409586433265,20.72889658500107,27.942850261201023,57.599968911665506,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_014,6.4031242374328485,52.38764477605842,9.531371076639351,45.569312653015416,59.20597689910143,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_015,7.0710678118654755,47.16114839907738,21.25165080419875,31.958633233016776,62.36366356513799,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_016,9.055385138137417,90.74647702448468,34.964363524674276,65.73447811424012,115.75847593472923,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_017,9.486832980505138,97.88732751060483,48.81214694437288,62.96922109869282,132.80543392251684,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_018,10.0,93.32812236080893,56.11016992693795,53.18932480838637,133.4669199132315,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_019,10.63014581273465,110.54336773247182,65.24229727024115,63.871839818813775,157.21489564612986,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,eccentric_test_020,10.770329614269007,113.9930899642417,58.02487388325421,72.48459571377896,155.50158421470445,10,Student t CI of mean across model runs
+ablations,eccentric,no_steady,__mean__,,46.02832680481967,12.123352291318351,37.35580301970981,54.70085058992953,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_001,1.4142135623730951,3.644114026470924,3.26007992793547,1.3119933360059388,5.97623471693591,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_002,1.4142135623730951,2.7803543435549645,1.5217384663696907,1.6917682225561983,3.868940464553731,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_003,2.0,6.441633855703723,3.9308581923315375,3.629667301427995,9.253600409979452,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_004,2.8284271247461903,10.87536702267927,6.876143957535565,5.956469956207747,15.794264089150793,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_005,3.0,12.444552479713224,4.479512410853323,9.240102341227999,15.649002618198448,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_006,3.0,11.822755349926844,11.428919099675323,3.646999144194071,19.99851155565962,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_007,3.1622776601683795,14.909280130011307,9.02641421796229,8.452172383040185,21.36638787698243,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_008,4.0,18.14756841553505,3.827087710662434,15.409834791957218,20.885302039112887,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_009,5.830951894845301,27.915360133408342,15.316060640065038,16.95891038227234,38.87180988454435,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_010,6.0,28.968498960545595,16.561968966785813,17.12078008368353,40.81621783740766,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_011,6.082762530298219,24.430785521540646,22.468697577498094,8.357647541311042,40.503923501770245,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_012,6.324555320336759,26.35963965284344,29.13204181467169,5.519832355691875,47.19944694999501,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_013,6.4031242374328485,25.884169909507772,13.892117983889,15.94634737117351,35.821992447842035,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_014,6.4031242374328485,27.13767021300838,18.534956285476486,13.8785612323284,40.39677919368836,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_015,7.0710678118654755,31.595227765862226,11.613997644371448,23.28707434503408,39.903381186690375,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_016,9.055385138137417,31.678288026721468,27.90145257718762,11.718791239017307,51.63778481442563,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_017,9.486832980505138,38.04214616645986,37.29082549047993,11.365896622498141,64.71839571042158,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_018,10.0,44.128785424154486,25.613484229719038,25.806002594454263,62.45156825385471,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_019,10.63014581273465,38.65682664065341,30.204288046903756,17.049980596373604,60.26367268493321,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,eccentric_test_020,10.770329614269007,45.986301502603126,31.630723446926506,23.359045043996023,68.61355796121023,10,Student t CI of mean across model runs
+ablations,eccentric,no_features,__mean__,,23.5924662770452,15.072959872693517,12.809920338695184,34.375012215395216,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_001,1.7320508075688772,0.5915137670567935,0.1585489937282643,0.47809464945858005,0.7049328846550069,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_002,2.8284271247461903,1.729055751907103,0.6326802759497304,1.2764635472350374,2.1816479565791687,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_003,2.8284271247461903,1.8380226797448558,0.6529200894776415,1.3709517846900408,2.305093574799671,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_004,3.0,1.9585168404704891,0.7087612179042774,1.4514996085584853,2.465534072382493,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_005,3.1622776601683795,1.9620854764039486,0.7559500092539458,1.4213114167155507,2.5028595360923465,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_006,3.1622776601683795,2.782374526936316,0.6193080749842282,2.33934821857295,3.2254008352996815,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_007,3.3166247903554,2.5090757174548957,0.8509695315289216,1.9003287863050602,3.117822648604731,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_008,4.0,2.2115297957905047,0.9382039587011709,1.540379114724606,2.8826804768564034,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_009,5.385164807134504,5.361671429034601,1.53604235095667,4.2628529254143315,6.460489932654871,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_010,5.830951894845301,2.526602111665379,1.012405308353207,1.8023709826935523,3.2508332406372062,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_011,6.164414002968976,2.4846077823688453,1.3283394572740623,1.53437097813452,3.4348445866031705,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_012,6.4031242374328485,5.055212369086459,1.6642512714079276,3.864678728814339,6.245746009358579,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_013,6.4031242374328485,4.007190717802297,1.585833797199868,2.872753559253689,5.141627876350905,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_014,6.4031242374328485,3.7926700605108747,2.0555583896714498,2.322212170833464,5.263127950188285,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_015,9.055385138137417,5.803271097989096,3.262713153636471,3.46926671133392,8.13727548464427,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_016,9.486832980505138,7.3246668911527735,4.81365762998807,3.8811836625624254,10.768150119743122,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_017,9.643650760992955,6.7915127332097995,3.3443607155643997,4.3991011992738125,9.183924267145787,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_018,9.695359714832659,5.623994907555837,3.0646332482256438,3.431688349170313,7.816301465941361,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_019,9.848857801796104,6.493442076052753,4.1082479002876795,3.554578569142479,9.432305582963028,10,Student t CI of mean across model runs
+ablations,pipe,full,pipe_test_020,9.9498743710662,7.235657941399795,4.656216276666104,3.9048014721936832,10.566514410605908,10,Student t CI of mean across model runs
+ablations,pipe,full,__mean__,,3.904133733679671,1.489219409933476,2.838810344278201,4.969457123081141,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_001,1.7320508075688772,87.07712319226093,3.2262341557356,84.76921430867704,89.38503207584482,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_002,2.8284271247461903,52.20198007621673,10.32492491984452,44.81597373117734,59.58798642125612,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_003,2.8284271247461903,55.307653964354316,6.415963132129291,50.717950429332454,59.89735749937618,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_004,3.0,53.218172850628676,7.638616944668077,47.75383546719583,58.682510234061525,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_005,3.1622776601683795,35.26513145706542,9.207688575282615,28.678347846709812,41.85191506742103,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_006,3.1622776601683795,41.11601475103241,20.98427753439401,26.10476689999858,56.12726260206624,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_007,3.3166247903554,40.31727686230006,8.159462207375862,34.480349223247096,46.15420450135303,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_008,4.0,182.55380131371234,128.70838800620956,90.48136709711846,274.6262355303062,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_009,5.385164807134504,202.4197108616296,128.8989360004074,110.21096682146745,294.62845490179177,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_010,5.830951894845301,338.622678894226,227.90946996978786,175.58606561522444,501.6592921732275,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_011,6.164414002968976,248.3476794007716,264.3919531109672,59.213069859769035,437.4822889417742,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_012,6.4031242374328485,278.4787347697391,130.61652824824975,185.04129925344125,371.91617028603696,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_013,6.4031242374328485,565.5080733368546,691.5620040607839,70.79441782506007,1060.2217288486493,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_014,6.4031242374328485,98.3445471032448,70.06852980612386,48.22054041522275,148.46855379126686,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_015,9.055385138137417,1023.5084409402907,737.7206745629326,495.77486171435964,1551.2420201662217,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_016,9.486832980505138,744.5056966954754,999.0422094671109,29.833952796986296,1459.1774405939645,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_017,9.643650760992955,2425.1338561404164,2499.0201122481103,637.4425606841453,4212.825151596688,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_018,9.695359714832659,1801.2343456803312,2245.2792871922416,195.05830175447,3407.4103896061924,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_019,9.848857801796104,2763.757075711312,5433.625912174672,-1123.224745023991,6650.738896446615,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,pipe_test_020,9.9498743710662,1599.7681520986519,1588.4334970346179,463.4712803198047,2736.065023877499,10,Student t CI of mean across model runs
+ablations,pipe,no_reformulation,__mean__,,631.8343073050257,387.72740475724976,354.470830677844,909.1977839322075,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_001,1.7320508075688772,2.3086347691408298,0.6837120817193286,1.8195366097873287,2.797732928494331,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_002,2.8284271247461903,9.189067859493143,2.164444948245837,7.640717218172165,10.73741850081412,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_003,2.8284271247461903,7.6736435202413205,1.9678723495739159,6.2659124449049015,9.081374595577739,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_004,3.0,9.20091585275221,2.3341252073598597,7.531183266267125,10.870648439237296,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_005,3.1622776601683795,13.966223341888599,3.675207979696685,11.33713793273408,16.595308751043117,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_006,3.1622776601683795,8.349380515516387,3.295346739013493,5.992031468195176,10.706729562837598,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_007,3.3166247903554,10.960920625983672,2.491792719409995,9.178399495906309,12.743441756061035,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_008,4.0,21.685247554634476,6.333990964380724,17.154183375908936,26.216311733360016,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_009,5.385164807134504,25.481213377602526,6.75506425912242,20.648931509563692,30.31349524564136,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_010,5.830951894845301,46.627193523104964,5.183140667921087,42.91939805169021,50.33498899451972,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_011,6.164414002968976,52.00630190579558,5.717849036165527,47.91599911047686,56.0966047011143,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_012,6.4031242374328485,44.05868127453651,6.8933820625365865,39.12745281060666,48.98990973846636,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_013,6.4031242374328485,41.77576181325389,5.512291509219953,37.83250601440994,45.719017612097836,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_014,6.4031242374328485,53.51799274734789,6.826553440788238,48.63457059950222,58.40141489519356,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_015,9.055385138137417,90.03054516229845,23.241947974520524,73.40425717051428,106.65683315408262,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_016,9.486832980505138,93.41850929506275,33.86023138584152,69.19635893543636,117.64065965468913,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_017,9.643650760992955,97.01018989730125,33.66029385559987,72.93106623069595,121.08931356390654,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_018,9.695359714832659,114.7552745946861,26.09483020735871,96.08815759572013,133.42239159365207,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_019,9.848857801796104,93.72621897216187,25.646096188741865,75.38010695235744,112.07233099196631,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,pipe_test_020,9.9498743710662,95.19374613631842,32.641411698866186,71.84348685690286,118.54400541573399,10,Student t CI of mean across model runs
+ablations,pipe,no_steady,__mean__,,46.546783136956044,8.528576263168206,40.44580720900118,52.64775906491091,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_001,1.7320508075688772,1.2496708501565017,0.09361086721732152,1.182705669818688,1.3166360304943154,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_002,2.8284271247461903,3.4860094501581096,0.3200235306729385,3.257078407418108,3.714940492898111,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_003,2.8284271247461903,5.4222120001092655,0.4527876639494339,5.098307217764713,5.746116782453818,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_004,3.0,4.746283782674197,0.5972504373298558,4.319036557736284,5.173531007612109,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_005,3.1622776601683795,2.4432730204431166,0.3643037630193712,2.182665807696109,2.703880233190124,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_006,3.1622776601683795,3.13893647371292,0.46600133655644377,2.805579199415708,3.472293748010132,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_007,3.3166247903554,7.5999097114698415,0.6489132396176376,7.135705144133568,8.064114278806116,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_008,4.0,3.728685219718809,0.7339374018759354,3.2036580307366913,4.253712408700927,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_009,5.385164807134504,12.40239472943875,1.0399944163769004,11.658427541512603,13.146361917364898,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_010,5.830951894845301,6.130667583260964,1.1789281566390972,5.28731318476592,6.974021981756008,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_011,6.164414002968976,6.487753686541805,0.957800273749317,5.802584646174639,7.172922726908972,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_012,6.4031242374328485,14.425737038112796,1.2337465508230048,13.543167922764072,15.30830615346152,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_013,6.4031242374328485,13.020382563120174,1.7237827247302668,11.787262686591449,14.2535024396489,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_014,6.4031242374328485,11.231535446793137,2.0024186392603016,9.799091444553898,12.663979449032375,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_015,9.055385138137417,20.789806537236302,2.5749370327146894,18.94780754844424,22.631805526028366,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_016,9.486832980505138,25.66803356296533,3.0638101209229838,23.47631583438026,27.859751291550403,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_017,9.643650760992955,23.714275763240302,2.979662871360684,21.582753350748057,25.845798175732547,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_018,9.695359714832659,20.18611906506014,2.9884173162053496,18.048334099990324,22.323904030129956,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_019,9.848857801796104,21.311805860536584,3.209295445230912,19.016014200490453,23.607597520582715,10,Student t CI of mean across model runs
+ablations,pipe,no_features,pipe_test_020,9.9498743710662,25.806787897177202,3.7749381152503028,23.106359846821015,28.50721594753339,10,Student t CI of mean across model runs
+ablations,pipe,no_features,__mean__,,11.649514012096313,1.2233451413567282,10.77438561684112,12.524642407351507,10,Student t CI of mean across model runs

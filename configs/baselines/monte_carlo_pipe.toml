@@ -1,0 +1,47 @@
+schema_version = 1
+scenario = "pipe"
+
+[geometry]
+rx_center = [1.0, 0.0, 0.0]
+rx_radius = 1.0
+pipe_radius = 5.0
+z_min = -70.0
+z_max = 70.0
+wall_kappa = 1.0
+end_boundary = "absorbing"
+
+[simulation]
+dt = 0.0002
+t_max = 20.0
+output_points = 801
+num_replicas = 250
+n_worst = 1
+repeats = 128
+max_iterations = 100000
+master_seed = 20260908
+
+[dataset]
+manifest = "../../data/training/pipe_positions.csv"
+seed = 2026100504
+train = 160
+validation = 20
+test = 20
+min_distance = 1.25
+max_distance = 10.0
+boundary_margin = 0.2
+candidates_per_band = 800
+near_end = 3.5
+middle_end = 6.5
+
+[outputs]
+root = "../../outputs/monte_carlo"
+checkpoint_batch = 8
+
+[smoke]
+dt = 0.002
+t_max = 0.2
+output_points = 41
+num_replicas = 16
+n_worst = 1
+repeats = 4
+max_iterations = 2000

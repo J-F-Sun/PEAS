@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "scenario": "eccentric",
+  "case_id": "eccentric_r10",
+  "problem": {
+    "nondimensionalization": {
+      "length_scale": 1.0,
+      "diffusivity": 1.0
+    },
+    "domain": {
+      "rx_center": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "outer_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rx_radius": 1.0,
+      "outer_radius": 10.0,
+      "boundary_eps": 0.0001
+    },
+    "boundary": {
+      "kappa": 5.0
+    },
+    "time": {
+      "t_min_pde": 1e-05,
+      "t_max": 20.0,
+      "sampling": {
+        "split_t": 6.5,
+        "early_fraction": 0.45,
+        "early_bias_power": 0.9,
+        "late_bias_power": 0.5
+      }
+    }
+  },
+  "features": {
+    "input_scale": "outer_radius",
+    "time_scale": 20.0,
+    "include_tau": true,
+    "include_radii": true,
+    "include_boundary_distances": true,
+    "mode": "axis_augmented",
+    "tau_scale": 1.0,
+    "tau_transform": "linear",
+    "outer_eps": 0.0,
+    "include_arrival": true,
+    "preset": "axis10_arrival",
+    "version": 1
+  },
+  "model": {
+    "input_dim": 10,
+    "output_dim": 1,
+    "hidden_dim": 64,
+    "num_hidden_layers": 6,
+    "activation": "tanh"
+  },
+  "steady_state": {
+    "method": "bispherical_fem",
+    "parameters": {
+      "n_xi": 96,
+      "n_eta": 128,
+      "clamp_min": 0.0001,
+      "drift_clip": 50.0,
+      "residual_clip": "1.0e3"
+    },
+    "checkpoint": "${PEAS_ROOT}/data/steady/eccentric.npz"
+  },
+  "training": {
+    "epochs": 7000,
+    "lr": 0.003,
+    "log_every": 100,
+    "grad_clip_norm": 1.0,
+    "max_nonfinite_skips": 100,
+    "nonfinite_lr_decay": 0.5,
+    "min_lr": 1e-07,
+    "lr_schedule": [
+      {
+        "epochs": 1800,
+        "lr": 0.0005,
+        "loss_weights": {
+          "pde": 1.0,
+          "ic": 2.0,
+          "bc_rx": 7.0,
+          "bc_outer": 2.0,
+          "range": 0.05
+        }
+      },
+      {
+        "epochs": 2200,
+        "lr": 8e-05,
+        "loss_weights": {
+          "pde": 2.0,
+          "ic": 3.0,
+          "bc_rx": 4.0,
+          "bc_outer": 4.0,
+          "range": 0.05
+        }
+      },
+      {
+        "epochs": 3000,
+        "lr": 2e-05,
+        "loss_weights": {
+          "pde": 7.0,
+          "ic": 1.5,
+          "bc_rx": 4.0,
+          "bc_outer": 4.0,
+          "range": 0.02
+        }
+      }
+    ],
+    "batch_sizes": {
+      "pde": 8192,
+      "ic": 2048,
+      "bc_rx": 2048,
+      "bc_outer": 2048
+    },
+    "loss_weights": {
+      "pde": 1.0,
+      "ic": 2.0,
+      "bc_rx": 5.0,
+      "bc_outer": 2.0,
+      "range": 0.05
+    },
+    "adam_reset_each_stage": false,
+    "checkpoint_every": 250,
+    "adaptive_sampling": {
+      "enabled": true,
+      "start_epoch": 800,
+      "refresh_every": 200,
+      "candidate_points": 16384,
+      "selected_points": 2048,
+      "batch_fraction": 0.25,
+      "chunk_size": 1024,
+      "score_clip": "1.0e3"
+    },
+    "lbfgs": {
+      "enabled": true,
+      "lr": 0.8,
+      "max_iter": 500,
+      "max_eval": 800,
+      "history_size": 50,
+      "tolerance_grad": 1e-09,
+      "tolerance_change": 1e-11,
+      "line_search_fn": "strong_wolfe",
+      "log_every": 25,
+      "batch_sizes": {
+        "pde": 8192,
+        "ic": 2048,
+        "bc_rx": 2048,
+        "bc_outer": 2048
+      },
+      "loss_weights": {
+        "pde": 8.0,
+        "ic": 2.0,
+        "bc_rx": 5.0,
+        "bc_outer": 5.0,
+        "range": 0.02
+      }
+    }
+  },
+  "sampling": {
+    "sampling": {
+      "near_rx_width": 1.0,
+      "near_outer_width": 1.0,
+      "interior_mixture": {
+        "near_rx": 0.4,
+        "near_outer": 0.25
+      }
+    }
+  },
+  "residual": {
+    "q_fem": {
+      "n_xi": 96,
+      "n_eta": 128,
+      "clamp_min": 0.0001,
+      "drift_clip": 50.0,
+      "residual_clip": "1.0e3"
+    }
+  },
+  "evaluation": {
+    "raw_predictions": true,
+    "reference": "${PEAS_ROOT}/data/reference/eccentric.npz",
+    "t_min": 1e-05,
+    "t_max": 20.0,
+    "time_points": 800
+  },
+  "runtime": {
+    "device": "auto",
+    "dtype": "float32",
+    "threads": 1,
+    "prediction_batch_size": 4096
+  },
+  "paths": {
+    "output_root": "${PEAS_ROOT}/outputs/training"
+  },
+  "seed": 1994417097
+}

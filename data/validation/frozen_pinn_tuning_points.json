@@ -1,0 +1,22 @@
+{
+  "canonical": [
+    "canonical_test_002",
+    "canonical_test_009",
+    "canonical_test_020"
+  ],
+  "concentric": [
+    "concentric_test_006",
+    "concentric_test_011",
+    "concentric_test_020"
+  ],
+  "eccentric": [
+    "eccentric_test_005",
+    "eccentric_test_009",
+    "eccentric_test_016"
+  ],
+  "pipe": [
+    "pipe_test_004",
+    "pipe_test_010",
+    "pipe_test_017"
+  ]
+}

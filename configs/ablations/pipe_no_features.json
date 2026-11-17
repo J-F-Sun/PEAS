@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "scenario": "pipe",
+  "case_id": "pipe_wo_late_loss",
+  "problem": {
+    "nondimensionalization": {
+      "length_scale": 1.0,
+      "diffusivity": 1.0
+    },
+    "domain": {
+      "boundary_eps": 0.0001,
+      "pipe_radius": 5.0,
+      "rx_center": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rx_radius": 1.0,
+      "z_max": 70.0,
+      "z_min": -70.0
+    },
+    "boundary": {
+      "kappa": 1.0
+    },
+    "time": {
+      "sampling": {
+        "early_bias_power": 0.8,
+        "early_fraction": 0.5,
+        "late_bias_power": 0.7,
+        "split_t": 12.0
+      },
+      "t_max": 80.0,
+      "t_min_pde": 1e-05
+    }
+  },
+  "features": {
+    "include_tau": true,
+    "input_dim": 11,
+    "radial_smoothing_eps": 0.001,
+    "time_scale": 20.0,
+    "mode": "augmented",
+    "tau_scale": 1.0,
+    "tau_transform": "log1p",
+    "spatial_transform": "mirror_log",
+    "axial_scale": 10.0,
+    "sqrt_time_transform": "smooth",
+    "include_arrival": true,
+    "preset": "symmetric11_arrival",
+    "version": 1
+  },
+  "model": {
+    "activation": "tanh",
+    "hidden_dim": 160,
+    "num_hidden_layers": 8,
+    "input_dim": 11,
+    "output_dim": 1
+  },
+  "steady_state": {
+    "method": "pipe_fem",
+    "parameters": {
+      "mesh": {
+        "size_min": 0.12,
+        "size_max": 0.9,
+        "distance_min": 0.35,
+        "distance_max": 4.0,
+        "surface_classification_tol": 1e-06,
+        "terminal_output": false
+      },
+      "seed": 73,
+      "gradient_method": "volume_weighted_nodal",
+      "locator_candidates": 96
+    },
+    "checkpoint": "${PEAS_ROOT}/data/steady/pipe.npz"
+  },
+  "training": {
+    "batch_sizes": {
+      "caps": 512,
+      "ic": 1536,
+      "late": 1024,
+      "pde": 3072,
+      "rx": 1024,
+      "wall": 1024
+    },
+    "epochs": 8500,
+    "grad_clip_norm": 1.0,
+    "log_every": 100,
+    "lr": 0.001,
+    "lr_schedule": [
+      {
+        "epochs": 2000,
+        "loss_weights": {
+          "caps": 4.0,
+          "ic": 2.0,
+          "late": 0.25,
+          "pde": 4.0,
+          "range": 0.05,
+          "rx": 10.0,
+          "wall": 6.0
+        },
+        "lr": 0.001
+      },
+      {
+        "epochs": 2500,
+        "loss_weights": {
+          "caps": 5.0,
+          "ic": 2.0,
+          "late": 0.5,
+          "pde": 8.0,
+          "range": 0.04,
+          "rx": 12.0,
+          "wall": 8.0
+        },
+        "lr": 0.0003
+      },
+      {
+        "epochs": 2500,
+        "loss_weights": {
+          "caps": 6.0,
+          "ic": 1.5,
+          "late": 1.0,
+          "pde": 16.0,
+          "range": 0.02,
+          "rx": 12.0,
+          "wall": 10.0
+        },
+        "lr": 0.0001
+      },
+      {
+        "epochs": 1500,
+        "loss_weights": {
+          "caps": 8.0,
+          "ic": 2.0,
+          "late": 2.0,
+          "pde": 24.0,
+          "range": 0.01,
+          "rx": 15.0,
+          "wall": 12.0
+        },
+        "lr": 3e-05
+      }
+    ],
+    "adam_reset_each_stage": true,
+    "checkpoint_every": 250,
+    "lbfgs": {
+      "batch_sizes": {
+        "caps": 1024,
+        "ic": 6144,
+        "late": 2048,
+        "pde": 6144,
+        "rx": 2048,
+        "wall": 2048
+      },
+      "enabled": true,
+      "history_size": 100,
+      "line_search_fn": "strong_wolfe",
+      "log_every": 25,
+      "loss_weights": {
+        "caps": 8.0,
+        "ic": 6.0,
+        "late": 2.0,
+        "pde": 18.0,
+        "range": 0.02,
+        "rx": 15.0,
+        "wall": 10.0
+      },
+      "lr": 0.8,
+      "max_eval": 600,
+      "max_iter": 300,
+      "run_with_epoch_override": false,
+      "tolerance_change": 1e-11,
+      "tolerance_grad": 1e-09
+    },
+    "validation": {
+      "batch_sizes": {
+        "caps": 512,
+        "ic": 2048,
+        "late": 1024,
+        "pde": 2048,
+        "rx": 1024,
+        "wall": 1024
+      },
+      "enabled": true,
+      "log_every": 10,
+      "loss_weights": {
+        "caps": 8.0,
+        "ic": 6.0,
+        "late": 2.0,
+        "pde": 18.0,
+        "range": 0.02,
+        "rx": 15.0,
+        "wall": 10.0
+      },
+      "restore_best_lbfgs": true,
+      "seed": 1073
+    },
+    "post_lbfgs_adam": {
+      "batch_sizes": {
+        "caps": 512,
+        "ic": 4096,
+        "late": 1024,
+        "pde": 2048,
+        "rx": 1024,
+        "wall": 1024
+      },
+      "enabled": false,
+      "epochs": 500,
+      "loss_weights": {
+        "caps": 8.0,
+        "ic": 6.0,
+        "late": 2.0,
+        "pde": 18.0,
+        "range": 0.02,
+        "rx": 15.0,
+        "wall": 10.0
+      },
+      "lr": 3e-06
+    },
+    "without_late_loss": true
+  },
+  "sampling": {
+    "sampling": {
+      "fem_inset": 0.03,
+      "interior_mixture": {
+        "near_caps": 0.1,
+        "near_rx": 0.45,
+        "near_wall": 0.2
+      },
+      "near_caps_width": 2.0,
+      "near_rx_width": 1.0,
+      "near_wall_width": 0.8
+    },
+    "ic_sampling": {
+      "enabled": true,
+      "near_rx_fraction": 0.45,
+      "near_rx_width": 1.0,
+      "rx_surface_margin": 0.02
+    },
+    "early_time_sampling": {
+      "enabled": true,
+      "levels": [
+        {
+          "bias_power": 1.0,
+          "fraction": 0.1,
+          "t_max": 0.25,
+          "t_min": 1e-05
+        },
+        {
+          "bias_power": 1.0,
+          "fraction": 0.2,
+          "t_max": 1.0,
+          "t_min": 0.25
+        },
+        {
+          "bias_power": 1.0,
+          "fraction": 0.35,
+          "t_max": 6.0,
+          "t_min": 1.0
+        },
+        {
+          "bias_power": 1.0,
+          "fraction": 0.15,
+          "t_max": 12.0,
+          "t_min": 6.0
+        }
+      ]
+    },
+    "late_time_constraint": {
+      "enabled": true,
+      "t_max": 80.0,
+      "t_min": 50.0,
+      "z_window": 12.0
+    }
+  },
+  "residual": {
+    "hybrid_residual": {
+      "enabled": true,
+      "epsilon_q": 0.03
+    }
+  },
+  "evaluation": {
+    "raw_predictions": true,
+    "reference": "${PEAS_ROOT}/data/reference/pipe.npz",
+    "t_min": 0.0,
+    "t_max": 20.0,
+    "time_points": 801
+  },
+  "runtime": {
+    "device": "auto",
+    "dtype": "float32",
+    "threads": 1,
+    "prediction_batch_size": 4096
+  },
+  "paths": {
+    "output_root": "${PEAS_ROOT}/outputs/training"
+  },
+  "seed": 73,
+  "ablation": {
+    "schema_version": 1,
+    "variant": "no_features",
+    "source_id": null,
+    "source": null,
+    "smoke": false,
+    "forward": {
+      "sigma_max": 0.1,
+      "clearance_divisor": 4.0,
+      "ic_local_fraction": 0.75,
+      "ic_local_scale": 2.0,
+      "pde_source_fraction": 0.25,
+      "integration_points": 2048,
+      "surface_polar": 32,
+      "surface_azimuth": 64
+    },
+    "baseline_config_sha256": "78d410b3f8e6bf5fa82c52b1bae53636a183e3c212742f6d86c9fe5785e2fab1",
+    "grid_sha256": "40f873abfdbba3d45c78d63281594f324dd2aa3cbf89415c7f780f95ae2603e5",
+    "network_input_dim": 4
+  },
+  "experiment": {
+    "protocol": "three_scene_ablations_v1",
+    "archived_package_sha256": "1b53047ae8496e475eb261c587aa4911f0bbd4387aeff1d1eadf939f3de46701"
+  }
+}
